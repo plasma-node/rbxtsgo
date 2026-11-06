@@ -199,6 +199,12 @@ func needsBracketSpacing(node *StringLiteral) bool {
 
 func renderStringLiteral(state *RenderState, node *StringLiteral) {
 	value := node.Value
+	if node.Quote != 0 {
+		state.writeByte(node.Quote)
+		state.writeString(value)
+		state.writeByte(node.Quote)
+		return
+	}
 	isMultiline := strings.IndexByte(value, '\n') >= 0
 	if !isMultiline && strings.IndexByte(value, '"') < 0 {
 		state.writeByte('"')

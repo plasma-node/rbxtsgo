@@ -7,6 +7,7 @@ tsbridge/testdata/** -text
 project/**/testdata/** -text
 project/include/* -text
 testdata/declarations/** -text
+testdata/fixemit/** -text
 watch/testdata/** -text
 # Fixtures that tests compare byte for byte with goldens made from LF files.
 spike/fixture/** text eol=lf

@@ -13,7 +13,7 @@ func transformTemplateExpression(state *TransformState, node *ast.Node) luau.Exp
 	parts := luau.NewList()
 
 	if template.Head.Text() != "" {
-		parts.Push(transformInterpolatedStringPart(template.Head))
+		parts.Push(transformInterpolatedStringPart(state, template.Head))
 	}
 
 	spanExpressions := make([]*ast.Node, len(templateSpans))
@@ -27,7 +27,7 @@ func transformTemplateExpression(state *TransformState, node *ast.Node) luau.Exp
 
 		templateSpan := templateSpans[i].AsTemplateSpan()
 		if templateSpan.Literal.Text() != "" {
-			parts.Push(transformInterpolatedStringPart(templateSpan.Literal))
+			parts.Push(transformInterpolatedStringPart(state, templateSpan.Literal))
 		}
 	}
 

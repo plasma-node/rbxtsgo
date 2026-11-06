@@ -35,8 +35,14 @@ func transformStatementList(state *TransformState, parent *ast.Node, statements 
 
 	removeComments := state.Options.RemoveComments.IsTrue()
 
+	// With fixEmit, the order to compile them in. getLastToken below still wants them as written.
+	ordered := statements
+	if state.Data.ProjectOptions.FixEmit {
+		ordered = hoistFunctionsPastFinalStatement(state, statements)
+	}
+
 	// iterate through each statement in the `statements` array
-	for _, statement := range statements {
+	for _, statement := range ordered {
 		// capture prerequisite statements for the `ts.Statement`
 		// transform the statement into a luau.List<...>
 		transformedStatements, prereqStatements := Capture(state, func() *luau.List { return transformStatement(state, statement) })

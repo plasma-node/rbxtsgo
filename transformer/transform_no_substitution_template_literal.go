@@ -11,6 +11,6 @@ import (
 // as they still are valid in luau
 func transformNoSubstitutionTemplateLiteral(state *TransformState, node *ast.Node) luau.Expression {
 	return luau.Create(&luau.InterpolatedString{
-		Parts: luau.MakeList(transformInterpolatedStringPart(node)),
+		Parts: luau.MakeList(transformInterpolatedStringPart(state, node)),
 	})
 }

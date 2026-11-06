@@ -42,6 +42,15 @@ func exportCountImportExpUses(state *TransformState, exportClause *ast.Node) int
 	return uses
 }
 
+func moduleHasExportEquals(state *TransformState, moduleSpecifier *ast.Node) bool {
+	symbol := state.Checker.GetSymbolAtLocation(moduleSpecifier)
+	if symbol == nil {
+		return false
+	}
+	_, ok := symbol.Exports()[ast.InternalSymbolNameExportEquals]
+	return ok
+}
+
 func transformExportFrom(state *TransformState, node *ast.Node) *luau.List {
 	declaration := node.AsExportDeclaration()
 	moduleSpecifier := declaration.ModuleSpecifier
@@ -75,12 +84,20 @@ func transformExportFrom(state *TransformState, node *ast.Node) *luau.List {
 	if exportClause != nil {
 		if ast.IsNamedExports(exportClause) {
 			// export { a, b, c } from "./module";
+			isExportEquals := state.Data.ProjectOptions.FixEmit && moduleHasExportEquals(state, moduleSpecifier)
 			for _, element := range exportClause.AsNamedExports().Elements.Nodes {
 				if isExportSpecifierValue(state, element) {
+					var value luau.Expression
+					if importName := element.PropertyNameOrName().Text(); isExportEquals && importName == "default" {
+						// the module has no default: the module is what it exports. From upstream's open PR #3115.
+						value = importExp
+					} else {
+						value = luau.NewProperty(importExp, importName)
+					}
 					statements.Push(luau.Create(&luau.Assignment{
 						Left:     luau.NewProperty(moduleID, element.Name().Text()),
 						Operator: luau.AssignEqual,
-						Right:    luau.NewProperty(importExp, element.PropertyNameOrName().Text()),
+						Right:    value,
 					}))
 				}
 			}

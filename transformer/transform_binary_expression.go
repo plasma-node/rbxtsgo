@@ -20,6 +20,8 @@ func transformOptimizedArrayAssignmentPattern(state *TransformState, assignmentP
 				state.Diagnostic.AddDiagnostic(shared.Errors.NoSpreadDestructuring.At(shared.AtNode(element)))
 			} else {
 				var initializer *ast.Node
+				// JS 3.0.0 crashes on [(a)] = b. From upstream's master, in transformBinaryExpression.
+				element = SkipDownwards(element)
 				if ast.IsBinaryExpression(element) {
 					binary := element.AsBinaryExpression()
 					initializer = SkipDownwards(binary.Right)

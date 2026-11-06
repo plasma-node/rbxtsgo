@@ -1,0 +1,18 @@
+{
+	"name": "fixemit",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include"
+			}
+		},
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"ts": {
+				"$path": "out"
+			}
+		}
+	}
+}

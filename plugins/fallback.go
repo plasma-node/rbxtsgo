@@ -16,7 +16,7 @@ const jsCompilerPath = "node_modules/roblox-ts/out/CLI/cli.js"
 // flagsOfOurs are the flags only rbxtsgo has that take a value, and boolFlagsOfOurs the ones that don't.
 var (
 	flagsOfOurs     = []string{"checkers", "cpuprofile", "setgetPrefix"}
-	boolFlagsOfOurs = []string{"setget", "no-setget"}
+	boolFlagsOfOurs = []string{"setget", "no-setget", "fix-emit", "no-fix-emit"}
 )
 
 // passAlongArgs removes our own flags from the command line, because yargs in the JS compiler rejects unknown ones.

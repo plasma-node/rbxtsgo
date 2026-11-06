@@ -144,6 +144,8 @@ func TestAgainstNpmPackage(t *testing.T) {
 			node := file.Statements.Nodes[1]
 			loc := AtRange(SourceRange{File: file, Pos: 19, End: 24})
 			factories := factoriesByKey(e)
+			// rbxtsgo's own, from upstream's master, where JS 3.0.0 crashes.
+			delete(factories, "noUnsupportedIteration")
 			factories["runtimeLibUsedInReplicatedFirst"] = w.RuntimeLibUsedInReplicatedFirst
 			if len(mode.want.Factories) < 50 {
 				t.Fatalf("only %d factories in the golden", len(mode.want.Factories))

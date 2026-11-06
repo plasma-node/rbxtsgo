@@ -160,13 +160,21 @@ func transformFlowControl(state *TransformState, node *ast.Node, exitTypeID *lua
 			if tryUses.UsesContinue {
 				flowControlCases = append(flowControlCases, flowControlCase{
 					condition:  createFlowControlCondition(state, node, exitTypeID, "TRY_CONTINUE"),
-					statements: luau.MakeList(luau.Create(&luau.ContinueStatement{})),
+					statements: createFlowControlContinue(state, node),
 				})
 			}
 		}
 	}
 
 	return collapseFlowControlCases(exitTypeID, flowControlCases)
+}
+
+// createFlowControlContinue is the continue after a TS.try call, which may be inside a switch.
+func createFlowControlContinue(state *TransformState, node *ast.Node) *luau.List {
+	if state.Data.ProjectOptions.FixEmit {
+		return createContinueStatements(state, node)
+	}
+	return luau.MakeList(luau.Create(&luau.ContinueStatement{}))
 }
 
 func transformTryStatement(state *TransformState, node *ast.Node) *luau.List {

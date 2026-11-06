@@ -105,6 +105,10 @@ type TransformState struct {
 	TryUsesStack          []*TryUses
 	PrereqStatementsStack []*luau.List
 
+	// With fixEmit. See createContinueStatements and hoistFunctionsPastFinalStatement.
+	switchContinueFlags map[*ast.Node]*luau.TemporaryIdentifier
+	hoistedPastFinal    map[*ast.Node]bool
+
 	HoistsByStatement map[*ast.Node][]*ast.Node
 	IsHoisted         map[*ast.Symbol]bool
 	SymbolToIDMap     map[*ast.Symbol]*luau.TemporaryIdentifier

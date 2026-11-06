@@ -93,6 +93,14 @@ func checkIdentifierHoist(state *TransformState, node *ast.Node, symbol *ast.Sym
 	declarationIdx := slices.Index(parent.Statements(), declarationStatement)
 	siblingIdx := slices.Index(parent.Statements(), sibling)
 
+	// With fixEmit, these compile before everything else in the block. See hoistFunctionsPastFinalStatement.
+	if state.hoistedPastFinal[declarationStatement] && !state.hoistedPastFinal[sibling] {
+		return
+	}
+	if state.hoistedPastFinal[sibling] && !state.hoistedPastFinal[declarationStatement] {
+		siblingIdx = -1
+	}
+
 	if siblingIdx > declarationIdx {
 		return
 	}

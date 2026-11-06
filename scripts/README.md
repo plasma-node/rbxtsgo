@@ -17,4 +17,3 @@ Each script opens with a header: purpose, exact run command, whether it needs St
 | `setup-third-party.sh [dir]` | Reproduces `third_party/` from the pins and applies `patches/typescript/`. Resets the clones |
 
 ## `local/` (gitignored)
-Machine-local scripts live in the ignored `scripts/local/`. Nothing in that folder is committed or published.

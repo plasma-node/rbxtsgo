@@ -1,0 +1,12 @@
+try inside case after 1,try,finally,after 2,after 3
+catch inside case after 1,catch,after 2,after 3
+switch inside try in try 1,finally 1,after 1,case,in try 2,finally 2,after 2,in try 3,finally 3,after 3
+try in switch in try in try 1,outer finally 1,after 1,inner finally,in try 2,outer finally 2,after 2,in try 3,outer finally 3,after 3
+try in nested switch after 1,outer,after 2
+write back through try 0,-2,2,3,4 4
+while through try 1,2,3
+break through try finally,after 1,after 2
+return finally
+return through try 20
+break and continue after 1,finally 2,after 2,finally 3,after 3,after 4
+try around loop after 1,after 2,finally

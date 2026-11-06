@@ -138,7 +138,7 @@ func transformSwitchStatement(state *TransformState, node *ast.Node) *luau.List 
 		}))
 	}
 
-	return luau.MakeList(luau.Create(&luau.RepeatStatement{
+	return wrapSwitchForContinue(state, node, luau.Create(&luau.RepeatStatement{
 		Condition:  luau.NewBool(true),
 		Statements: statements,
 	}))

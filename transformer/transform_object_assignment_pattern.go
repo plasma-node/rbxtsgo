@@ -37,10 +37,11 @@ func transformObjectAssignmentPattern(state *TransformState, assignmentPattern *
 		} else if ast.IsPropertyAssignment(property) {
 			name := property.Name()
 			propertyInitializer := property.AsPropertyAssignment().Initializer
-			init := propertyInitializer
+			// JS 3.0.0 crashes on ({ a: (b) } = c). From upstream's master, in transformAssignmentPatternElement.
+			init := SkipDownwards(propertyInitializer)
 			var initializer *ast.Node
-			if ast.IsBinaryExpression(propertyInitializer) {
-				binary := propertyInitializer.AsBinaryExpression()
+			if ast.IsBinaryExpression(init) {
+				binary := init.AsBinaryExpression()
 				initializer = SkipDownwards(binary.Right)
 				init = SkipDownwards(binary.Left)
 			}
@@ -66,9 +67,8 @@ func transformObjectAssignmentPattern(state *TransformState, assignmentPattern *
 				if initializer != nil {
 					state.Prereq(transformInitializer(state, id, initializer))
 				}
-				if !ast.IsIdentifier(name) {
-					panic(shared.AssertionMessage(""))
-				}
+				// JS 3.0.0 asserts that name is an identifier here and crashes on ({ "a": [b] } = c). Upstream's master has no
+				// such assertion, and objectAccessor takes any property name.
 				transformArrayAssignmentPattern(state, init, id)
 			} else if ast.IsObjectLiteralExpression(init) {
 				id := state.PushToVar(value, "binding")

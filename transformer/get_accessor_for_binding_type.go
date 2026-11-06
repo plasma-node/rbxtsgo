@@ -153,5 +153,8 @@ func getAccessorForBindingType(state *TransformState, node *ast.Node, t *checker
 		isThis(node) {
 		return iterAccessor
 	}
-	panic(shared.AssertionMessage("Destructuring not supported for type: " + state.Checker.TypeToString(t)))
+	state.Diagnostic.AddDiagnostic(shared.Errors.NoUnsupportedIteration.At(shared.AtNode(node)))
+	return func(*TransformState, luau.AnyIdentifier, int, *[]luau.AnyIdentifier, bool) luau.Expression {
+		return luau.NewNone()
+	}
 }

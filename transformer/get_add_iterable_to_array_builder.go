@@ -357,6 +357,7 @@ func getAddIterableToArrayBuilder(state *TransformState, node *ast.Node, t *chec
 		state.Diagnostic.AddDiagnostic(shared.Errors.NoMacroUnion.At(shared.AtNode(node)))
 		return addNothing
 	} else {
-		panic(shared.AssertionMessage("Iteration type not implemented: " + state.Checker.TypeToString(t)))
+		state.Diagnostic.AddDiagnostic(shared.Errors.NoUnsupportedIteration.At(shared.AtNode(node)))
+		return addNothing
 	}
 }

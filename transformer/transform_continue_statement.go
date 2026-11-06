@@ -14,6 +14,10 @@ func transformContinueStatement(state *TransformState, node *ast.Node) *luau.Lis
 		return luau.NewList()
 	}
 
+	if state.Data.ProjectOptions.FixEmit {
+		return createContinueStatements(state, node)
+	}
+
 	if isBreakBlockedByTryStatement(node) {
 		state.MarkTryUses(func(u *TryUses) { u.UsesContinue = true })
 

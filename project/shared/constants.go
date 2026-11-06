@@ -60,6 +60,9 @@ type ProjectOptions struct {
 	OptimizedLoops         bool
 	AllowCommentDirectives bool
 	Luau                   bool
+	// FixEmit is rbxtsgo's own. It turns on the output fixes that differ from JS 3.0.0 for code that compiles there. See
+	// docs/known-differences.md. BuildKey hashes these options, so changing it forces a rebuild.
+	FixEmit bool
 }
 
 // DefaultProjectOptions is DEFAULT_PROJECT_OPTIONS.

@@ -132,6 +132,9 @@ type NumberLiteral struct {
 type StringLiteral struct {
 	BaseNode
 	Value string
+	// Quote, if not 0, is the delimiter to render, for a value that already has what it needs escaped. rbxtsgo's own, for
+	// --fix-emit.
+	Quote byte
 }
 
 type VarArgsLiteral struct{ BaseNode }

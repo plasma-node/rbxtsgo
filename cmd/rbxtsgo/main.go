@@ -69,6 +69,8 @@ func run(args []string) int {
 	rojo := flags.String("rojo", "", "manually select Rojo project file")
 	checkers := flags.Int("checkers", 0, "number of type checkers and transform workers (default 4)")
 	cpuProfile := flags.String("cpuprofile", "", "write a CPU profile to this file")
+	var fixEmit tristate
+	flags.Var(&fixEmit, "fix-emit", "turn on fixes for output that is wrong in roblox-ts 3.0.0, which makes the output differ from it where it was wrong. Also tsconfig \"rbxtsgo\": { \"fixEmit\": true }")
 	var setget tristate
 	flags.Var(&setget, "setget", "turn getters and setters into methods, as rbxts-transformer-setget does")
 	setgetPrefix := flags.String("setgetPrefix", "", "prefix of the methods setget makes (default __)")
@@ -116,6 +118,7 @@ func run(args []string) int {
 		setBool(optimizedLoops, &options.OptimizedLoops)
 		setBool(allowCommentDirectives, &options.AllowCommentDirectives)
 		setBool(luauFlag, &options.Luau)
+		setBool(fixEmit, &options.FixEmit)
 		if *projectType != "" {
 			options.Type = shared.ProjectType(*projectType)
 		}
@@ -190,6 +193,8 @@ func findTsConfigPath(projectPath string) (string, error) {
 
 // applyTsConfigOptions is getTsConfigProjectOptions: the "rbxts" section of tsconfig.json.
 func applyTsConfigOptions(tsConfigPath string, options *shared.ProjectOptions) {
+	// The "rbxtsgo" block is ours, and is read with its other settings. build and Load report a bad value.
+	options.FixEmit, _ = plugins.FixEmitSetting(tsConfigPath)
 	text, err := os.ReadFile(tsConfigPath)
 	if err != nil {
 		return
@@ -256,7 +261,14 @@ func build(projectPath string, applyFlags func(*shared.ProjectOptions), checkers
 	if decision.Action == plugins.ActionError {
 		return errors.New(decision.Reason)
 	}
+	if _, err := plugins.FixEmitSetting(tsConfigPath); err != nil {
+		return err
+	}
 	if decision.Action == plugins.ActionFallback {
+		// JS 3.0.0 doesn't have these fixes, so handing it the build would silently drop what was asked for.
+		if options.FixEmit {
+			return errors.New(decision.Reason + ", and the JS compiler doesn't have --fix-emit.\nTo build this project, turn fixEmit off, or remove the plugin from compilerOptions.plugins.")
+		}
 		code, err := plugins.Delegate(decision.Reason, tsConfigPath, commandLine, os.Stderr)
 		exitCode = code
 		return err
@@ -270,6 +282,9 @@ func build(projectPath string, applyFlags func(*shared.ProjectOptions), checkers
 				options := shared.DefaultProjectOptions()
 				applyTsConfigOptions(tsConfigPath, &options)
 				applyFlags(&options)
+				if _, err := plugins.FixEmitSetting(tsConfigPath); err != nil {
+					return nil, err
+				}
 				return project.CreateProjectData(tsConfigPath, options)
 			},
 			Checkers:      checkers,

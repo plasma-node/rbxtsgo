@@ -36,7 +36,7 @@ bash scripts/setup-third-party.sh     # clones TypeScript 7.1 at a pinned commit
 go build -o rbxtsgo ./cmd/rbxtsgo     # rbxtsgo.exe on Windows
 ```
 
-Release builds use `CGO_ENABLED=0` for Windows, macOS and Linux on x86_64 and arm64. All six cross-compile; only Windows x86_64 has been run.
+Release builds use `CGO_ENABLED=0` for Windows, macOS and Linux on x86_64 and arm64. Only Windows x86_64 has been run so far.
 
 ## Use
 
@@ -48,7 +48,7 @@ rbxtsgo -p . -w       # watch mode
 rbxtsgo --help        # all flags
 ```
 
-Extra flags: `--checkers N` sets the number of type checkers, and `--setget` turns on the built-in setget transformer (see [docs/setget.md](docs/setget.md)). A project that uses any other transformer plugin is built by the JS compiler, which must be installed in the project's `node_modules`.
+Extra flags: `--checkers N` sets the number of type checkers, `--setget` turns on the built-in setget transformer (see [docs/setget.md](docs/setget.md)), and `--fix-emit` turns on fixes for output that is wrong in `roblox-ts` 3.0.0 (see [docs/known-differences.md](docs/known-differences.md)). A project that uses any other transformer plugin is built by the JS compiler, which must be installed in the project's `node_modules`.
 
 ## Compatibility
 

@@ -164,6 +164,7 @@ type ErrorDefinitions struct {
 	NoAsyncGeneratorFunctions                 *DiagnosticFactory
 	NoNonStringModuleSpecifier                *DiagnosticFactory
 	NoIterableIteration                       *DiagnosticFactory
+	NoUnsupportedIteration                    *DiagnosticFactory
 	NoMixedTypeCall                           *DiagnosticFactory
 	NoIndexWithoutCall                        *DiagnosticFactory
 	NoCommentDirectives                       *DiagnosticFactory
@@ -254,6 +255,9 @@ func (w *WarningDefinitions) TransformerNotFound(name, err string) *Diagnostic {
 }
 
 // NewDefinitions builds `errors` and `warnings`. Ids count up through both, in source order.
+// portOnlyDiagnosticID is the first id of diagnostics JS 3.0.0 doesn't have. It's far past any id it hands out.
+const portOnlyDiagnosticID = 1 << 20
+
 func NewDefinitions(k Kleur) (*ErrorDefinitions, *WarningDefinitions) {
 	id := 0
 	errorFactory := func(messages ...string) *DiagnosticFactory {
@@ -358,6 +362,18 @@ func NewDefinitions(k Kleur) (*ErrorDefinitions, *WarningDefinitions) {
 	id++
 	e.NoPackageImportWithoutScope = &NoPackageImportWithoutScopeFactory{contextFactory: contextFactory{ID: id, category: diagnostics.CategoryError}, kleur: k}
 	id++
+
+	// From upstream's master (#3052), where it comes after noIterableIteration. JS 3.0.0 crashes where this is reported, so
+	// it has no id in 3.0.0's order, and taking one here would change every id after it.
+	e.NoUnsupportedIteration = &DiagnosticFactory{
+		ID:       portOnlyDiagnosticID,
+		category: diagnostics.CategoryError,
+		messages: []string{
+			"Cannot iterate over this type!",
+			"roblox-ts needs a supported, specific iterable type to generate the correct iteration code.",
+			s("Use a supported type such as Array<T>, Set<T>, or Map<K, V>."),
+		},
+	}
 
 	w := &WarningDefinitions{kleur: k, nextID: id}
 	w.RuntimeLibUsedInReplicatedFirst = w.newFactory("This statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.")

@@ -7,6 +7,6 @@ import (
 	"github.com/microsoft/TypeScript/tsc/rbxtsgo/luau"
 )
 
-func transformInterpolatedStringPart(node *ast.Node) *luau.InterpolatedStringPart {
-	return luau.Create(&luau.InterpolatedStringPart{Text: createStringFromLiteral(node)})
+func transformInterpolatedStringPart(state *TransformState, node *ast.Node) *luau.InterpolatedStringPart {
+	return luau.Create(&luau.InterpolatedStringPart{Text: createStringFromLiteral(state, node)})
 }

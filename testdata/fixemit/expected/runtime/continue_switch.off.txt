@@ -1,0 +1,11 @@
+for-of after 1,skipped,after 2,after 3
+while 1,2,3
+nested switch after 1,inner,outer,after 2
+loop inside case inner 1,inner 3,outer 1,outer 2
+write back 0,1,2,4,5 5
+do-while 1,2,3
+fallthrough one or two,after 1,after 2,after 3,default,after 4
+multiple 1,2,3
+default clause 1,2,3
+no continue a,after 1,b,after 2
+closure 1,2,3

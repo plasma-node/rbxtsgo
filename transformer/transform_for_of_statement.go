@@ -122,6 +122,8 @@ func transformInLineArrayAssignmentPattern(state *TransformState, assignmentPatt
 					state.Diagnostic.AddDiagnostic(shared.Errors.NoSpreadDestructuring.At(shared.AtNode(element)))
 				} else {
 					var initializer *ast.Node
+					// JS 3.0.0 crashes on [(a)] of b. From upstream's master, in transformAssignmentPatternElement.
+					element = SkipDownwards(element)
 					if ast.IsBinaryExpression(element) {
 						binary := element.AsBinaryExpression()
 						initializer = SkipDownwards(binary.Right)
@@ -372,7 +374,8 @@ func getLoopBuilder(state *TransformState, node *ast.Node, t *checker.Type) loop
 		state.Diagnostic.AddDiagnostic(shared.Errors.NoMacroUnion.At(shared.AtNode(node)))
 		return emptyLoopBuilder
 	} else {
-		panic(shared.AssertionMessage("ForOf iteration type not implemented: " + state.Checker.TypeToString(t)))
+		state.Diagnostic.AddDiagnostic(shared.Errors.NoUnsupportedIteration.At(shared.AtNode(node)))
+		return emptyLoopBuilder
 	}
 }
 
