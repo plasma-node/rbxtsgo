@@ -1,0 +1,8 @@
+{
+	"name": "eco-repro-ts7-diagnostics",
+	"version": "0.0.0",
+	"private": true,
+	"dependencies": {
+		"@rbxts/compiler-types": "3.0.0-types.0", "@rbxts/types": "1.0.961", "@rbxts/services": "1.6.0"
+	}
+}

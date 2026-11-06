@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"rootDir": null,
+		"rootDirs": ["src", "../rootshared"],
+		"outDir": "out",
+		"baseUrl": "src",
+		"typeRoots": ["../node_modules/@rbxts"]
+	},
+	"include": ["src/**/*"]
+}

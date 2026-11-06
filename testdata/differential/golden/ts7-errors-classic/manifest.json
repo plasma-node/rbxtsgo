@@ -1,0 +1,31 @@
+{
+	"sources": [
+		"src/shared/exportAssignExpression.ts",
+		"src/shared/exportEqualsAndMore.ts",
+		"src/shared/exportsName.ts",
+		"src/shared/target.ts",
+		"src/shared/importTypeOfRequire.ts",
+		"src/shared/requireTs.ts",
+		"src/shared/starCallable.ts",
+		"src/shared/noDefault.ts",
+		"src/shared/missingDefault.ts",
+		"src/shared/typeOnlyUsed.ts",
+		"src/shared/neverTarget.ts",
+		"src/shared/objectName.ts",
+		"src/shared/overloadErrors.ts",
+		"src/shared/requireCall.ts",
+		"src/shared/requireName.ts",
+		"src/shared/targetClass.ts",
+		"src/shared/starClass.ts",
+		"src/shared/topLevelAwait.ts",
+		"src/shared/umdGlobal.ts"
+	],
+	"outputs": [
+		"shared/exportAssignExpression.luau",
+		"shared/noDefault.luau",
+		"shared/objectName.luau",
+		"shared/requireCall.luau",
+		"shared/target.luau",
+		"shared/targetClass.luau"
+	]
+}

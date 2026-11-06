@@ -1,0 +1,10 @@
+{
+	"sources": [
+		"src/shared/a_union_call_macro_first.ts",
+		"src/shared/union_macros.ts"
+	],
+	"outputs": [
+		"shared/a_union_call_macro_first.luau",
+		"shared/union_macros.luau"
+	]
+}

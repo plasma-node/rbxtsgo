@@ -1,0 +1,8 @@
+{
+	"sources": [
+		"src/prefix.ts"
+	],
+	"outputs": [
+		"prefix.luau"
+	]
+}

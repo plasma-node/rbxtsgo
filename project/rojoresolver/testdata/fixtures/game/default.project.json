@@ -1,0 +1,33 @@
+{
+	"name": "game",
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": { "$className": "ServerScriptService", "server": { "$path": "out/server" } },
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": { "$className": "StarterPlayerScripts", "client": { "$path": "out/client" } }
+		},
+		"ReplicatedFirst": { "first": { "$path": { "optional": "out/first" } } },
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"$ignoreUnknownInstances": true,
+			"$properties": { "Archivable": true },
+			"rbxts_include": { "$path": "include", "node_modules": { "@rbxts": { "$path": "modules/@rbxts" } } },
+			"shared": { "$path": "out/shared" },
+			"oneFile": { "$path": "assets/thing.lua" },
+			"jsonFile": { "$path": "assets/data.json" },
+			"missing": { "$path": { "optional": "does/not/exist" } },
+			"overlapOuter": { "$path": "overlap" },
+			"overlapInner": { "$path": "overlap/inner" },
+			"zeta": { "$path": "numbered/zeta" },
+			"10": { "$path": "numbered/ten" },
+			"2": { "$path": "numbered/two" },
+			"alpha": { "$path": "numbered/alpha" },
+			"same": { "$path": "assets/same.luau" },
+			"sameAgain": { "$path": "assets/same.luau" }
+		},
+		"ServerStorage": { "stored": { "$path": "out/stored" } },
+		"StarterGui": { "gui": { "$path": "out/gui" } },
+		"StarterPack": { "pack": { "$path": "out/pack" } }
+	}
+}

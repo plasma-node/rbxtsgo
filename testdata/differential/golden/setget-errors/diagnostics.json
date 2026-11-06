@@ -1,0 +1,622 @@
+{
+	"src/afterComments.ts": [
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'number' is not assignable to type 'string'.",
+			"file": "src/afterComments.ts",
+			"line": 7,
+			"column": 6
+		},
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'number' is not assignable to type 'string'.",
+			"file": "src/afterComments.ts",
+			"line": 11,
+			"column": 15
+		}
+	],
+	"src/assignToType.ts": [
+		{
+			"source": "ts",
+			"code": 2741,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'x' is missing in type 'C' but required in type '{ x: number; }'.",
+			"file": "src/assignToType.ts",
+			"line": 5,
+			"column": 6
+		}
+	],
+	"src/computedName.ts": [
+		{
+			"source": "ts",
+			"code": 1435,
+			"id": -1,
+			"category": "error",
+			"message": "Unknown keyword or identifier. Did you mean 'get'?",
+			"file": "src/computedName.ts",
+			"line": 2,
+			"column": 11
+		},
+		{
+			"source": "ts",
+			"code": 7008,
+			"id": -1,
+			"category": "error",
+			"message": "Member '__get' implicitly has an 'any' type.",
+			"file": "src/computedName.ts",
+			"line": 2,
+			"column": 11
+		},
+		{
+			"source": "ts",
+			"code": 2551,
+			"id": -1,
+			"category": "error",
+			"message": "Property '__getk' does not exist on type 'C'. Did you mean '__get'?",
+			"file": "src/computedName.ts",
+			"line": 6,
+			"column": 14
+		}
+	],
+	"src/contexts.ts": [
+		{
+			"source": "ts",
+			"code": 2488,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'Thing' must have a '[Symbol.iterator]()' method that returns an iterator.",
+			"file": "src/contexts.ts",
+			"line": 36,
+			"column": 11
+		},
+		{
+			"source": "ts",
+			"code": 7057,
+			"id": -1,
+			"category": "error",
+			"message": "'yield' expression implicitly results in an 'any' type because its containing generator lacks a return-type annotation.",
+			"file": "src/contexts.ts",
+			"line": 38,
+			"column": 27
+		},
+		{
+			"source": "ts",
+			"code": 7057,
+			"id": -1,
+			"category": "error",
+			"message": "'yield' expression implicitly results in an 'any' type because its containing generator lacks a return-type annotation.",
+			"file": "src/contexts.ts",
+			"line": 39,
+			"column": 27
+		},
+		{
+			"source": "ts",
+			"code": 2349,
+			"id": -1,
+			"category": "error",
+			"message": "This expression is not callable.",
+			"file": "src/contexts.ts",
+			"line": 57,
+			"column": 6
+		},
+		{
+			"source": "ts",
+			"code": 2695,
+			"id": -1,
+			"category": "error",
+			"message": "Left side of comma operator is unused and has no side effects.",
+			"file": "src/contexts.ts",
+			"line": 132,
+			"column": 23
+		},
+		{
+			"source": "ts",
+			"code": 2365,
+			"id": -1,
+			"category": "error",
+			"message": "Operator '+' cannot be applied to types 'number' and '() => number'.",
+			"file": "src/contexts.ts",
+			"line": 134,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2363,
+			"id": -1,
+			"category": "error",
+			"message": "The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.",
+			"file": "src/contexts.ts",
+			"line": 139,
+			"column": 23
+		},
+		{
+			"source": "ts",
+			"code": 2345,
+			"id": -1,
+			"category": "error",
+			"message": "Argument of type 'string' is not assignable to parameter of type 'number'.",
+			"file": "src/contexts.ts",
+			"line": 155,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2365,
+			"id": -1,
+			"category": "error",
+			"message": "Operator '+' cannot be applied to types 'number' and 'void'.",
+			"file": "src/contexts.ts",
+			"line": 156,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2345,
+			"id": -1,
+			"category": "error",
+			"message": "Argument of type 'void' is not assignable to parameter of type 'number'.",
+			"file": "src/contexts.ts",
+			"line": 157,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2345,
+			"id": -1,
+			"category": "error",
+			"message": "Argument of type 'void' is not assignable to parameter of type 'number'.",
+			"file": "src/contexts.ts",
+			"line": 158,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2365,
+			"id": -1,
+			"category": "error",
+			"message": "Operator '+' cannot be applied to types 'number' and 'void'.",
+			"file": "src/contexts.ts",
+			"line": 159,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'me' does not exist on type 'Thing'.",
+			"file": "src/contexts.ts",
+			"line": 163,
+			"column": 2
+		},
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'me' does not exist on type 'Thing'.",
+			"file": "src/contexts.ts",
+			"line": 163,
+			"column": 14
+		},
+		{
+			"source": "ts",
+			"code": 7053,
+			"id": -1,
+			"category": "error",
+			"message": "Element implicitly has an 'any' type because expression of type '\"v\"' can't be used to index type 'Thing'.",
+			"file": "src/contexts.ts",
+			"line": 170,
+			"column": 0
+		},
+		{
+			"source": "ts",
+			"code": 7053,
+			"id": -1,
+			"category": "error",
+			"message": "Element implicitly has an 'any' type because expression of type '\"v\"' can't be used to index type 'Thing'.",
+			"file": "src/contexts.ts",
+			"line": 171,
+			"column": 0
+		},
+		{
+			"source": "ts",
+			"code": 2790,
+			"id": -1,
+			"category": "error",
+			"message": "The operand of a 'delete' operator must be optional.",
+			"file": "src/contexts.ts",
+			"line": 173,
+			"column": 7
+		},
+		{
+			"source": "ts",
+			"code": 2790,
+			"id": -1,
+			"category": "error",
+			"message": "The operand of a 'delete' operator must be optional.",
+			"file": "src/contexts.ts",
+			"line": 174,
+			"column": 7
+		},
+		{
+			"source": "ts",
+			"code": 2345,
+			"id": -1,
+			"category": "error",
+			"message": "Argument of type 'number[]' is not assignable to parameter of type 'number'.",
+			"file": "src/contexts.ts",
+			"line": 175,
+			"column": 9
+		},
+		{
+			"source": "ts",
+			"code": 2345,
+			"id": -1,
+			"category": "error",
+			"message": "Argument of type '{ a: number; }' is not assignable to parameter of type 'number'.",
+			"file": "src/contexts.ts",
+			"line": 176,
+			"column": 10
+		},
+		{
+			"source": "ts",
+			"code": 2487,
+			"id": -1,
+			"category": "error",
+			"message": "The left-hand side of a 'for...of' statement must be a variable or a property access.",
+			"file": "src/contexts.ts",
+			"line": 177,
+			"column": 5
+		}
+	],
+	"src/destructure.ts": [
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'x' does not exist on type 'C'.",
+			"file": "src/destructure.ts",
+			"line": 5,
+			"column": 8
+		}
+	],
+	"src/elementAccess.ts": [
+		{
+			"source": "ts",
+			"code": 7053,
+			"id": -1,
+			"category": "error",
+			"message": "Element implicitly has an 'any' type because expression of type '\"x\"' can't be used to index type 'C'.",
+			"file": "src/elementAccess.ts",
+			"line": 6,
+			"column": 6
+		}
+	],
+	"src/generatorYield.ts": [
+		{
+			"source": "ts",
+			"code": 1109,
+			"id": -1,
+			"category": "error",
+			"message": "Expression expected.",
+			"file": "src/generatorYield.ts",
+			"line": 10,
+			"column": 27
+		},
+		{
+			"source": "ts",
+			"code": 2554,
+			"id": -1,
+			"category": "error",
+			"message": "Expected 1 arguments, but got 2.",
+			"file": "src/generatorYield.ts",
+			"line": 10,
+			"column": 27
+		},
+		{
+			"source": "ts",
+			"code": 7057,
+			"id": -1,
+			"category": "error",
+			"message": "'yield' expression implicitly results in an 'any' type because its containing generator lacks a return-type annotation.",
+			"file": "src/generatorYield.ts",
+			"line": 10,
+			"column": 27
+		},
+		{
+			"source": "ts",
+			"code": 7057,
+			"id": -1,
+			"category": "error",
+			"message": "'yield' expression implicitly results in an 'any' type because its containing generator lacks a return-type annotation.",
+			"file": "src/generatorYield.ts",
+			"line": 11,
+			"column": 27
+		}
+	],
+	"src/implementsInterface.ts": [
+		{
+			"source": "ts",
+			"code": 2420,
+			"id": -1,
+			"category": "error",
+			"message": "Class 'C' incorrectly implements interface 'HasX'.",
+			"file": "src/implementsInterface.ts",
+			"line": 4,
+			"column": 6
+		}
+	],
+	"src/interfaceSetter.ts": [
+		{
+			"source": "ts",
+			"code": 7010,
+			"id": -1,
+			"category": "error",
+			"message": "'__setname', which lacks return-type annotation, implicitly has an 'any' return type.",
+			"file": "src/interfaceSetter.ts",
+			"line": 1,
+			"column": 4
+		}
+	],
+	"src/jsxText.tsx": [
+		{
+			"source": "ts",
+			"code": 2747,
+			"id": -1,
+			"category": "error",
+			"message": "'frame' components don't accept text as child elements. Text in JSX has the type 'string', but the expected type of '_jsx_children' is 'JsxNode'.",
+			"file": "src/jsxText.tsx",
+			"line": 6,
+			"column": 68
+		},
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'string' is not assignable to type 'JsxChild | [string | number, Element]'.",
+			"file": "src/jsxText.tsx",
+			"line": 6,
+			"column": 69
+		}
+	],
+	"src/keyofAccessor.ts": [
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type '\"x\"' is not assignable to type '\"__getx\"'.",
+			"file": "src/keyofAccessor.ts",
+			"line": 5,
+			"column": 6
+		}
+	],
+	"src/mappedKeys.ts": [
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'yx' does not exist on type '{ y__getx: () => number; }'.",
+			"file": "src/mappedKeys.ts",
+			"line": 9,
+			"column": 14
+		}
+	],
+	"src/mixedCoalesce.ts": [
+		{
+			"source": "ts",
+			"code": 5076,
+			"id": -1,
+			"category": "error",
+			"message": "'||' and '??' operations cannot be mixed without parentheses.",
+			"file": "src/mixedCoalesce.ts",
+			"line": 11,
+			"column": 23
+		}
+	],
+	"src/nestedPostfix.ts": [
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'inner' does not exist on type 'Outer'.",
+			"file": "src/nestedPostfix.ts",
+			"line": 15,
+			"column": 2
+		},
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property 'inner' does not exist on type 'Outer'.",
+			"file": "src/nestedPostfix.ts",
+			"line": 15,
+			"column": 17
+		}
+	],
+	"src/partialOfClass.ts": [
+		{
+			"source": "ts",
+			"code": 2722,
+			"id": -1,
+			"category": "error",
+			"message": "Cannot invoke an object which is possibly 'undefined'.",
+			"file": "src/partialOfClass.ts",
+			"line": 6,
+			"column": 6
+		}
+	],
+	"src/postfixValue.ts": [
+		{
+			"source": "ts",
+			"code": 2365,
+			"id": -1,
+			"category": "error",
+			"message": "Operator '+' cannot be applied to types 'void' and 'number'.",
+			"file": "src/postfixValue.ts",
+			"line": 10,
+			"column": 6
+		}
+	],
+	"src/prefixIncrement.ts": [
+		{
+			"source": "ts",
+			"code": 2357,
+			"id": -1,
+			"category": "error",
+			"message": "The operand of an increment or decrement operator must be a variable or a property access.",
+			"file": "src/prefixIncrement.ts",
+			"line": 9,
+			"column": 2
+		}
+	],
+	"src/privateName.ts": [
+		{
+			"source": "ts",
+			"code": 1435,
+			"id": -1,
+			"category": "error",
+			"message": "Unknown keyword or identifier. Did you mean 'get'?",
+			"file": "src/privateName.ts",
+			"line": 1,
+			"column": 4
+		},
+		{
+			"source": "ts",
+			"code": 7008,
+			"id": -1,
+			"category": "error",
+			"message": "Member '__get' implicitly has an 'any' type.",
+			"file": "src/privateName.ts",
+			"line": 1,
+			"column": 4
+		},
+		{
+			"source": "ts",
+			"code": 1005,
+			"id": -1,
+			"category": "error",
+			"message": "';' expected.",
+			"file": "src/privateName.ts",
+			"line": 5,
+			"column": 25
+		}
+	],
+	"src/readSetterOnly.ts": [
+		{
+			"source": "ts",
+			"code": 2551,
+			"id": -1,
+			"category": "error",
+			"message": "Property '__getonlySet' does not exist on type 'C'. Did you mean '__setonlySet'?",
+			"file": "src/readSetterOnly.ts",
+			"line": 6,
+			"column": 8
+		}
+	],
+	"src/robloxDiagnostic.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 7,
+			"category": "error",
+			"message": "`null` is not supported!\nSuggestion: Use `undefined` instead.",
+			"file": "src/robloxDiagnostic.ts",
+			"line": 8,
+			"column": 11
+		}
+	],
+	"src/stringName.ts": [
+		{
+			"source": "ts",
+			"code": 1435,
+			"id": -1,
+			"category": "error",
+			"message": "Unknown keyword or identifier. Did you mean 'get'?",
+			"file": "src/stringName.ts",
+			"line": 1,
+			"column": 11
+		},
+		{
+			"source": "ts",
+			"code": 7008,
+			"id": -1,
+			"category": "error",
+			"message": "Member '__get' implicitly has an 'any' type.",
+			"file": "src/stringName.ts",
+			"line": 1,
+			"column": 11
+		}
+	],
+	"src/typeInBody.ts": [
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'number' is not assignable to type 'string'.",
+			"file": "src/typeInBody.ts",
+			"line": 3,
+			"column": 8
+		},
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'string' is not assignable to type 'number'.",
+			"file": "src/typeInBody.ts",
+			"line": 6,
+			"column": 14
+		}
+	],
+	"src/unionField.ts": [
+		{
+			"source": "ts",
+			"code": 2339,
+			"id": -1,
+			"category": "error",
+			"message": "Property '__getv' does not exist on type 'WithGetter | WithField'.",
+			"file": "src/unionField.ts",
+			"line": 9,
+			"column": 13
+		}
+	],
+	"src/usesDeclared.ts": [
+		{
+			"source": "ts",
+			"code": 2551,
+			"id": -1,
+			"category": "error",
+			"message": "Property '__getfromDeclaration' does not exist on type 'Declared'. Did you mean 'fromDeclaration'?",
+			"file": "src/usesDeclared.ts",
+			"line": 1,
+			"column": 8
+		}
+	],
+	"src/writeGetterOnly.ts": [
+		{
+			"source": "ts",
+			"code": 2364,
+			"id": -1,
+			"category": "error",
+			"message": "The left-hand side of an assignment expression must be a variable or a property access.",
+			"file": "src/writeGetterOnly.ts",
+			"line": 6,
+			"column": 0
+		}
+	]
+}

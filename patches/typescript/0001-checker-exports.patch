@@ -1,0 +1,40 @@
+diff --git a/tsc/internal/checker/rbxtsgo_exports.go b/tsc/internal/checker/rbxtsgo_exports.go
+new file mode 100644
+--- /dev/null
++++ b/tsc/internal/checker/rbxtsgo_exports.go
+@@ -0,0 +1,35 @@
++package checker
++
++import "github.com/microsoft/TypeScript/tsc/internal/ast"
++
++// Exports added by rbxtsgo. New file only, so upstream merges cannot conflict with it.
++
++// GetTrueType returns the regular true type, like ts.TypeChecker.getTrueType() with no argument.
++// It is a struct field, so go:linkname cannot reach it.
++func (c *Checker) GetTrueType() *Type { return c.regularTrueType }
++
++// GetFalseType returns the regular false type, like ts.TypeChecker.getFalseType() with no argument.
++func (c *Checker) GetFalseType() *Type { return c.regularFalseType }
++
++func (c *Checker) GetTypeOfAssignmentPattern(expr *ast.Node) *Type {
++	return c.getTypeOfAssignmentPattern(expr)
++}
++
++func (c *Checker) CreateArrayType(elementType *Type) *Type { return c.createArrayType(elementType) }
++
++func (c *Checker) GetStringLiteralType(value string) *Type { return c.getStringLiteralType(value) }
++
++// IsMutexHeld reports whether c.mu, the mutex that EmitResolver methods take, is held right now.
++// The bridge uses it to fail loudly instead of deadlocking. It is advisory: another goroutine can
++// take the mutex right after this returns, so it only proves anything when one goroutine owns c.
++func (c *Checker) IsMutexHeld() bool {
++	if c.mu.TryLock() {
++		c.mu.Unlock()
++		return false
++	}
++	return true
++}
++
++// Checker returns the checker a type belongs to. JS type objects carry theirs, and roblox-ts calls methods such as
++// type.getConstraint() on them.
++func (t *Type) Checker() *Checker { return t.checker }

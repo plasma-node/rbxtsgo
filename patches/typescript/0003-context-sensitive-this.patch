@@ -1,0 +1,15 @@
+diff --git a/tsc/internal/ast/utilities.go b/tsc/internal/ast/utilities.go
+index ff11fd6..f895095 100644
+--- a/tsc/internal/ast/utilities.go
++++ b/tsc/internal/ast/utilities.go
+@@ -4327,7 +4327,9 @@ func HasContextSensitiveParameters(node *Node) bool {
+ 			// an implicit 'this' parameter which is subject to contextual typing.
+ 			parameter := core.FirstOrNil(node.Parameters())
+ 			if parameter == nil || !IsThisParameter(parameter) {
+-				return node.Flags&NodeFlagsContainsThis != 0
++				// rbxtsgo: TS 5.5.3 returns true here. The narrower check came later, and changes whether a function
++				// expression that doesn't use `this` takes the contextual `this` parameter, which decides `self` in output.
++				return true
+ 			}
+ 		}
+ 	}

@@ -1,0 +1,1 @@
+{ "name": "g", "tree": { "$className": "DataModel", "ReplicatedStorage": { "bad": { "$path": "src/sub" }, "whole": { "$path": "src" }, "good": { "$path": "out" } } } }

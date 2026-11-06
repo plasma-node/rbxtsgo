@@ -1,0 +1,3071 @@
+== src/other.ts
+17-22 id "Shape"
+  symbol Shape flags=Interface decls=1 value=false parent="<ROOT>/src/other"
+  undefined=false arguments=false merged=true
+26-31 id "sides"
+  symbol sides flags=Property decls=1 value=true parent=Shape
+  undefined=false arguments=false merged=true
+55-59 id "Kind"
+  symbol Kind flags=Enum decls=1 value=true parent="<ROOT>/src/other"
+  undefined=false arguments=false merged=true
+63-66 id "One"
+  symbol One flags=EnumMember decls=1 value=true parent=Kind
+  undefined=false arguments=false merged=true
+69-70 literal "1"
+69-70 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+90-96 id "helper"
+  symbol helper flags=Function decls=1 value=true parent="<ROOT>/src/other"
+  undefined=false arguments=false merged=true
+109-110 literal "1"
+109-110 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+138-150 id "defaultThing"
+  symbol default flags=Function decls=1 value=true parent="<ROOT>/src/other"
+  undefined=false arguments=false merged=true
+163-172 literal "default"
+163-172 expr "\"default\"" "\"default\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"default\""
+  numberIndex none
+  contextual none
+== src/syntax.ts
+82-158 comments ["// A public, from-scratch file that exercises the syntax the transformer handles."]
+89-101 id "defaultThing"
+  symbol defaultThing flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias default flags=Function decls=1 value=true parent="<ROOT>/src/other"
+105-111 id "helper"
+  symbol helper flags=Function decls=1 value=true parent="<ROOT>/src/other"
+  undefined=false arguments=false merged=true
+115-122 id "renamed"
+  symbol renamed flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias helper flags=Function decls=1 value=true parent="<ROOT>/src/other"
+129-134 id "Shape"
+  symbol Shape flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias Shape flags=Interface decls=1 value=false parent="<ROOT>/src/other"
+136-140 id "Kind"
+  symbol Kind flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias Kind flags=Enum decls=1 value=true parent="<ROOT>/src/other"
+148-157 literal "./other"
+171-176 id "whole"
+  symbol whole flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias "<ROOT>/src/other" flags=ValueModule decls=1 value=true parent=-
+182-191 literal "./other"
+230-341 comments ["// numeric and string literal forms"]
+243-250 id "numbers"
+  symbol numbers flags=Variable decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+253-340 expr "[0, 1, 1.5, 0.5, 0x10, 0o17, 0b101, 1e3," "number[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "number[]"
+  numberIndex "number"
+  contextual none
+254-255 literal "0"
+254-255 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+257-258 literal "1"
+257-258 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+260-263 literal "1.5"
+260-263 expr "1.5" "1.5" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1.5"
+  numberIndex none
+  contextual none
+265-268 literal "0.5"
+265-268 expr "0.5" "0.5" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0.5"
+  numberIndex none
+  contextual none
+270-274 literal "16"
+270-274 expr "0x10" "16" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "16"
+  numberIndex none
+  contextual none
+276-280 literal "15"
+276-280 expr "0o17" "15" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "15"
+  numberIndex none
+  contextual none
+282-287 literal "5"
+282-287 expr "0b101" "5" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "5"
+  numberIndex none
+  contextual none
+289-292 literal "1000"
+289-292 expr "1e3" "1000" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1000"
+  numberIndex none
+  contextual none
+294-299 literal "1000"
+294-299 expr "1_000" "1000" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1000"
+  numberIndex none
+  contextual none
+301-305 literal "0.001"
+301-305 expr "1e-3" "0.001" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0.001"
+  numberIndex none
+  contextual none
+307-328 literal "123456789012345680000"
+307-328 expr "123456789012345680000" "123456789012345680000" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "123456789012345680000"
+  numberIndex none
+  contextual none
+330-339 expr "0.1 + 0.2" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+330-333 literal "0.1"
+330-333 expr "0.1" "0.1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0.1"
+  numberIndex none
+  contextual none
+336-339 literal "0.2"
+336-339 expr "0.2" "0.2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0.2"
+  numberIndex none
+  contextual none
+355-362 id "strings"
+  symbol strings flags=Variable decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+365-438 expr "[\"plain\", 'single', \"esc\\n\\t\\\\\\\"q\", \"\\x4" "string[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "string[]"
+  numberIndex "string"
+  contextual none
+366-373 literal "plain"
+366-373 expr "\"plain\"" "\"plain\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"plain\""
+  numberIndex none
+  contextual none
+375-383 literal "single"
+375-383 expr "'single'" "\"single\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"single\""
+  numberIndex none
+  contextual none
+385-399 literal "esc\n\t\\\"q"
+385-399 expr "\"esc\\n\\t\\\\\\\"q\"" "\"esc\\n\\t\\\\\\\"q\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"esc\\n\\t\\\\\\\"q\""
+  numberIndex none
+  contextual none
+401-414 literal "ABC"
+401-414 expr "\"\\x41B\\u{43}\"" "\"ABC\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"ABC\""
+  numberIndex none
+  contextual none
+416-422 literal "tmpl"
+416-422 expr "`tmpl`" "\"tmpl\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"tmpl\""
+  numberIndex none
+  contextual none
+424-437 literal "multiline"
+424-437 expr "\"multi\\\nline\"" "\"multiline\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"multiline\""
+  numberIndex none
+  contextual none
+446-450 id "name"
+  symbol name flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+453-460 literal "world"
+453-460 expr "\"world\"" "\"world\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"world\""
+  numberIndex none
+  contextual none
+475-484 id "templated"
+  symbol templated flags=Variable decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+487-529 expr "`hello ${name} and ${1 + 1}\\n end \\${raw" "\"hello world and 2\\n end ${raw}\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"hello world and 2\\n end ${raw}\""
+  numberIndex none
+  contextual none
+487-496 template "hello " raw "hello "
+496-500 id "name"
+  symbol name flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+496-500 expr "name" "\"world\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"world\""
+  numberIndex none
+  contextual none
+500-508 template " and " raw " and "
+508-513 expr "1 + 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+508-509 literal "1"
+508-509 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+512-513 literal "1"
+512-513 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+513-529 template "\n end ${raw}" raw "\\n end \\${raw}"
+540-543 id "tag"
+  symbol tag flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+544-548 id "strs"
+  symbol strs flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+550-570 id "TemplateStringsArray"
+  symbol TemplateStringsArray flags=Interface decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+575-579 id "vals"
+  symbol vals flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+581-586 id "Array"
+  symbol Array flags=Variable|Interface decls=2 value=true parent=-
+  undefined=false arguments=false merged=true
+607-632 expr "strs.size() + vals.size()" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+607-618 expr "strs.size()" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  signature params=0 returns "number"
+607-616 expr "strs.size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+  constant null
+607-611 id "strs"
+  symbol strs flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+607-611 expr "strs" "TemplateStringsArray" flags=Object symbol=TemplateStringsArray
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "TemplateStringsArray"
+  numberIndex "string"
+  contextual none
+612-616 id "size"
+  symbol size flags=Method decls=1 value=true parent=ArrayLike
+  undefined=false arguments=false merged=true
+612-616 expr "size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+621-632 expr "vals.size()" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  signature params=0 returns "number"
+621-630 expr "vals.size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+  constant null
+621-625 id "vals"
+  symbol vals flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+621-625 expr "vals" "unknown[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "unknown[]"
+  numberIndex "unknown"
+  contextual none
+626-630 id "size"
+  symbol size flags=Method decls=1 value=true parent=ArrayLike
+  undefined=false arguments=false merged=true
+626-630 expr "size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+649-655 id "tagged"
+  symbol tagged flags=Variable decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+658-676 expr "tag`a${1}b\\n${2}c`" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+658-661 id "tag"
+  symbol tag flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+658-661 expr "tag" "(strs: TemplateStringsArray, ...vals: unknown[]) => number" flags=Object symbol=tag
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(strs: TemplateStringsArray, ...vals: unknown[]) => number"
+  numberIndex none
+  contextual none
+661-676 expr "`a${1}b\\n${2}c`" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+661-665 template "a" raw "a"
+665-666 literal "1"
+665-666 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual "unknown"
+666-672 template "b\n" raw "b\\n"
+672-673 literal "2"
+672-673 expr "2" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual "unknown"
+673-676 template "c" raw "c"
+688-750 comments ["// enums"]
+700-705 id "Color"
+  symbol Color flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+709-712 id "Red"
+  symbol Red flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+715-720 id "Green"
+  symbol Green flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+723-724 literal "5"
+723-724 expr "5" "5" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "5"
+  numberIndex none
+  contextual none
+727-731 id "Blue"
+  symbol Blue flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+734-738 id "Name"
+  symbol Name flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+741-747 literal "name"
+741-747 expr "\"name\"" "\"name\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"name\""
+  numberIndex none
+  contextual none
+769-773 id "Flag"
+  symbol Flag flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+777-778 id "A"
+  symbol A flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+781-782 literal "1"
+781-782 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+785-786 id "B"
+  symbol B flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+789-795 expr "A << 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+789-790 id "A"
+  symbol A flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+789-790 expr "A" "Flag.A" flags=NumberLiteral|EnumLiteral symbol=A
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Flag.A"
+  numberIndex none
+  contextual none
+794-795 literal "1"
+794-795 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+798-799 id "C"
+  symbol C flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+802-807 expr "A | B" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+802-803 id "A"
+  symbol A flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+802-803 expr "A" "Flag.A" flags=NumberLiteral|EnumLiteral symbol=A
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Flag.A"
+  numberIndex none
+  contextual none
+806-807 id "B"
+  symbol B flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+806-807 expr "B" "Flag.B" flags=NumberLiteral|EnumLiteral symbol=B
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Flag.B"
+  numberIndex none
+  contextual none
+824-832 id "enumUses"
+  symbol enumUses flags=Variable decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+835-904 expr "[Color.Red, Color.Blue, Color[\"Green\"], " "(Flag | Color | Kind)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(Flag | Color | Kind)[]"
+  numberIndex "Flag | Color | Kind"
+  contextual none
+836-845 expr "Color.Red" "Color.Red" flags=NumberLiteral|EnumLiteral symbol=Red
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Color.Red"
+  numberIndex none
+  contextual none
+  constant null
+836-841 id "Color"
+  symbol Color flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+836-841 expr "Color" "typeof Color" flags=Object symbol=Color
+  tuple=false arrayLike=false calls=0 constructs=0 props=4
+  nonOptional "typeof Color"
+  numberIndex "string"
+  contextual none
+842-845 id "Red"
+  symbol Red flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+842-845 expr "Red" "Color.Red" flags=NumberLiteral|EnumLiteral symbol=Red
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Color.Red"
+  numberIndex none
+  contextual none
+847-857 expr "Color.Blue" "Color.Blue" flags=NumberLiteral|EnumLiteral symbol=Blue
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Color.Blue"
+  numberIndex none
+  contextual none
+  constant null
+847-852 id "Color"
+  symbol Color flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+847-852 expr "Color" "typeof Color" flags=Object symbol=Color
+  tuple=false arrayLike=false calls=0 constructs=0 props=4
+  nonOptional "typeof Color"
+  numberIndex "string"
+  contextual none
+853-857 id "Blue"
+  symbol Blue flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+853-857 expr "Blue" "Color.Blue" flags=NumberLiteral|EnumLiteral symbol=Blue
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Color.Blue"
+  numberIndex none
+  contextual none
+859-873 expr "Color[\"Green\"]" "Color.Green" flags=NumberLiteral|EnumLiteral symbol=Green
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Color.Green"
+  numberIndex none
+  contextual none
+  constant null
+859-864 id "Color"
+  symbol Color flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+859-864 expr "Color" "typeof Color" flags=Object symbol=Color
+  tuple=false arrayLike=false calls=0 constructs=0 props=4
+  nonOptional "typeof Color"
+  numberIndex "string"
+  contextual none
+865-872 literal "Green"
+865-872 expr "\"Green\"" "\"Green\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"Green\""
+  numberIndex none
+  contextual none
+875-885 expr "Color.Name" "Color.Name" flags=StringLiteral|EnumLiteral symbol=Name
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "Color.Name"
+  numberIndex none
+  contextual none
+  constant null
+875-880 id "Color"
+  symbol Color flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+875-880 expr "Color" "typeof Color" flags=Object symbol=Color
+  tuple=false arrayLike=false calls=0 constructs=0 props=4
+  nonOptional "typeof Color"
+  numberIndex "string"
+  contextual none
+881-885 id "Name"
+  symbol Name flags=EnumMember decls=1 value=true parent=Color
+  undefined=false arguments=false merged=true
+881-885 expr "Name" "Color.Name" flags=StringLiteral|EnumLiteral symbol=Name
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "Color.Name"
+  numberIndex none
+  contextual none
+887-893 expr "Flag.C" "Flag.C" flags=NumberLiteral|EnumLiteral symbol=C
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Flag.C"
+  numberIndex none
+  contextual none
+  constant 3
+887-891 id "Flag"
+  symbol Flag flags=Enum decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+887-891 expr "Flag" "typeof Flag" flags=Object symbol=Flag
+  tuple=false arrayLike=false calls=0 constructs=0 props=3
+  nonOptional "typeof Flag"
+  numberIndex "string"
+  contextual none
+892-893 id "C"
+  symbol C flags=EnumMember decls=1 value=true parent=Flag
+  undefined=false arguments=false merged=true
+892-893 expr "C" "Flag.C" flags=NumberLiteral|EnumLiteral symbol=C
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Flag.C"
+  numberIndex none
+  contextual none
+895-903 expr "Kind.One" "Kind" flags=NumberLiteral|EnumLiteral symbol=One
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Kind"
+  numberIndex none
+  contextual none
+  constant null
+895-899 id "Kind"
+  symbol Kind flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias Kind flags=Enum decls=1 value=true parent="<ROOT>/src/other"
+895-899 expr "Kind" "typeof Kind" flags=Object symbol=Kind
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "typeof Kind"
+  numberIndex "string"
+  contextual none
+900-903 id "One"
+  symbol One flags=EnumMember decls=1 value=true parent=Kind
+  undefined=false arguments=false merged=true
+900-903 expr "One" "Kind" flags=NumberLiteral|EnumLiteral symbol=One
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "Kind"
+  numberIndex none
+  contextual none
+918-1245 comments ["// classes"]
+933-937 id "Base"
+  symbol Base flags=Class decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+938-939 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=Base
+  undefined=false arguments=false merged=true
+958-963 id "count"
+  symbol count flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+966-967 literal "0"
+966-967 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+989-994 id "value"
+  symbol value flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+996-997 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=Base
+  undefined=false arguments=false merged=true
+1035-1037 id "id"
+  symbol id flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1055-1061 id "secret"
+  symbol secret flags=Property|Optional decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1090-1094 id "make"
+  symbol make flags=Method decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1108-1120 expr "Base.count++" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1108-1118 expr "Base.count" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+1108-1112 id "Base"
+  symbol Base flags=Class decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1108-1112 expr "Base" "typeof Base" flags=Object symbol=Base
+  tuple=false arrayLike=false calls=0 constructs=1 props=3
+  nonOptional "typeof Base"
+  numberIndex none
+  contextual none
+1113-1118 id "count"
+  symbol count flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1113-1118 expr "count" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1133-1139 id "method"
+  symbol method flags=Method decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1140-1144 id "this"
+  symbol this flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1146-1150 id "Base"
+  symbol Base flags=Class decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1151-1152 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=Base
+  undefined=false arguments=false merged=true
+1155-1158 id "arg"
+  symbol arg flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1160-1161 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=Base
+  undefined=false arguments=false merged=true
+1174-1197 expr "[arg, this.id] as const" "readonly [T, number]" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=21
+  nonOptional "readonly [T, number]"
+  numberIndex "number | T"
+  contextual none
+1174-1188 expr "[arg, this.id]" "readonly [T, number]" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=21
+  nonOptional "readonly [T, number]"
+  numberIndex "number | T"
+  contextual none
+1175-1178 id "arg"
+  symbol arg flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1175-1178 expr "arg" "T" flags=TypeParameter symbol=T
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "T"
+  numberIndex none
+  contextual none
+1180-1187 expr "this.id" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+1180-1184 expr "this" "Base<T>" flags=Object symbol=Base
+  tuple=false arrayLike=false calls=0 constructs=0 props=5
+  nonOptional "Base<T>"
+  numberIndex none
+  contextual none
+1185-1187 id "id"
+  symbol id flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1185-1187 expr "id" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1192-1197 id "const"
+  symbol const flags=TypeAlias decls=0 value=false parent=-
+  undefined=false arguments=false merged=true
+1214-1218 id "prop"
+  symbol prop flags=Accessor decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1232-1239 expr "this.id" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+1232-1236 expr "this" "this" flags=TypeParameter symbol=Base
+  tuple=false arrayLike=false calls=0 constructs=0 props=5
+  nonOptional "this"
+  numberIndex none
+  contextual none
+1237-1239 id "id"
+  symbol id flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1237-1239 expr "id" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1259-1266 id "Derived"
+  symbol Derived flags=Class decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+1275-1279 id "Base"
+  symbol Base flags=Class decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1275-1279 expr "Base" "typeof Base" flags=Object symbol=Base
+  tuple=false arrayLike=false calls=0 constructs=1 props=3
+  nonOptional "typeof Base"
+  numberIndex none
+  contextual none
+1299-1304 id "Shape"
+  symbol Shape flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias Shape flags=Interface decls=1 value=false parent="<ROOT>/src/other"
+1318-1323 id "value"
+  symbol value flags=Property decls=1 value=true parent=Derived
+  undefined=false arguments=false merged=true
+1326-1329 literal "v"
+1326-1329 expr "\"v\"" "\"v\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"v\""
+  numberIndex none
+  contextual none
+1339-1344 id "sides"
+  symbol sides flags=Property decls=1 value=true parent=Derived
+  undefined=false arguments=false merged=true
+1347-1348 literal "3"
+1347-1348 expr "3" "3" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "3"
+  numberIndex none
+  contextual none
+1367-1373 id "method"
+  symbol method flags=Method decls=1 value=true parent=Derived
+  undefined=false arguments=false merged=true
+1374-1377 id "arg"
+  symbol arg flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1398-1415 expr "super.method(arg)" "readonly [string, number]" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=21
+  nonOptional "readonly [string, number]"
+  numberIndex "string | number"
+  contextual none
+  signature params=1 returns "readonly [string, number]"
+1398-1410 expr "super.method" "(this: Base<string>, arg: string) => readonly [string, number]" flags=Object symbol=method
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(this: Base<string>, arg: string) => readonly [string, number]"
+  numberIndex none
+  contextual none
+  constant null
+1398-1403 expr "super" "Base<string>" flags=Object symbol=Base
+  tuple=false arrayLike=false calls=0 constructs=0 props=5
+  nonOptional "Base<string>"
+  numberIndex none
+  contextual none
+1404-1410 id "method"
+  symbol method flags=Method decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1404-1410 expr "method" "(this: Base<string>, arg: string) => readonly [string, number]" flags=Object symbol=method
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(this: Base<string>, arg: string) => readonly [string, number]"
+  numberIndex none
+  contextual none
+1411-1414 id "arg"
+  symbol arg flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1411-1414 expr "arg" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual "string"
+1428-1433 id "arrow"
+  symbol arrow flags=Property decls=1 value=true parent=Derived
+  undefined=false arguments=false merged=true
+1436-1452 expr "() => this.sides" "() => number" flags=Object symbol=__function
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+1442-1452 expr "this.sides" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+1442-1446 expr "this" "this" flags=TypeParameter symbol=Derived
+  tuple=false arrayLike=false calls=0 constructs=0 props=7
+  nonOptional "this"
+  numberIndex none
+  contextual none
+1447-1452 id "sides"
+  symbol sides flags=Property decls=1 value=true parent=Derived
+  undefined=false arguments=false merged=true
+1447-1452 expr "sides" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1466-1483 expr "Derived.count = 1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+1466-1479 expr "Derived.count" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+1466-1473 id "Derived"
+  symbol Derived flags=Class decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+1466-1473 expr "Derived" "typeof Derived" flags=Object symbol=Derived
+  tuple=false arrayLike=false calls=0 constructs=1 props=3
+  nonOptional "typeof Derived"
+  numberIndex none
+  contextual none
+1474-1479 id "count"
+  symbol count flags=Property decls=1 value=true parent=Base
+  undefined=false arguments=false merged=true
+1474-1479 expr "count" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1482-1483 literal "1"
+1482-1483 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual "number"
+1499-1505 id "sealed"
+  symbol sealed flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1506-1512 id "target"
+  symbol target flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1527-1533 id "sealed"
+  symbol sealed flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1527-1533 expr "sealed" "(target: unknown) => void" flags=Object symbol=sealed
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(target: unknown) => void"
+  numberIndex none
+  contextual "(target: typeof Decorated) => void | typeof Decorated"
+1547-1556 id "Decorated"
+  symbol Decorated flags=Class decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+1567-1568 id "x"
+  symbol x flags=Property|Optional decls=1 value=true parent=Decorated
+  undefined=false arguments=false merged=true
+1596-1754 comments ["// namespaces"]
+1613-1618 id "Space"
+  symbol Space flags=ValueModule decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+1635-1640 id "inner"
+  symbol inner flags=Variable decls=1 value=true parent=Space
+  undefined=false arguments=false merged=true
+1643-1644 literal "1"
+1643-1644 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+1663-1666 id "run"
+  symbol run flags=Function decls=1 value=true parent=Space
+  undefined=false arguments=false merged=true
+1680-1689 expr "inner + 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1680-1685 id "inner"
+  symbol inner flags=Variable decls=1 value=true parent=Space
+  undefined=false arguments=false merged=true
+1680-1685 expr "inner" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+1688-1689 literal "1"
+1688-1689 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+1712-1716 id "Deep"
+  symbol Deep flags=ValueModule decls=1 value=true parent=Space
+  undefined=false arguments=false merged=true
+1734-1740 id "deeper"
+  symbol deeper flags=Variable decls=1 value=true parent=Deep
+  undefined=false arguments=false merged=true
+1743-1748 id "inner"
+  symbol inner flags=Variable decls=1 value=true parent=Space
+  undefined=false arguments=false merged=true
+1743-1748 expr "inner" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+1784-1900 comments ["// functions and generators"]
+1801-1804 id "gen"
+  symbol gen flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+1805-1806 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1817-1826 id "Generator"
+  symbol Generator flags=Interface decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+1864-1865 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1868-1869 literal "0"
+1868-1869 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+1871-1876 expr "i < n" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+1871-1872 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1871-1872 expr "i" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1875-1876 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1875-1876 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1878-1881 expr "i++" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1878-1879 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1878-1879 expr "i" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1887-1894 expr "yield i" "undefined" flags=Undefined symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "undefined"
+  numberIndex none
+  contextual none
+1893-1894 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1893-1894 expr "i" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual "number"
+1923-1928 id "later"
+  symbol later flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+1929-1930 id "p"
+  symbol p flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1932-1939 id "Promise"
+  symbol Promise flags=Variable|Interface|NamespaceModule decls=4 value=true parent=-
+  undefined=false arguments=false merged=true
+1958-1959 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1962-1969 expr "await p" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1968-1969 id "p"
+  symbol p flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1968-1969 expr "p" "Promise<number>" flags=Object symbol=Promise
+  tuple=false arrayLike=false calls=0 constructs=0 props=16
+  nonOptional "Promise<number>"
+  numberIndex none
+  contextual none
+1979-1984 expr "v + 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1979-1980 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+1979-1980 expr "v" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+1983-1984 literal "1"
+1983-1984 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+2004-2012 id "defaults"
+  symbol defaults flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+2013-2014 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2017-2018 literal "1"
+2017-2018 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+2020-2021 id "b"
+  symbol b flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2035-2039 id "rest"
+  symbol rest flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2041-2046 id "Array"
+  symbol Array flags=Variable|Interface decls=2 value=true parent=-
+  undefined=false arguments=false merged=true
+2066-2085 expr "[a, b, rest.size()]" "(string | number | undefined)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(string | number | undefined)[]"
+  numberIndex "string | number | undefined"
+  contextual none
+2067-2068 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2067-2068 expr "a" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2070-2071 id "b"
+  symbol b flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2070-2071 expr "b" "string | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "string | undefined"
+  numberIndex none
+  contextual none
+2073-2084 expr "rest.size()" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  signature params=0 returns "number"
+2073-2082 expr "rest.size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+  constant null
+2073-2077 id "rest"
+  symbol rest flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2073-2077 expr "rest" "number[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "number[]"
+  numberIndex "number"
+  contextual none
+2078-2082 id "size"
+  symbol size flags=Method decls=1 value=true parent=ArrayLike
+  undefined=false arguments=false merged=true
+2078-2082 expr "size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+2095-2097 id "fn"
+  symbol fn flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2100-2171 expr "function named(x: number): number {\n\tret" "(x: number) => number" flags=Object symbol=named
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(x: number) => number"
+  numberIndex none
+  contextual none
+2109-2114 id "named"
+  symbol named flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2115-2116 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2144-2168 expr "x > 0 ? named(x - 1) : 0" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual "number"
+2144-2149 expr "x > 0" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+2144-2145 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2144-2145 expr "x" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2148-2149 literal "0"
+2148-2149 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+2152-2164 expr "named(x - 1)" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual "number"
+  signature params=1 returns "number"
+2152-2157 id "named"
+  symbol named flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2152-2157 expr "named" "(x: number) => number" flags=Object symbol=named
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(x: number) => number"
+  numberIndex none
+  contextual none
+2158-2163 expr "x - 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual "number"
+2158-2159 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2158-2159 expr "x" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2162-2163 literal "1"
+2162-2163 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+2167-2168 literal "0"
+2167-2168 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual "number"
+2202-2231 comments ["// destructuring and spread"]
+2207-2211 id "Pair"
+  symbol Pair flags=TypeAlias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+2248-2259 id "destructure"
+  symbol destructure flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+2260-2264 id "pair"
+  symbol pair flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2266-2270 id "Pair"
+  symbol Pair flags=TypeAlias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+2272-2275 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2279-2280 id "a"
+  symbol a flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2290-2291 id "b"
+  symbol b flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2296-2297 id "c"
+  symbol c flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2311-2314 id "map"
+  symbol map flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2316-2319 id "Map"
+  symbol Map flags=Variable|Interface decls=2 value=true parent=-
+  undefined=false arguments=false merged=true
+2347-2352 id "first"
+  symbol first flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2354-2360 id "second"
+  symbol second flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2363-2366 literal "x"
+2363-2366 expr "\"x\"" "\"x\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"x\""
+  numberIndex none
+  contextual "string"
+2370-2374 id "pair"
+  symbol pair flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2370-2374 expr "pair" "Pair" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=30
+  nonOptional "Pair"
+  numberIndex "string | number"
+  contextual "[any, (\"x\" | undefined)?]"
+2385-2386 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2388-2389 id "b"
+  symbol b flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2393-2394 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2399-2409 expr "{ c: \"d\" }" "{ c: string; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ c: string; }"
+  numberIndex none
+  contextual "{ c: string; } | undefined"
+2401-2402 id "c"
+  symbol c flags=Property decls=1 value=true parent=__object
+  undefined=false arguments=false merged=true
+2404-2407 literal "d"
+2404-2407 expr "\"d\"" "\"d\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"d\""
+  numberIndex none
+  contextual "string"
+2414-2417 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2414-2417 expr "obj" "{ a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual "{ a: any; b?: { c: string; } | undefined; }"
+2424-2425 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2428-2429 literal "0"
+2428-2429 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+2436-2437 id "y"
+  symbol y flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2440-2442 literal ""
+2440-2442 expr "\"\"" "\"\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"\""
+  numberIndex none
+  contextual none
+2445-2458 expr "[x, y] = pair" "Pair" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=30
+  nonOptional "Pair"
+  numberIndex "string | number"
+  contextual none
+2445-2451 expr "[x, y]" "[number, string]" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=30
+  nonOptional "[number, string]"
+  numberIndex "string | number"
+  contextual none
+2446-2447 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2446-2447 expr "x" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2449-2450 id "y"
+  symbol y flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2449-2450 expr "y" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+2454-2458 id "pair"
+  symbol pair flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2454-2458 expr "pair" "Pair" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=30
+  nonOptional "Pair"
+  numberIndex "string | number"
+  contextual "[number, string]"
+2461-2477 expr "({ a: x } = obj)" "{ a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual none
+2462-2476 expr "{ a: x } = obj" "{ a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual none
+2462-2470 expr "{ a: x }" "{ a: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ a: number; }"
+  numberIndex none
+  contextual none
+2464-2465 id "a"
+  symbol a flags=Property decls=1 value=true parent=__object
+  undefined=false arguments=false merged=true
+2467-2468 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2467-2468 expr "x" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2473-2476 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2473-2476 expr "obj" "{ a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual "{ a: number; }"
+2486-2490 id "copy"
+  symbol copy flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2493-2513 expr "{ ...obj, extra: 1 }" "{ extra: number; a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=3
+  nonOptional "{ extra: number; a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual none
+2498-2501 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2498-2501 expr "obj" "{ a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual none
+2503-2508 id "extra"
+  symbol extra flags=Property decls=1 value=true parent=__object
+  undefined=false arguments=false merged=true
+2510-2511 literal "1"
+2510-2511 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+2522-2526 id "list"
+  symbol list flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2529-2549 expr "[...pair, ...[1, 2]]" "(string | number)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(string | number)[]"
+  numberIndex "string | number"
+  contextual none
+2530-2537 expr "...pair" "string | number" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "string | number"
+  numberIndex none
+  contextual none
+2533-2537 id "pair"
+  symbol pair flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2533-2537 expr "pair" "Pair" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=30
+  nonOptional "Pair"
+  numberIndex "string | number"
+  contextual none
+2539-2548 expr "...[1, 2]" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2542-2548 expr "[1, 2]" "number[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "number[]"
+  numberIndex "number"
+  contextual none
+2543-2544 literal "1"
+2543-2544 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+2546-2547 literal "2"
+2546-2547 expr "2" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual none
+2564-2565 id "k"
+  symbol k flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2567-2568 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2573-2576 id "map"
+  symbol map flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2573-2576 expr "map" "Map<string, number>" flags=Object symbol=Map
+  tuple=false arrayLike=false calls=0 constructs=0 props=10
+  nonOptional "Map<string, number>"
+  numberIndex none
+  contextual none
+2582-2593 expr "print(k, v)" "void" flags=Void symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "void"
+  numberIndex none
+  contextual none
+  signature params=1 returns "void"
+2582-2587 id "print"
+  symbol print flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2582-2587 expr "print" "(...params: unknown[]) => void" flags=Object symbol=print
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(...params: unknown[]) => void"
+  numberIndex none
+  contextual none
+2588-2589 id "k"
+  symbol k flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2588-2589 expr "k" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual "unknown"
+2591-2592 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2591-2592 expr "v" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual "unknown"
+2606-2645 expr "[first, second, a, c, x, y, copy, list]" "(string | number | (string | number)[] | { extra: number; a: number; b?: { c: string; } | undefined; })[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(string | number | (string | number)[] | { extra: number; a: number; b?: { c: string; } | undefined; })[]"
+  numberIndex "string | number | (string | number)[] | { extra: number; a: number; b?: { c: string; } | undefined; }"
+  contextual none
+2607-2612 id "first"
+  symbol first flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2607-2612 expr "first" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2614-2620 id "second"
+  symbol second flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2614-2620 expr "second" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+2622-2623 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2622-2623 expr "a" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2625-2626 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2625-2626 expr "c" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+2628-2629 id "x"
+  symbol x flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2628-2629 expr "x" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2631-2632 id "y"
+  symbol y flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2631-2632 expr "y" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+2634-2638 id "copy"
+  symbol copy flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2634-2638 expr "copy" "{ extra: number; a: number; b?: { c: string; } | undefined; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=3
+  nonOptional "{ extra: number; a: number; b?: { c: string; } | undefined; }"
+  numberIndex none
+  contextual none
+2640-2644 id "list"
+  symbol list flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2640-2644 expr "list" "(string | number)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(string | number)[]"
+  numberIndex "string | number"
+  contextual none
+2685-3086 comments ["// optional chains, nullish, casts"]
+2701-2707 id "chains"
+  symbol chains flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+2708-2709 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2714-2715 id "f"
+  symbol f flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2732-2733 id "g"
+  symbol g flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2737-2738 id "h"
+  symbol h flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2751-2754 id "arr"
+  symbol arr flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2756-2761 id "Array"
+  symbol Array flags=Variable|Interface decls=2 value=true parent=-
+  undefined=false arguments=false merged=true
+2782-2783 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2786-2794 expr "o?.f?.()" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+  signature params=0 returns "number | undefined"
+2786-2790 expr "o?.f" "(() => number) | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "(() => number) | undefined"
+  numberIndex none
+  contextual none
+  constant null
+2786-2787 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2786-2787 expr "o" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined"
+  numberIndex none
+  contextual none
+2789-2790 id "f"
+  symbol f flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2789-2790 expr "f" "(() => number) | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "(() => number) | undefined"
+  numberIndex none
+  contextual none
+2803-2804 id "b"
+  symbol b flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2807-2818 expr "o?.g.h ?? 2" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2807-2813 expr "o?.g.h" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+  constant null
+2807-2811 expr "o?.g" "{ h?: number | undefined; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ h?: number | undefined; }"
+  numberIndex none
+  contextual none
+  constant null
+2807-2808 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2807-2808 expr "o" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined"
+  numberIndex none
+  contextual none
+2810-2811 id "g"
+  symbol g flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2810-2811 expr "g" "{ h?: number | undefined; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ h?: number | undefined; }"
+  numberIndex none
+  contextual none
+2812-2813 id "h"
+  symbol h flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2812-2813 expr "h" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+2817-2818 literal "2"
+2817-2818 expr "2" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual "number | undefined"
+2827-2828 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2831-2838 expr "o!.g.h!" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2831-2837 expr "o!.g.h" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+  constant null
+2831-2835 expr "o!.g" "{ h?: number | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ h?: number | undefined; }"
+  numberIndex none
+  contextual none
+  constant null
+2831-2833 expr "o!" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=3
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; }"
+  numberIndex none
+  contextual none
+2831-2832 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2831-2832 expr "o" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined"
+  numberIndex none
+  contextual none
+2834-2835 id "g"
+  symbol g flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2834-2835 expr "g" "{ h?: number | undefined; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ h?: number | undefined; }"
+  numberIndex none
+  contextual none
+2836-2837 id "h"
+  symbol h flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2836-2837 expr "h" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+2847-2848 id "d"
+  symbol d flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2851-2884 expr "(o as unknown as { z: number }).z" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+2851-2882 expr "(o as unknown as { z: number })" "{ z: number; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ z: number; }"
+  numberIndex none
+  contextual none
+2852-2881 expr "o as unknown as { z: number }" "{ z: number; }" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ z: number; }"
+  numberIndex none
+  contextual none
+2852-2864 expr "o as unknown" "unknown" flags=Unknown symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "unknown"
+  numberIndex none
+  contextual "{ z: number; }"
+2852-2853 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2852-2853 expr "o" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined"
+  numberIndex none
+  contextual "unknown"
+2870-2871 id "z"
+  symbol z flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2883-2884 id "z"
+  symbol z flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2883-2884 expr "z" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2893-2894 id "e"
+  symbol e flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2897-2917 expr "<number>(<unknown>a)" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2905-2917 expr "(<unknown>a)" "unknown" flags=Unknown symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "unknown"
+  numberIndex none
+  contextual "number"
+2906-2916 expr "<unknown>a" "unknown" flags=Unknown symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "unknown"
+  numberIndex none
+  contextual "number"
+2915-2916 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2915-2916 expr "a" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual "unknown"
+2926-2927 id "f"
+  symbol f flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2930-2962 expr "{ y: 1 } satisfies { y: number }" "{ y: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ y: number; }"
+  numberIndex none
+  contextual none
+2930-2938 expr "{ y: 1 }" "{ y: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ y: number; }"
+  numberIndex none
+  contextual "{ y: number; }"
+2932-2933 id "y"
+  symbol y flags=Property decls=1 value=true parent=__object
+  undefined=false arguments=false merged=true
+2935-2936 literal "1"
+2935-2936 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual "number"
+2951-2952 id "y"
+  symbol y flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+2969-2970 id "g"
+  symbol g flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2993-3000 expr "g ??= 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+2993-2994 id "g"
+  symbol g flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+2993-2994 expr "g" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+2999-3000 literal "1"
+2999-3000 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual "number | undefined"
+3003-3010 expr "g ||= 2" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3003-3004 id "g"
+  symbol g flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3003-3004 expr "g" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+3009-3010 literal "2"
+3009-3010 expr "2" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual "number | undefined"
+3013-3020 expr "g &&= 3" "0 | 3 | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "0 | 3 | undefined"
+  numberIndex none
+  contextual none
+3013-3014 id "g"
+  symbol g flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3013-3014 expr "g" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+3019-3020 literal "3"
+3019-3020 expr "3" "3" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "3"
+  numberIndex none
+  contextual "number | undefined"
+3030-3083 expr "[a, b, c, d, e, f, g, typeOf(a), o?.arr[" "(number | { h?: number | undefined; } | { y: number; } | keyof CheckableTypes | undefined)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(number | { h?: number | undefined; } | { y: number; } | keyof CheckableTypes | undefined)[]"
+  numberIndex "number | { h?: number | undefined; } | { y: number; } | keyof CheckableTypes | undefined"
+  contextual none
+3031-3032 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3031-3032 expr "a" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+3034-3035 id "b"
+  symbol b flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3034-3035 expr "b" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3037-3038 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3037-3038 expr "c" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3040-3041 id "d"
+  symbol d flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3040-3041 expr "d" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3043-3044 id "e"
+  symbol e flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3043-3044 expr "e" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3046-3047 id "f"
+  symbol f flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3046-3047 expr "f" "{ y: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ y: number; }"
+  numberIndex none
+  contextual none
+3049-3050 id "g"
+  symbol g flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3049-3050 expr "g" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3052-3061 expr "typeOf(a)" "keyof CheckableTypes" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "keyof CheckableTypes"
+  numberIndex none
+  contextual none
+  signature params=1 returns "keyof CheckableTypes"
+3052-3058 id "typeOf"
+  symbol typeOf flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3052-3058 expr "typeOf" "(value: any) => keyof CheckableTypes" flags=Object symbol=typeOf
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(value: any) => keyof CheckableTypes"
+  numberIndex none
+  contextual none
+3059-3060 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3059-3060 expr "a" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual "any"
+3063-3072 expr "o?.arr[0]" "number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number | undefined"
+  numberIndex none
+  contextual none
+  constant null
+3063-3069 expr "o?.arr" "number[] | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number[]"
+  numberIndex none
+  contextual none
+  constant null
+3063-3064 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3063-3064 expr "o" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined"
+  numberIndex none
+  contextual none
+3066-3069 id "arr"
+  symbol arr flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+3066-3069 expr "arr" "number[] | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "number[]"
+  numberIndex none
+  contextual none
+3070-3071 literal "0"
+3070-3071 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+3074-3082 expr "o?.[\"g\"]" "{ h?: number | undefined; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ h?: number | undefined; } | undefined"
+  numberIndex none
+  contextual none
+  constant null
+3074-3075 id "o"
+  symbol o flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3074-3075 expr "o" "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{ f?: (() => number) | undefined; g: { h?: number | undefined; }; arr: number[]; } | undefined"
+  numberIndex none
+  contextual none
+3078-3081 literal "g"
+3078-3081 expr "\"g\"" "\"g\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"g\""
+  numberIndex none
+  contextual none
+3102-3759 comments ["// statements"]
+3118-3128 id "statements"
+  symbol statements flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+3129-3130 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3141-3142 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3152-3155 id "set"
+  symbol set flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3157-3160 id "Set"
+  symbol Set flags=Variable|Interface decls=2 value=true parent=-
+  undefined=false arguments=false merged=true
+3170-3175 id "tuple"
+  symbol tuple flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3177-3185 id "LuaTuple"
+  symbol LuaTuple flags=TypeAlias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3208-3213 id "label"
+  symbol none
+3226-3227 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3231-3234 id "set"
+  symbol set flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3231-3234 expr "set" "Set<number>" flags=Object symbol=Set
+  tuple=false arrayLike=false calls=0 constructs=0 props=9
+  nonOptional "Set<number>"
+  numberIndex none
+  contextual none
+3244-3249 expr "i > 1" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+3244-3245 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3244-3245 expr "i" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3248-3249 literal "1"
+3248-3249 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+3260-3265 id "label"
+  symbol none
+3280-3285 id "label"
+  symbol none
+3299-3300 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3299-3300 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3311-3312 literal "1"
+3311-3312 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+3324-3329 literal "one"
+3324-3329 expr "\"one\"" "\"one\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"one\""
+  numberIndex none
+  contextual none
+3338-3339 literal "2"
+3338-3339 expr "2" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual none
+3371-3374 expr "n++" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3371-3372 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3371-3372 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3388-3398 expr "error(\"x\")" "never" flags=Never symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "never"
+  numberIndex none
+  contextual none
+  signature params=2 returns "never"
+3388-3393 id "error"
+  symbol error flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3388-3393 expr "error" "(message?: unknown, level?: number | undefined) => never" flags=Object symbol=error
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(message?: unknown, level?: number | undefined) => never"
+  numberIndex none
+  contextual none
+3394-3397 literal "x"
+3394-3397 expr "\"x\"" "\"x\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"x\""
+  numberIndex none
+  contextual "unknown"
+3410-3411 id "e"
+  symbol e flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3417-3425 expr "print(e)" "void" flags=Void symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "void"
+  numberIndex none
+  contextual none
+  signature params=1 returns "void"
+3417-3422 id "print"
+  symbol print flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3417-3422 expr "print" "(...params: unknown[]) => void" flags=Object symbol=print
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(...params: unknown[]) => void"
+  numberIndex none
+  contextual none
+3423-3424 id "e"
+  symbol e flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3423-3424 expr "e" "unknown" flags=Unknown symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "unknown"
+  numberIndex none
+  contextual "unknown"
+3442-3445 expr "n--" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3442-3443 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3442-3443 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3458-3464 expr "n += 1" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3458-3459 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3458-3459 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3463-3464 literal "1"
+3463-3464 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+3476-3481 expr "n < 3" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+3476-3477 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3476-3477 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3480-3481 literal "3"
+3480-3481 expr "3" "3" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "3"
+  numberIndex none
+  contextual none
+3492-3497 expr "n > 0" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+3492-3493 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3492-3493 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3496-3497 literal "0"
+3496-3497 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+3499-3502 expr "n--" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3499-3500 id "n"
+  symbol n flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3499-3500 expr "n" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3516-3519 id "key"
+  symbol key flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3523-3531 expr "{ a: 1 }" "{ a: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ a: number; }"
+  numberIndex none
+  contextual none
+3525-3526 id "a"
+  symbol a flags=Property decls=1 value=true parent=__object
+  undefined=false arguments=false merged=true
+3528-3529 literal "1"
+3528-3529 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+3533-3543 expr "print(key)" "void" flags=Void symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "void"
+  numberIndex none
+  contextual none
+  signature params=1 returns "void"
+3533-3538 id "print"
+  symbol print flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3533-3538 expr "print" "(...params: unknown[]) => void" flags=Object symbol=print
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "(...params: unknown[]) => void"
+  numberIndex none
+  contextual none
+3539-3542 id "key"
+  symbol key flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3539-3542 expr "key" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual "unknown"
+3553-3554 id "p"
+  symbol p flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3556-3557 id "q"
+  symbol q flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3561-3566 id "tuple"
+  symbol tuple flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3561-3566 expr "tuple" "LuaTuple<[number, string]>" flags=Intersection symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=31
+  nonOptional "LuaTuple<[number, string]>"
+  numberIndex "string | number"
+  contextual "[any, any]"
+3575-3578 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3580-3586 id "Record"
+  symbol Record flags=TypeAlias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3605-3607 expr "{}" "{}" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "{}"
+  numberIndex none
+  contextual "Record<string, number>"
+3610-3622 expr "delete obj.k" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+3617-3622 expr "obj.k" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+3617-3620 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3617-3620 expr "obj" "Record<string, number>" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "Record<string, number>"
+  numberIndex none
+  contextual none
+3621-3622 id "k"
+  symbol none
+3621-3622 expr "k" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3625-3633 expr "void obj" "undefined" flags=Undefined symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "undefined"
+  numberIndex none
+  contextual none
+3630-3633 id "obj"
+  symbol obj flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3630-3633 expr "obj" "Record<string, number>" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "Record<string, number>"
+  numberIndex none
+  contextual none
+3642-3643 id "t"
+  symbol t flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3646-3681 expr "typeIs(v, \"string\") ? v : undefined" "string | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "string | undefined"
+  numberIndex none
+  contextual none
+3646-3665 expr "typeIs(v, \"string\")" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+  signature params=2 returns "boolean"
+3646-3652 id "typeIs"
+  symbol typeIs flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3646-3652 expr "typeIs" "<T extends keyof CheckableTypes>(value: any, type: T) => value is CheckableTypes[T]" flags=Object symbol=typeIs
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "<T extends keyof CheckableTypes>(value: any, type: T) => value is CheckableTypes[T]"
+  numberIndex none
+  contextual none
+3653-3654 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3653-3654 expr "v" "unknown" flags=Unknown symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "unknown"
+  numberIndex none
+  contextual "any"
+3656-3664 literal "string"
+3656-3664 expr "\"string\"" "\"string\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"string\""
+  numberIndex none
+  contextual "\"string\""
+3668-3669 id "v"
+  symbol v flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3668-3669 expr "v" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+3672-3681 id "undefined"
+  symbol undefined flags=Property decls=0 value=false parent=-
+  undefined=true arguments=false merged=true
+3672-3681 expr "undefined" "undefined" flags=Undefined symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "undefined"
+  numberIndex none
+  contextual none
+3690-3691 id "r"
+  symbol r flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3694-3720 expr "classIs(game, \"DataModel\")" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+  signature params=2 returns "boolean"
+3694-3701 id "classIs"
+  symbol classIs flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3694-3701 expr "classIs" "<T extends keyof Instances>(instance: Instance, className: T) => instance is Instances[T]" flags=Object symbol=classIs
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "<T extends keyof Instances>(instance: Instance, className: T) => instance is Instances[T]"
+  numberIndex none
+  contextual none
+3702-3706 id "game"
+  symbol game flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3702-3706 expr "game" "DataModel" flags=Object symbol=DataModel
+  tuple=false arrayLike=false calls=0 constructs=0 props=85
+  nonOptional "DataModel"
+  numberIndex none
+  contextual "Instance"
+3708-3719 literal "DataModel"
+3708-3719 expr "\"DataModel\"" "\"DataModel\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"DataModel\""
+  numberIndex none
+  contextual "\"DataModel\""
+3730-3756 expr "[p, q, t, r, $tuple(1, 2)]" "(string | number | boolean | LuaTuple<[number, number]> | undefined)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(string | number | boolean | LuaTuple<[number, number]> | undefined)[]"
+  numberIndex "string | number | boolean | LuaTuple<[number, number]> | undefined"
+  contextual none
+3731-3732 id "p"
+  symbol p flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3731-3732 expr "p" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+3734-3735 id "q"
+  symbol q flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3734-3735 expr "q" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+3737-3738 id "t"
+  symbol t flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3737-3738 expr "t" "string | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "string | undefined"
+  numberIndex none
+  contextual none
+3740-3741 id "r"
+  symbol r flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3740-3741 expr "r" "boolean" flags=Boolean|Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "boolean"
+  numberIndex none
+  contextual none
+3743-3755 expr "$tuple(1, 2)" "LuaTuple<[number, number]>" flags=Intersection symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=31
+  nonOptional "LuaTuple<[number, number]>"
+  numberIndex "number"
+  contextual none
+  signature params=1 returns "LuaTuple<[number, number]>"
+3743-3749 id "$tuple"
+  symbol $tuple flags=Function decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3743-3749 expr "$tuple" "<T extends Array<any>>(...values: T) => LuaTuple<T>" flags=Object symbol=$tuple
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "<T extends Array<any>>(...values: T) => LuaTuple<T>"
+  numberIndex none
+  contextual none
+3750-3751 literal "1"
+3750-3751 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual "number"
+3753-3754 literal "2"
+3753-3754 expr "2" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual "number"
+3798-3857 comments ["// types the checker has to work out"]
+3810-3816 id "Mapped"
+  symbol Mapped flags=TypeAlias decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+3817-3818 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3834-3835 id "K"
+  symbol K flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3845-3846 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3850-3851 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3852-3853 id "K"
+  symbol K flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3870-3874 id "Cond"
+  symbol Cond flags=TypeAlias decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+3875-3876 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3880-3881 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3899-3902 literal "s"
+3905-3906 id "T"
+  symbol T flags=TypeParameter decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+3924-3927 literal "n"
+3954-3962 id "Callable"
+  symbol Callable flags=Interface decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+3967-3968 id "a"
+  symbol a flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+3993-3994 id "b"
+  symbol b flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4005-4013 id "Callable"
+  symbol Callable flags=Interface decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+4016-4021 id "field"
+  symbol field flags=Property decls=1 value=true parent=Callable
+  undefined=false arguments=false merged=true
+4032-4038 id "method"
+  symbol method flags=Method decls=1 value=true parent=Callable
+  undefined=false arguments=false merged=true
+4050-4055 id "index"
+  symbol index flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4092-4101 id "usesTypes"
+  symbol usesTypes flags=Function decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+4102-4103 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4105-4113 id "Callable"
+  symbol Callable flags=Interface decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+4115-4116 id "m"
+  symbol m flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4118-4124 id "Mapped"
+  symbol Mapped flags=TypeAlias decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+4127-4128 id "a"
+  symbol a flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+4130-4131 literal "1"
+4136-4137 id "u"
+  symbol u flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4168-4169 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4173-4174 id "a"
+  symbol a flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+4176-4177 literal "1"
+4184-4185 id "b"
+  symbol b flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+4187-4188 literal "2"
+4192-4193 id "l"
+  symbol l flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4195-4198 literal "x"
+4201-4204 literal "y"
+4206-4207 id "t"
+  symbol t flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4250-4256 id "called"
+  symbol called flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4259-4263 expr "c(1)" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+  signature params=1 returns "string"
+4259-4260 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4259-4260 expr "c" "Callable" flags=Object symbol=Callable
+  tuple=false arrayLike=false calls=1 constructs=1 props=2
+  nonOptional "Callable"
+  numberIndex "string"
+  contextual none
+4261-4262 literal "1"
+4261-4262 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual "number"
+4272-4277 id "built"
+  symbol built flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4280-4290 expr "new c(\"s\")" "Callable" flags=Object symbol=Callable
+  tuple=false arrayLike=false calls=1 constructs=1 props=2
+  nonOptional "Callable"
+  numberIndex "string"
+  contextual none
+  signature params=1 returns "Callable"
+4284-4285 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4284-4285 expr "c" "Callable" flags=Object symbol=Callable
+  tuple=false arrayLike=false calls=1 constructs=1 props=2
+  nonOptional "Callable"
+  numberIndex "string"
+  contextual none
+4286-4289 literal "s"
+4286-4289 expr "\"s\"" "\"s\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"s\""
+  numberIndex none
+  contextual "string"
+4299-4306 id "indexed"
+  symbol indexed flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4309-4313 expr "c[0]" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+  constant null
+4309-4310 id "c"
+  symbol c flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4309-4310 expr "c" "Callable" flags=Object symbol=Callable
+  tuple=false arrayLike=false calls=1 constructs=1 props=2
+  nonOptional "Callable"
+  numberIndex "string"
+  contextual none
+4311-4312 literal "0"
+4311-4312 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+4323-4429 expr "[called, built.field, indexed, m.a, u, i" "(string | number | (() => number) | (() => string) | undefined)[]" flags=Object symbol=Array
+  tuple=false arrayLike=true calls=0 constructs=0 props=27
+  nonOptional "(string | number | (() => number) | (() => string) | undefined)[]"
+  numberIndex "string | number | (() => number) | (() => string) | undefined"
+  contextual none
+4324-4330 id "called"
+  symbol called flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4324-4330 expr "called" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+4332-4343 expr "built.field" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+4332-4337 id "built"
+  symbol built flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4332-4337 expr "built" "Callable" flags=Object symbol=Callable
+  tuple=false arrayLike=false calls=1 constructs=1 props=2
+  nonOptional "Callable"
+  numberIndex "string"
+  contextual none
+4338-4343 id "field"
+  symbol field flags=Property decls=1 value=true parent=Callable
+  undefined=false arguments=false merged=true
+4338-4343 expr "field" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+4345-4352 id "indexed"
+  symbol indexed flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4345-4352 expr "indexed" "string" flags=String symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "string"
+  numberIndex none
+  contextual none
+4354-4357 expr "m.a" "1 | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "1 | undefined"
+  numberIndex none
+  contextual none
+  constant null
+4354-4355 id "m"
+  symbol m flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4354-4355 expr "m" "Mapped<{ a: 1; }>" flags=Object symbol=__type
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "Mapped<{ a: 1; }>"
+  numberIndex none
+  contextual none
+4356-4357 id "a"
+  symbol a flags=Property|Optional decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+4356-4357 expr "a" "1 | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "1 | undefined"
+  numberIndex none
+  contextual none
+4359-4360 id "u"
+  symbol u flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4359-4360 expr "u" "string | number | undefined" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=0
+  nonOptional "string | number | undefined"
+  numberIndex none
+  contextual none
+4362-4365 expr "i.a" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+  constant null
+4362-4363 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4362-4363 expr "i" "{ a: 1; } & { b: 2; }" flags=Intersection symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: 1; } & { b: 2; }"
+  numberIndex none
+  contextual none
+4364-4365 id "a"
+  symbol a flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+4364-4365 expr "a" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+4367-4370 expr "i.b" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual none
+  constant null
+4367-4368 id "i"
+  symbol i flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4367-4368 expr "i" "{ a: 1; } & { b: 2; }" flags=Intersection symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "{ a: 1; } & { b: 2; }"
+  numberIndex none
+  contextual none
+4369-4370 id "b"
+  symbol b flags=Property decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+4369-4370 expr "b" "2" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "2"
+  numberIndex none
+  contextual none
+4372-4373 id "l"
+  symbol l flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4372-4373 expr "l" "\"x\" | \"y\"" flags=Union symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"x\" | \"y\""
+  numberIndex none
+  contextual none
+4375-4379 expr "t[0]" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  constant null
+4375-4376 id "t"
+  symbol t flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4375-4376 expr "t" "readonly [number, ...string[]]" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=20
+  nonOptional "readonly [number, ...string[]]"
+  numberIndex "string | number"
+  contextual none
+4377-4378 literal "0"
+4377-4378 expr "0" "0" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "0"
+  numberIndex none
+  contextual none
+4381-4389 expr "t.size()" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  signature params=0 returns "number"
+4381-4387 expr "t.size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+  constant null
+4381-4382 id "t"
+  symbol t flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4381-4382 expr "t" "readonly [number, ...string[]]" flags=Object symbol=-
+  tuple=true arrayLike=true calls=0 constructs=0 props=20
+  nonOptional "readonly [number, ...string[]]"
+  numberIndex "string | number"
+  contextual none
+4383-4387 id "size"
+  symbol size flags=Method decls=1 value=true parent=ArrayLike
+  undefined=false arguments=false merged=true
+4383-4387 expr "size" "() => number" flags=Object symbol=size
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+4391-4400 expr "renamed()" "number" flags=Number symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "number"
+  numberIndex none
+  contextual none
+  signature params=0 returns "number"
+4391-4398 id "renamed"
+  symbol renamed flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias helper flags=Function decls=1 value=true parent="<ROOT>/src/other"
+4391-4398 expr "renamed" "() => number" flags=Object symbol=helper
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+4402-4414 expr "whole.helper" "() => number" flags=Object symbol=helper
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+  constant null
+4402-4407 id "whole"
+  symbol whole flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias "<ROOT>/src/other" flags=ValueModule decls=1 value=true parent=-
+4402-4407 expr "whole" "typeof import(\"<ROOT>/src/other\")" flags=Object symbol="<ROOT>/src/other"
+  tuple=false arrayLike=false calls=0 constructs=0 props=3
+  nonOptional "typeof import(\"<ROOT>/src/other\")"
+  numberIndex none
+  contextual none
+4408-4414 id "helper"
+  symbol helper flags=Function decls=1 value=true parent="<ROOT>/src/other"
+  undefined=false arguments=false merged=true
+4408-4414 expr "helper" "() => number" flags=Object symbol=helper
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => number"
+  numberIndex none
+  contextual none
+4416-4428 id "defaultThing"
+  symbol defaultThing flags=Alias decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+  skipAlias default flags=Function decls=1 value=true parent="<ROOT>/src/other"
+4416-4428 expr "defaultThing" "() => string" flags=Object symbol=default
+  tuple=false arrayLike=false calls=1 constructs=0 props=0
+  nonOptional "() => string"
+  numberIndex none
+  contextual none
+4454-4462 id "Exported"
+  symbol default flags=Class decls=1 value=true parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+4475-4477 id "fn"
+  symbol fn flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+4481-4491 id "exportedFn"
+  symbol exportedFn flags=Alias decls=1 value=false parent="<ROOT>/src/syntax"
+  undefined=false arguments=false merged=true
+  skipAlias fn flags=Variable decls=1 value=true parent=-
+== src/unicode.ts
+106-132 comments ["// Offsets in this file are UTF-16 units in JS and bytes in Go, so the probe drops them here. café 日本語 😀"]
+119-125 id "accent"
+  symbol accent flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+128-131 literal "é"
+128-131 expr "\"é\"" "\"é\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"é\""
+  numberIndex none
+  contextual none
+146-149 id "cjk"
+  symbol cjk flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+152-157 literal "日本語"
+152-157 expr "\"日本語\"" "\"日本語\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"日本語\""
+  numberIndex none
+  contextual none
+172-177 id "emoji"
+  symbol emoji flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+180-184 literal "😀"
+180-184 expr "\"😀\"" "\"😀\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"😀\""
+  numberIndex none
+  contextual none
+199-206 id "escaped"
+  symbol escaped flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+209-221 literal "é😀"
+209-221 expr "\"é\\u{1F600}\"" "\"é😀\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"é😀\""
+  numberIndex none
+  contextual none
+236-249 id "loneSurrogate"
+  symbol loneSurrogate flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+252-260 literal "\ud83d"
+252-260 expr "\"\\uD83D\"" "\"\ud83d\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"\ud83d\""
+  numberIndex none
+  contextual none
+275-279 id "café"
+  symbol café flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+282-283 literal "1"
+282-283 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+298-302 id "tmpl"
+  symbol tmpl flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+305-321 expr "`日本語${accent}😀`" "\"日本語é😀\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"日本語é😀\""
+  numberIndex none
+  contextual none
+305-311 template "日本語" raw "日本語"
+311-317 id "accent"
+  symbol accent flags=Variable decls=1 value=true parent="<ROOT>/src/unicode"
+  undefined=false arguments=false merged=true
+311-317 expr "accent" "\"é\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"é\""
+  numberIndex none
+  contextual none
+317-321 template "😀" raw "😀"
+== src/view.tsx
+18-23 id "React"
+  symbol React flags=ValueModule decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+36-49 id "createElement"
+  symbol createElement flags=Function decls=1 value=true parent=React
+  undefined=false arguments=false merged=true
+50-53 id "tag"
+  symbol tag flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+64-69 id "props"
+  symbol props flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+84-92 id "children"
+  symbol children flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+94-99 id "Array"
+  symbol Array flags=Variable|Interface decls=2 value=true parent=-
+  undefined=false arguments=false merged=true
+127-135 id "Fragment"
+  symbol Fragment flags=Variable decls=1 value=true parent=React
+  undefined=false arguments=false merged=true
+166-169 id "JSX"
+  symbol JSX flags=NamespaceModule decls=1 value=false parent=-
+  undefined=false arguments=false merged=true
+183-200 id "IntrinsicElements"
+  symbol IntrinsicElements flags=Interface decls=1 value=false parent=JSX
+  undefined=false arguments=false merged=true
+205-210 id "frame"
+  symbol frame flags=Property decls=1 value=true parent=IntrinsicElements
+  undefined=false arguments=false merged=true
+214-218 id "Size"
+  symbol Size flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+229-232 id "Key"
+  symbol Key flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+243-251 id "children"
+  symbol children flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+267-276 id "textlabel"
+  symbol textlabel flags=Property decls=1 value=true parent=IntrinsicElements
+  undefined=false arguments=false merged=true
+280-284 id "Text"
+  symbol Text flags=Property|Optional decls=1 value=true parent=__type
+  undefined=false arguments=false merged=true
+308-313 id "attrs"
+  symbol attrs flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+316-327 expr "{ Size: 1 }" "{ Size: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ Size: number; }"
+  numberIndex none
+  contextual none
+318-322 id "Size"
+  symbol Size flags=Property decls=1 value=true parent=__object
+  undefined=false arguments=false merged=true
+324-325 literal "1"
+324-325 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+342-349 id "element"
+  symbol element flags=Variable decls=1 value=true parent="<ROOT>/src/view"
+  undefined=false arguments=false merged=true
+352-506 expr "(\n\t<frame {...attrs} Key=\"k\">\n\t\ttext wit" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual none
+355-504 expr "<frame {...attrs} Key=\"k\">\n\t\ttext with  " "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual none
+356-361 id "frame"
+  symbol none
+356-361 expr "frame" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual "any"
+366-371 id "attrs"
+  symbol attrs flags=Variable decls=1 value=true parent=-
+  undefined=false arguments=false merged=true
+366-371 expr "attrs" "{ Size: number; }" flags=Object symbol=__object
+  tuple=false arrayLike=false calls=0 constructs=0 props=1
+  nonOptional "{ Size: number; }"
+  numberIndex none
+  contextual "any"
+373-376 id "Key"
+  symbol Key flags=Property decls=1 value=true parent=__jsxAttributes
+  undefined=false arguments=false merged=true
+377-380 literal "k"
+384-405 jsxtext "\n\t\ttext with   spaces\n\t\t" ws=false
+406-413 literal "value"
+406-413 expr "\"value\"" "\"value\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"value\""
+  numberIndex none
+  contextual none
+417-417 jsxtext "\n\t\t" ws=true
+417-445 expr "<textlabel Text={`t${1}`} />" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual none
+418-427 id "textlabel"
+  symbol none
+418-427 expr "textlabel" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual "any"
+428-432 id "Text"
+  symbol Text flags=Property decls=1 value=true parent=__jsxAttributes
+  undefined=false arguments=false merged=true
+434-441 expr "`t${1}`" "\"t1\"" flags=StringLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=15
+  nonOptional "\"t1\""
+  numberIndex none
+  contextual none
+434-438 template "t" raw "t"
+438-439 literal "1"
+438-439 expr "1" "1" flags=NumberLiteral symbol=-
+  tuple=false arrayLike=false calls=0 constructs=0 props=2
+  nonOptional "1"
+  numberIndex none
+  contextual none
+439-441 template "" raw ""
+448-448 jsxtext "\n\t\t" ws=true
+448-473 expr "<>\n\t\t\t<textlabel />\n\t\t</>" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual none
+454-454 jsxtext "\n\t\t\t" ws=true
+454-467 expr "<textlabel />" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual none
+455-464 id "textlabel"
+  symbol none
+455-464 expr "textlabel" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual "any"
+470-470 jsxtext "\n\t\t" ws=true
+476-496 jsxtext "\n\t\t&amp; entity &#65;\n\t" ws=false
+498-503 id "frame"
+  symbol none
+498-503 expr "frame" "any" flags=Any symbol=-
+  tuple=false arrayLike=true calls=0 constructs=0 props=0
+  nonOptional "any"
+  numberIndex none
+  contextual none

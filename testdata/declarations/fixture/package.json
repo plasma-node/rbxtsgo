@@ -1,0 +1,1 @@
+{ "name": "@scope/declarations-fixture", "version": "0.0.0", "private": true, "main": "out/init.lua", "types": "out/index.d.ts" }

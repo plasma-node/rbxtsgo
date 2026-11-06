@@ -1,0 +1,7 @@
+{
+	"name": "@rbxts/exports-pkg",
+	"version": "1.0.0",
+	"main": "main.lua",
+	"types": "main.d.ts",
+	"exports": { ".": { "types": "./fromExports.d.ts", "default": "./fromExports.lua" } }
+}

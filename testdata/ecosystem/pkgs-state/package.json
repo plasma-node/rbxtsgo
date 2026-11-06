@@ -1,0 +1,20 @@
+{
+	"name": "eco-pkgs-state",
+	"version": "0.0.0",
+	"private": true,
+	"dependencies": {
+		"@rbxts/compiler-types": "3.0.0-types.0", "@rbxts/types": "1.0.961", "@rbxts/services": "1.6.0",
+		"@rbxts/charm": "0.11.1",
+		"@rbxts/flipper": "2.0.1",
+		"@rbxts/fusion": "0.2.0",
+		"@rbxts/immut": "0.4.4-ts.0",
+		"@rbxts/jecs": "0.11.0",
+		"@rbxts/matter": "0.8.5",
+		"@rbxts/react": "17.3.13-ts.1",
+		"@rbxts/react-reflex": "0.3.7",
+		"@rbxts/reflex": "4.3.1",
+		"@rbxts/ripple": "0.10.2",
+		"@rbxts/rodux": "3.0.0-ts.3",
+		"@rbxts/spr": "2.1.1"
+	}
+}

@@ -1,0 +1,76 @@
+name: Release
+
+# Runs when a version tag such as v0.1.0 is pushed. It builds the binaries for six targets and attaches one zip
+# per target to a GitHub release. It uses only the GITHUB_TOKEN that GitHub gives every run: no other secrets.
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - { goos: windows, goarch: amd64, os_name: windows, arch_name: x86_64, exe: ".exe" }
+          - { goos: windows, goarch: arm64, os_name: windows, arch_name: aarch64, exe: ".exe" }
+          - { goos: darwin, goarch: amd64, os_name: macos, arch_name: x86_64, exe: "" }
+          - { goos: darwin, goarch: arm64, os_name: macos, arch_name: aarch64, exe: "" }
+          - { goos: linux, goarch: amd64, os_name: linux, arch_name: x86_64, exe: "" }
+          - { goos: linux, goarch: arm64, os_name: linux, arch_name: aarch64, exe: "" }
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Fetch and patch the pinned TypeScript
+        run: bash scripts/setup-third-party.sh
+
+      - name: Build
+        env:
+          CGO_ENABLED: "0"
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+        run: |
+          mkdir -p dist/pkg
+          go build -trimpath -ldflags "-s -w" -o "dist/pkg/rbxtsgo${{ matrix.exe }}" ./cmd/rbxtsgo
+
+      - name: Zip
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          name="rbxtsgo-${version}-${{ matrix.os_name }}-${{ matrix.arch_name }}"
+          cp LICENSE THIRD_PARTY_NOTICES.md dist/pkg/
+          # The binary goes first: Aftman installs the first file when the tool name does not match exactly.
+          (cd dist/pkg && zip -X "../${name}.zip" "rbxtsgo${{ matrix.exe }}" LICENSE THIRD_PARTY_NOTICES.md)
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: zip-${{ matrix.os_name }}-${{ matrix.arch_name }}
+          path: dist/*.zip
+          if-no-files-found: error
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          pattern: zip-*
+          merge-multiple: true
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ls -l dist
+          gh release create "$GITHUB_REF_NAME" dist/*.zip --repo "$GITHUB_REPOSITORY" --title "$GITHUB_REF_NAME" --generate-notes

@@ -1,0 +1,158 @@
+{
+	"src/shared/exportEqualsAndMore.ts": [
+		{
+			"source": "ts",
+			"code": 2309,
+			"id": -1,
+			"category": "error",
+			"message": "An export assignment cannot be used in a module with other exported elements.",
+			"file": "src/shared/exportEqualsAndMore.ts",
+			"line": 2,
+			"column": 0
+		}
+	],
+	"src/shared/exportsName.ts": [
+		{
+			"source": "ts",
+			"code": 2441,
+			"id": -1,
+			"category": "error",
+			"message": "Duplicate identifier 'exports'. Compiler reserves name 'exports' in top level scope of a module.",
+			"file": "src/shared/exportsName.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/shared/importTypeOfRequire.ts": [
+		{
+			"source": "ts",
+			"code": 1361,
+			"id": -1,
+			"category": "error",
+			"message": "'fn' cannot be used as a value because it was imported using 'import type'.",
+			"file": "src/shared/importTypeOfRequire.ts",
+			"line": 1,
+			"column": 6
+		}
+	],
+	"src/shared/requireTs.ts": [
+		{
+			"source": "ts",
+			"code": 5097,
+			"id": -1,
+			"category": "error",
+			"message": "An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.",
+			"file": "src/shared/requireTs.ts",
+			"line": 0,
+			"column": 24
+		}
+	],
+	"src/shared/starCallable.ts": [
+		{
+			"source": "ts",
+			"code": 2497,
+			"id": -1,
+			"category": "error",
+			"message": "This module can only be referenced with ECMAScript imports/exports by turning on the 'esModuleInterop' flag and referencing its default export.",
+			"file": "src/shared/starCallable.ts",
+			"line": 0,
+			"column": 20
+		}
+	],
+	"src/shared/missingDefault.ts": [
+		{
+			"source": "ts",
+			"code": 1192,
+			"id": -1,
+			"category": "error",
+			"message": "Module '\"<ROOT>/src/shared/noDefault\"' has no default export.",
+			"file": "src/shared/missingDefault.ts",
+			"line": 0,
+			"column": 7
+		}
+	],
+	"src/shared/typeOnlyUsed.ts": [
+		{
+			"source": "ts",
+			"code": 1361,
+			"id": -1,
+			"category": "error",
+			"message": "'named' cannot be used as a value because it was imported using 'import type'.",
+			"file": "src/shared/typeOnlyUsed.ts",
+			"line": 1,
+			"column": 6
+		}
+	],
+	"src/shared/neverTarget.ts": [
+		{
+			"source": "ts",
+			"code": 2345,
+			"id": -1,
+			"category": "error",
+			"message": "Argument of type 'string' is not assignable to parameter of type 'never'.",
+			"file": "src/shared/neverTarget.ts",
+			"line": 2,
+			"column": 4
+		}
+	],
+	"src/shared/overloadErrors.ts": [
+		{
+			"source": "ts",
+			"code": 2769,
+			"id": -1,
+			"category": "error",
+			"message": "No overload matches this call.",
+			"file": "src/shared/overloadErrors.ts",
+			"line": 3,
+			"column": 0
+		}
+	],
+	"src/shared/requireName.ts": [
+		{
+			"source": "ts",
+			"code": 2441,
+			"id": -1,
+			"category": "error",
+			"message": "Duplicate identifier 'require'. Compiler reserves name 'require' in top level scope of a module.",
+			"file": "src/shared/requireName.ts",
+			"line": 0,
+			"column": 9
+		}
+	],
+	"src/shared/starClass.ts": [
+		{
+			"source": "ts",
+			"code": 2497,
+			"id": -1,
+			"category": "error",
+			"message": "This module can only be referenced with ECMAScript imports/exports by turning on the 'esModuleInterop' flag and referencing its default export.",
+			"file": "src/shared/starClass.ts",
+			"line": 0,
+			"column": 23
+		}
+	],
+	"src/shared/topLevelAwait.ts": [
+		{
+			"source": "ts",
+			"code": 1378,
+			"id": -1,
+			"category": "error",
+			"message": "Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', 'nodenext', or 'preserve', and the 'target' option is set to 'es2017' or higher.",
+			"file": "src/shared/topLevelAwait.ts",
+			"line": 1,
+			"column": 14
+		}
+	],
+	"src/shared/umdGlobal.ts": [
+		{
+			"source": "ts",
+			"code": 2304,
+			"id": -1,
+			"category": "error",
+			"message": "Cannot find name 'Roact'.",
+			"file": "src/shared/umdGlobal.ts",
+			"line": 0,
+			"column": 6
+		}
+	]
+}

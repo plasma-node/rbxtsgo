@@ -1,0 +1,9 @@
+{
+	"sources": [
+		"src/shared/a_ok.ts",
+		"src/shared/b_transform_error.ts",
+		"src/shared/c_type_error.ts",
+		"src/shared/d_transform_error.ts"
+	],
+	"outputs": []
+}

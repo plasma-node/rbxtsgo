@@ -1,0 +1,10 @@
+src/lib.ts
+src/shared/viaBaseUrl.ts
+node_modules/@rbxts/exportspkg/lib/deep.d.ts
+node_modules/@rbxts/brokenpkg/index.d.ts
+src/aliases.ts
+src/augment.ts
+src/ignored.ts
+src/iteration.ts
+node_modules/@rbxts/exportspkg/index.d.ts
+node_modules/@rbxts/types/index.d.ts

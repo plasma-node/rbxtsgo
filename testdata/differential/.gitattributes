@@ -1,0 +1,3 @@
+# Goldens are compiler output: never normalize line endings.
+golden/** -text
+fixtures/** text eol=lf

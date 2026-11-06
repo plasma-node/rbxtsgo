@@ -1,0 +1,12 @@
+{
+	"name": "luau-golden-generator",
+	"private": true,
+	"description": "Generates byte-exact golden pairs (serialized AST + rendered Luau) from the real npm @roblox-ts/luau-ast. Dev tooling only.",
+	"scripts": {
+		"generate": "node generate.js",
+		"check": "node generate.js --check"
+	},
+	"dependencies": {
+		"@roblox-ts/luau-ast": "2.0.0"
+	}
+}

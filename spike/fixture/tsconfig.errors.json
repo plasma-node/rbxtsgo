@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"rootDir": ".",
+		"incremental": false,
+		"tsBuildInfoFile": null,
+		"noEmit": true
+	},
+	"include": ["errors/**/*"]
+}

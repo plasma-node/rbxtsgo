@@ -1,0 +1,24 @@
+{
+	"<whole>": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/shared/b_transform_error.ts",
+			"line": 2,
+			"column": 21
+		},
+		{
+			"source": "ts",
+			"code": 2322,
+			"id": -1,
+			"category": "error",
+			"message": "Type 'number' is not assignable to type 'string'.",
+			"file": "src/shared/c_type_error.ts",
+			"line": 0,
+			"column": 13
+		}
+	]
+}

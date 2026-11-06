@@ -1,0 +1,4 @@
+errors/plainError.ts(1,14): TS2322: Type 'string' is not assignable to type 'number'.
+errors/plainError.ts(6,1): TS2578: Unused '@ts-expect-error' directive.
+errors/reservedExports.ts(1,14): TS2441: Duplicate identifier 'exports'. Compiler reserves name 'exports' in top level scope of a module.
+errors/reservedRequire.ts(1,7): TS2441: Duplicate identifier 'require'. Compiler reserves name 'require' in top level scope of a module.

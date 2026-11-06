@@ -1,0 +1,26 @@
+diff --git a/tsc/internal/printer/printer.go b/tsc/internal/printer/printer.go
+index a27452d..8ebcb16 100644
+--- a/tsc/internal/printer/printer.go
++++ b/tsc/internal/printer/printer.go
+@@ -50,6 +50,11 @@ type PrinterOptions struct {
+ 	// StripInternal                 bool
+ 	PreserveSourceNewlines        bool
+ 	TerminateUnterminatedLiterals bool // !!!
++	// rbxtsgo: a parse tree already spells every parenthesis it needs, as a ParenthesizedExpression. TS 5.5.3's printer
++	// adds none to it, while this one compares precedences and writes (a!).b and (new A)?.c for a!.b and new A?.c. The
++	// reprint for transformer plugins must match TS 5.5.3's text, so with this set, only synthesized expressions get
++	// parentheses here. The caller adds any that a synthesized parent needs around a parse tree child.
++	KeepParseTreeParentheses bool
+ }
+ 
+ type PrintHandlers struct {
+@@ -3220,7 +3225,8 @@ func (p *Printer) emitExpressionNoASI(node *ast.Expression, precedence ast.Opera
+ }
+ 
+ func (p *Printer) emitExpression(node *ast.Expression, precedence ast.OperatorPrecedence) {
+-	parens := ast.GetExpressionPrecedence(ast.SkipPartiallyEmittedExpressions(node)) < precedence
++	parens := ast.GetExpressionPrecedence(ast.SkipPartiallyEmittedExpressions(node)) < precedence &&
++		!(p.Options.KeepParseTreeParentheses && !ast.NodeIsSynthesized(node))
+ 	if parens {
+ 		p.writePunctuation("(")
+ 	}

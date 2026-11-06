@@ -1,0 +1,35 @@
+{
+	"sources": [
+		"src/afterComments.ts",
+		"src/assignToType.ts",
+		"src/computedName.ts",
+		"src/contexts.ts",
+		"src/destructure.ts",
+		"src/elementAccess.ts",
+		"src/generatorYield.ts",
+		"src/implementsInterface.ts",
+		"src/interfaceSetter.ts",
+		"src/jsxText.tsx",
+		"src/keyofAccessor.ts",
+		"src/mappedKeys.ts",
+		"src/mixedCoalesce.ts",
+		"src/nestedPostfix.ts",
+		"src/partialOfClass.ts",
+		"src/postfixValue.ts",
+		"src/prefixIncrement.ts",
+		"src/privateName.ts",
+		"src/propertyOverride.ts",
+		"src/readSetterOnly.ts",
+		"src/robloxDiagnostic.ts",
+		"src/stringName.ts",
+		"src/syntaxError.ts",
+		"src/typeInBody.ts",
+		"src/unionField.ts",
+		"src/usesDeclared.ts",
+		"src/writeGetterOnly.ts"
+	],
+	"outputs": [
+		"propertyOverride.luau",
+		"syntaxError.luau"
+	]
+}

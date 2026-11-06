@@ -1,0 +1,13 @@
+* text=auto
+*.sh text eol=lf
+*.patch -text
+*.go text eol=lf
+# Test data and shipped runtime files stay byte-exact on every platform.
+tsbridge/testdata/** -text
+project/**/testdata/** -text
+project/include/* -text
+testdata/declarations/** -text
+watch/testdata/** -text
+# Fixtures that tests compare byte for byte with goldens made from LF files.
+spike/fixture/** text eol=lf
+transformer/testdata/syntax/** text eol=lf

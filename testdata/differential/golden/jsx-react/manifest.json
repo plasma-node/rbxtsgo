@@ -1,0 +1,8 @@
+{
+	"sources": [
+		"src/components.tsx"
+	],
+	"outputs": [
+		"components.luau"
+	]
+}

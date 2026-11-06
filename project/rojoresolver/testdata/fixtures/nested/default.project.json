@@ -1,0 +1,1 @@
+{ "name": "outer", "tree": { "$className": "Folder", "subproject": { "$path": "sub" }, "searched": { "$path": "search" } } }

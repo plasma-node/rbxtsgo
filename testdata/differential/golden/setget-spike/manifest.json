@@ -1,0 +1,15 @@
+{
+	"sources": [
+		"src/client/app.tsx",
+		"src/server/main.server.ts",
+		"src/shared/types.ts",
+		"src/shared/util.ts",
+		"src/shared/augment.ts"
+	],
+	"outputs": [
+		"client/app.luau",
+		"shared/augment.luau",
+		"shared/types.luau",
+		"shared/util.luau"
+	]
+}

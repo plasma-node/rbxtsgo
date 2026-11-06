@@ -1,0 +1,15 @@
+{
+	"configs": ["game/default.project.json", "model/default.project.json", "nested/default.project.json", "multi/b.project.json", "does-not-exist.project.json"],
+	"synthetic": ["pkgdir/out", "game/modules/@rbxts", "does/not/exist"],
+	"find": ["game", "model", "multi", "none"],
+	"types": ["a.lua", "a.luau", "a.server.lua", "a.client.lua", "a.server.luau", "a.client.luau", "a.foo.lua", "a.json", "a.server.json", "a.toml", "a.txt", "a", "init.lua", "init.server.lua", ".lua", "a.d.ts"],
+	"lookups": [
+		"game/out/server/main.server.lua", "game/out/server/init.server.lua", "game/out/server/missing.lua", "game/out/server", "game/out/client/main.client.lua", "game/out/client/init.client.luau",
+		"game/out/shared/init.lua", "game/out/shared/mod.lua", "game/out/shared/mod.luau", "game/out/shared/deep/thing.lua", "game/out/shared", "game/out/first/a.lua",
+		"game/modules/@rbxts/pkg/out/init.lua", "game/modules/@rbxts/pkg/out/other.json", "game/include/RuntimeLib.lua", "game/assets/thing.lua", "game/assets/thing.luau", "game/assets/data.json", "game/assets/same.luau", "game/assets/other.lua",
+		"game/overlap/a.lua", "game/overlap/inner/b.lua", "game/overlap/inner", "game/numbered/zeta/x.lua", "game/numbered/ten/x.lua", "game/numbered/two/x.lua", "game/numbered/alpha/x.toml",
+		"game/does/not/exist/x.lua", "game/out/stored/x.lua", "game/out/gui/x.lua", "game/out/pack/x.lua", "game/outside.lua", "game/out/shared/x.y.lua", "game/out/shared/x.server.json", "game/out/shared/x.txt",
+		"model/out/init.lua", "model/out/inner/x.lua", "model/out/other/init.server.lua", "model/out", "nested/sub/out/a.lua", "nested/search/plain/dir/c.lua", "nested/search/pkg/lib/d.lua", "nested/search/loose.lua",
+		"pkgdir/out/sub/init.lua", "pkgdir/out/a.lua", "pkgdir/out"
+	]
+}

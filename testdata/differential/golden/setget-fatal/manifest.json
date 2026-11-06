@@ -1,0 +1,11 @@
+{
+	"sources": [
+		"src/compoundNew.ts",
+		"src/compoundNoGetter.ts",
+		"src/fine.ts",
+		"src/firstInOrder.ts",
+		"src/postfixNew.ts",
+		"src/postfixNoGetter.ts"
+	],
+	"outputs": []
+}

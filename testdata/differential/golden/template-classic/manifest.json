@@ -1,0 +1,12 @@
+{
+	"sources": [
+		"src/client/main.client.ts",
+		"src/shared/module.ts",
+		"src/server/main.server.ts"
+	],
+	"outputs": [
+		"client/main.client.luau",
+		"server/main.server.luau",
+		"shared/module.luau"
+	]
+}

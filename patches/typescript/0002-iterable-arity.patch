@@ -1,0 +1,15 @@
+diff --git a/tsc/internal/checker/checker.go b/tsc/internal/checker/checker.go
+index b639d48..03355ba 100644
+--- a/tsc/internal/checker/checker.go
++++ b/tsc/internal/checker/checker.go
+@@ -6090,7 +6090,9 @@ func (c *Checker) getIteratedTypeOrElementType(use IterationUse, inputType *Type
+ 		}
+ 		return nil
+ 	}
+-	iterableExists := c.getGlobalIterableType() != c.emptyGenericType
++	// rbxtsgo: compiler-types declares Iterable<T> with one type parameter, so the arity 3 lookup fails.
++	// TS 5.9 decided this from the target, not the arity. Without this, for-of over Map, Set and Iterable is an error.
++	iterableExists := c.getGlobalIterableType() != c.emptyGenericType || c.getGlobalSymbol("Iterable", ast.SymbolFlagsType, nil) != nil
+ 	possibleOutOfBounds := c.compilerOptions.NoUncheckedIndexedAccess == core.TSTrue && use&IterationUsePossiblyOutOfBounds != 0
+ 	if iterableExists || allowAsyncIterables {
+ 		iterationTypes := c.getIterationTypesOfIterable(inputType, use, core.IfElse(iterableExists, errorNode, nil))

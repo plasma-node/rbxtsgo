@@ -1,0 +1,16 @@
+{
+	"name": "rbxtsgo-spike-fixture",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Public, from-scratch fixture for the rbxtsgo tsgo feasibility spike.",
+	"dependencies": {
+		"@rbxts/charm": "0.11.1",
+		"@rbxts/compiler-types": "3.0.0-types.0",
+		"@rbxts/janitor": "1.18.3-ts.0",
+		"@rbxts/react": "17.3.13-ts.1",
+		"@rbxts/react-roblox": "17.3.13-ts.1",
+		"@rbxts/services": "1.6.0",
+		"@rbxts/t": "3.2.1",
+		"@rbxts/types": "1.0.961"
+	}
+}

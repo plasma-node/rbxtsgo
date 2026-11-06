@@ -1,0 +1,143 @@
+[
+	{
+		"name": "upstream-tests",
+		"tsconfig": ".scratch/diff/tests/tsconfig.json",
+		"mode": "perfile",
+		"options": {
+			"allowCommentDirectives": true,
+			"optimizedLoops": true
+		}
+	},
+	{
+		"name": "fixtures",
+		"tsconfig": ".scratch/diff/fixtures/tsconfig.json",
+		"mode": "perfile",
+		"options": {}
+	},
+	{
+		"name": "jsx-react",
+		"tsconfig": ".scratch/diff/jsx-react/tsconfig.json",
+		"mode": "perfile",
+		"options": {}
+	},
+	{
+		"name": "union-isolated",
+		"tsconfig": ".scratch/diff/union-isolated/tsconfig.json",
+		"mode": "whole",
+		"options": {}
+	},
+	{
+		"name": "whole-errors",
+		"tsconfig": ".scratch/diff/whole-errors/tsconfig.json",
+		"mode": "whole",
+		"options": {}
+	},
+	{
+		"name": "spike-fixture",
+		"tsconfig": ".scratch/diff/spike-fixture/tsconfig.json",
+		"mode": "perfile",
+		"options": {}
+	},
+	{
+		"name": "setget-core",
+		"tsconfig": ".scratch/diff/setget-core/tsconfig.json",
+		"mode": "whole",
+		"options": {
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "setget-errors",
+		"tsconfig": ".scratch/diff/setget-errors/tsconfig.json",
+		"mode": "perfile",
+		"options": {
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "setget-fatal",
+		"tsconfig": ".scratch/diff/setget-fatal/tsconfig.json",
+		"mode": "plugin-exit",
+		"options": {}
+	},
+	{
+		"name": "setget-prefix",
+		"tsconfig": ".scratch/diff/setget-prefix/tsconfig.json",
+		"mode": "whole",
+		"options": {
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "setget-off",
+		"tsconfig": ".scratch/diff/setget-off/tsconfig.json",
+		"mode": "whole",
+		"options": {
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "setget-upstream",
+		"tsconfig": ".scratch/diff/setget-upstream/tsconfig.json",
+		"mode": "whole",
+		"options": {
+			"allowCommentDirectives": true,
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "setget-fixtures",
+		"tsconfig": ".scratch/diff/setget-fixtures/tsconfig.json",
+		"mode": "perfile",
+		"options": {
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "setget-spike",
+		"tsconfig": ".scratch/diff/setget-spike/tsconfig.json",
+		"mode": "perfile",
+		"options": {
+			"writeTransformedFiles": true
+		}
+	},
+	{
+		"name": "ts7-core-classic",
+		"tsconfig": ".scratch/diff/ts7-core-classic/tsconfig.json",
+		"mode": "whole",
+		"options": {}
+	},
+	{
+		"name": "ts7-core-ts7",
+		"tsconfig": ".scratch/diff/ts7-core-ts7/tsconfig.json",
+		"mode": "whole",
+		"options": {},
+		"golden": "ts7-core-classic"
+	},
+	{
+		"name": "ts7-errors-classic",
+		"tsconfig": ".scratch/diff/ts7-errors-classic/tsconfig.json",
+		"mode": "perfile",
+		"options": {}
+	},
+	{
+		"name": "ts7-errors-ts7",
+		"tsconfig": ".scratch/diff/ts7-errors-ts7/tsconfig.json",
+		"mode": "perfile",
+		"options": {},
+		"golden": "ts7-errors-classic"
+	},
+	{
+		"name": "template-classic",
+		"tsconfig": ".scratch/diff/template-classic/tsconfig.json",
+		"mode": "whole",
+		"options": {}
+	},
+	{
+		"name": "template-ts7",
+		"tsconfig": ".scratch/diff/template-ts7/tsconfig.json",
+		"mode": "whole",
+		"options": {},
+		"golden": "template-classic"
+	}
+]

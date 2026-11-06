@@ -1,0 +1,11 @@
+# name | repository | commit | extra flags for both compilers. Licenses were checked on GitHub: all MIT except frrazer-boilerplate (Unlicense).
+# Run: bash scripts/validate-ecosystem.sh projects
+slither | https://github.com/littensy/slither | 56545f14df4d25d3df7e71fbaeff7b21cf8798a7 |
+charm-example | https://github.com/littensy/charm-example | 07db0be6e17b17edb658027fac7e49230169305f |
+rbxts-react-example | https://github.com/littensy/rbxts-react-example | 9cf7b2b2bab96638e10d567cf2efaf835fb251c7 |
+pretty-react-hooks | https://github.com/littensy/pretty-react-hooks | d8fe499f938a1701e4e553879db25f2663b40988 | --type package
+toucan | https://github.com/OverlineJunior/toucan | 5fafd068c4939077ac23ecd74cce080693fc6663 | --type package
+rbx-log | https://github.com/roblox-aurora/rbx-log | b1dd9edb3c0faa6a3d851e50c81d529abb3df8ad | --type package
+SwordfightTS | https://github.com/OverDsh/SwordfightTS | ecc9fd7c5a82e3a782904b5ed3a051269717d2ae |
+roblox-ts-demo | https://github.com/DestinEcarma/roblox-ts-demo | 87001f8113619b42f5ee50a6cd8976b15a607b11 |
+frrazer-boilerplate | https://github.com/frrazer/roblox-ts-game-boilerplate | 218596e0a7c240b84d1ef2ffa3d0d47894634a82 |

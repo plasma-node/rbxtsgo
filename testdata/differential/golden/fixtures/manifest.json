@@ -1,0 +1,28 @@
+{
+	"sources": [
+		"src/shared/a_classes.tsx",
+		"src/shared/a_lone_surrogate_values.ts",
+		"src/shared/a_union_call_macro_first.ts",
+		"src/shared/comments_only.ts",
+		"src/shared/empty.ts",
+		"src/shared/eval_order.ts",
+		"src/shared/exports_order.ts",
+		"src/shared/export_let.ts",
+		"src/shared/strings_unicode.ts",
+		"src/shared/macros_mix.ts",
+		"src/shared/union_macros.ts"
+	],
+	"outputs": [
+		"shared/a_classes.luau",
+		"shared/a_lone_surrogate_values.luau",
+		"shared/a_union_call_macro_first.luau",
+		"shared/comments_only.luau",
+		"shared/empty.luau",
+		"shared/eval_order.luau",
+		"shared/export_let.luau",
+		"shared/exports_order.luau",
+		"shared/macros_mix.luau",
+		"shared/strings_unicode.luau",
+		"shared/union_macros.luau"
+	]
+}

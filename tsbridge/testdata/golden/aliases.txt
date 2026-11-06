@@ -1,0 +1,16 @@
+src/aliases.ts	defaultUsed	true
+src/aliases.ts	renamedUnused	false
+src/aliases.ts	defaultUnused	false
+src/aliases.ts	OnlyType	false
+src/aliases.ts	unusedValue	false
+src/aliases.ts	usedValue	true
+src/aliases.ts	UsedAsTypeOnly	false
+src/aliases.ts	ExplicitTypeOnly	false
+src/aliases.ts	InlineTypeOnly	false
+src/aliases.ts	usedAgain	true
+src/aliases.ts	* as namespaceUsed	true
+src/aliases.ts	* as namespaceUnused	false
+src/aliases.ts	viaBaseUrl	true
+src/aliases.ts	fromDeep	true
+src/aliases.ts	fine	true
+src/iteration.ts	makeMap	true

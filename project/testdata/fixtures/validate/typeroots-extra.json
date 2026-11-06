@@ -1,0 +1,1 @@
+{ "compilerOptions": { "allowSyntheticDefaultImports": true, "module": "commonjs", "moduleResolution": "Node", "noLib": true, "moduleDetection": "force", "strict": true, "target": "ESNext", "typeRoots": ["other", "node_modules/@rbxts"], "rootDir": "src", "outDir": "out" }, "include": ["src/**/*"] }

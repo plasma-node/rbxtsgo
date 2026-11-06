@@ -1,0 +1,37 @@
+[[90m12:46:12 PM[0m] Starting compilation in watch mode...
+
+[[90m12:46:14 PM[0m] Found 0 errors. Watching for file changes.
+
+[[90m12:46:20 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:46:21 PM[0m] Found 0 errors. Watching for file changes.
+
+[[90m12:46:23 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/shared/a.ts[0m:[93m1[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType 'number' is not assignable to type 'string'.
+
+[7m1[0m export const a: string = 2;
+[7m [0m [91m             ~[0m
+
+[[90m12:46:25 PM[0m] Found 1 error. Watching for file changes.
+
+[[90m12:46:27 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:46:28 PM[0m] Found 0 errors. Watching for file changes.
+
+[[90m12:46:30 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:46:31 PM[0m] Found 0 errors. Watching for file changes.
+
+[[90m12:46:33 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:46:34 PM[0m] Found 0 errors. Watching for file changes.
+
+[[90m12:46:36 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:46:38 PM[0m] Found 0 errors. Watching for file changes.
+
+[[90m12:46:39 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m12:46:41 PM[0m] Found 0 errors. Watching for file changes.
+

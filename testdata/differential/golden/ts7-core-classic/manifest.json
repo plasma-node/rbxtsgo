@@ -1,0 +1,40 @@
+{
+	"sources": [
+		"src/shared/defaultAsName.ts",
+		"src/shared/useDefault.ts",
+		"src/shared/useStar.ts",
+		"src/shared/defaultExport.ts",
+		"src/shared/elision.ts",
+		"src/shared/imports.ts",
+		"src/shared/reexports.ts",
+		"src/shared/useReexports.ts",
+		"src/shared/useRequire.ts",
+		"src/shared/effect.ts",
+		"src/shared/viaPaths.ts",
+		"src/shared/exportEqualsFn.ts",
+		"src/shared/exportEqualsClass.ts",
+		"src/shared/exportEqualsNamespace.ts",
+		"src/shared/exportEqualsObject.ts",
+		"src/shared/services.ts",
+		"src/shared/usePackage.ts"
+	],
+	"outputs": [
+		"shared/defaultAsName.luau",
+		"shared/defaultExport.luau",
+		"shared/effect.luau",
+		"shared/elision.luau",
+		"shared/exportEqualsClass.luau",
+		"shared/exportEqualsFn.luau",
+		"shared/exportEqualsNamespace.luau",
+		"shared/exportEqualsObject.luau",
+		"shared/imports.luau",
+		"shared/reexports.luau",
+		"shared/services.luau",
+		"shared/useDefault.luau",
+		"shared/usePackage.luau",
+		"shared/useReexports.luau",
+		"shared/useRequire.luau",
+		"shared/useStar.luau",
+		"shared/viaPaths.luau"
+	]
+}

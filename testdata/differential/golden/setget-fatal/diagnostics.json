@@ -1,0 +1,62 @@
+{
+	"src/compoundNew.ts": [
+		{
+			"source": "plugin",
+			"code": 1,
+			"id": -1,
+			"category": "error",
+			"message": "[rbxts-transformer-setget]: Cannot compile a compound assignment with a new expression inside: new C().v += 1\n[rbxts-transformer-setget]: Suggestion: extract new expression into a variable.",
+			"file": "",
+			"line": -1,
+			"column": -1
+		}
+	],
+	"src/compoundNoGetter.ts": [
+		{
+			"source": "plugin",
+			"code": 1,
+			"id": -1,
+			"category": "error",
+			"message": "[rbxts-transformer-setget]: Required getter declaration of \"c.onlySet\" for compound assignment: c.onlySet += 1",
+			"file": "",
+			"line": -1,
+			"column": -1
+		}
+	],
+	"src/firstInOrder.ts": [
+		{
+			"source": "plugin",
+			"code": 1,
+			"id": -1,
+			"category": "error",
+			"message": "[rbxts-transformer-setget]: Required getter declaration of \"c.a\" for compound assignment: c.a += 1",
+			"file": "",
+			"line": -1,
+			"column": -1
+		}
+	],
+	"src/postfixNew.ts": [
+		{
+			"source": "plugin",
+			"code": 1,
+			"id": -1,
+			"category": "error",
+			"message": "[rbxts-transformer-setget]: Cannot compile a postfix unary expression with a new expression inside: new C().v--\n[rbxts-transformer-setget]: Suggestion: extract new expression into a variable.",
+			"file": "",
+			"line": -1,
+			"column": -1
+		}
+	],
+	"src/postfixNoGetter.ts": [
+		{
+			"source": "plugin",
+			"code": 1,
+			"id": -1,
+			"category": "error",
+			"message": "[rbxts-transformer-setget]: Required getter declaration of \"c.onlySet\" for postfix unary expression: c.onlySet++",
+			"file": "",
+			"line": -1,
+			"column": -1
+		}
+	]
+}

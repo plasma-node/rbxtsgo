@@ -1,0 +1,28 @@
+{
+	"sources": [
+		"src/basic.ts",
+		"src/comments.ts",
+		"src/compound.ts",
+		"src/inherit.ts",
+		"src/noAccessors.ts",
+		"src/objectLiteral.ts",
+		"src/shapes.ts",
+		"src/union.ts",
+		"src/shared/crossA.ts",
+		"src/shared/crossB.ts",
+		"src/shared/unicode.tsx"
+	],
+	"outputs": [
+		"basic.luau",
+		"comments.luau",
+		"compound.luau",
+		"inherit.luau",
+		"noAccessors.luau",
+		"objectLiteral.luau",
+		"shapes.luau",
+		"shared/crossA.luau",
+		"shared/crossB.luau",
+		"shared/unicode.luau",
+		"union.luau"
+	]
+}

@@ -1,0 +1,1 @@
+{ "compilerOptions": { "allowSyntheticDefaultImports": true, "module": "commonjs", "moduleResolution": "Node", "noLib": true, "moduleDetection": "auto", "strict": true, "typeRoots": ["node_modules/@rbxts"], "rootDir": "src", "outDir": "out" }, "include": ["src/**/*"] }

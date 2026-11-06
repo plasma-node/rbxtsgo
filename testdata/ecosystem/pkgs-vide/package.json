@@ -1,0 +1,10 @@
+{
+	"name": "eco-pkgs-vide",
+	"version": "0.0.0",
+	"private": true,
+	"dependencies": {
+		"@rbxts/compiler-types": "3.0.0-types.0", "@rbxts/types": "1.0.961", "@rbxts/services": "1.6.0",
+		"@rbxts/vide": "0.6.1",
+		"@rbxts/pretty-vide-utils": "0.0.5"
+	}
+}

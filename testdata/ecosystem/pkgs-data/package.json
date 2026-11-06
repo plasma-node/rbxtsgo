@@ -1,0 +1,18 @@
+{
+	"name": "eco-pkgs-data",
+	"version": "0.0.0",
+	"private": true,
+	"dependencies": {
+		"@rbxts/compiler-types": "3.0.0-types.0", "@rbxts/types": "1.0.961", "@rbxts/services": "1.6.0",
+		"@rbxts/cmdr": "1.12.1",
+		"@rbxts/gamejoy": "1.1.4",
+		"@rbxts/lapis": "0.3.8",
+		"@rbxts/net": "3.0.10",
+		"@rbxts/profile-store": "1.0.3",
+		"@rbxts/profileservice": "1.4.2",
+		"@rbxts/squash": "3.0.0-ts.0",
+		"@rbxts/testez": "0.4.2-ts.0",
+		"@rbxts/topbar-plus": "3.2.5",
+		"@rbxts/zone-plus": "3.2.0"
+	}
+}

@@ -1,0 +1,1042 @@
+{
+	"src/diagnostics/noMacroObjectSpread.2.tsx": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 45,
+			"category": "error",
+			"message": "Macro classes cannot be used in an object spread!\nSuggestion: Did you mean to use an array spread? `[ ...exp ]`",
+			"file": "src/diagnostics/noMacroObjectSpread.2.tsx",
+			"line": 8,
+			"column": 21
+		}
+	],
+	"src/diagnostics/noPrecedingJsxSpreadElement.tsx": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 55,
+			"category": "error",
+			"message": "JSX spread expression must come last in children!",
+			"file": "src/diagnostics/noPrecedingJsxSpreadElement.tsx",
+			"line": 3,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedFunctionGotMethod.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 57,
+			"category": "error",
+			"message": "Attempted to assign method where non-method was expected.",
+			"file": "src/diagnostics/expectedFunctionGotMethod.1.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedFunctionGotMethod.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 57,
+			"category": "error",
+			"message": "Attempted to assign method where non-method was expected.",
+			"file": "src/diagnostics/expectedFunctionGotMethod.2.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedFunctionGotMethod.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 57,
+			"category": "error",
+			"message": "Attempted to assign method where non-method was expected.",
+			"file": "src/diagnostics/expectedFunctionGotMethod.3.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedMethodGotFunction.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 56,
+			"category": "error",
+			"message": "Attempted to assign non-method where method was expected.",
+			"file": "src/diagnostics/expectedMethodGotFunction.1.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedMethodGotFunction.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 56,
+			"category": "error",
+			"message": "Attempted to assign non-method where method was expected.",
+			"file": "src/diagnostics/expectedMethodGotFunction.2.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedMethodGotFunction.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 56,
+			"category": "error",
+			"message": "Attempted to assign non-method where method was expected.",
+			"file": "src/diagnostics/expectedMethodGotFunction.3.ts",
+			"line": 7,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedMethodGotFunction.4.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 56,
+			"category": "error",
+			"message": "Attempted to assign non-method where method was expected.",
+			"file": "src/diagnostics/expectedMethodGotFunction.4.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/expectedMethodGotFunction.5.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 56,
+			"category": "error",
+			"message": "Attempted to assign non-method where method was expected.",
+			"file": "src/diagnostics/expectedMethodGotFunction.5.ts",
+			"line": 5,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noAny.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.1.ts",
+			"line": 1,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noAny.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.2.ts",
+			"line": 1,
+			"column": 7
+		},
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.2.ts",
+			"line": 1,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noAny.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.3.ts",
+			"line": 1,
+			"column": 7
+		},
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.3.ts",
+			"line": 1,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noAny.4.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.4.ts",
+			"line": 1,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noAny.5.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 12,
+			"category": "error",
+			"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+			"file": "src/diagnostics/noAny.5.ts",
+			"line": 1,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noArguments.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 26,
+			"category": "error",
+			"message": "`arguments` is not supported!",
+			"file": "src/diagnostics/noArguments.ts",
+			"line": 1,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noAsyncGeneratorFunctions.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 35,
+			"category": "error",
+			"message": "Async generator functions are not supported!",
+			"file": "src/diagnostics/noAsyncGeneratorFunctions.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noAwaitForOf.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 34,
+			"category": "error",
+			"message": "`await` is not supported in for-of loops!",
+			"file": "src/diagnostics/noAwaitForOf.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noBigInt.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 11,
+			"category": "error",
+			"message": "BigInt literals are not supported!",
+			"file": "src/diagnostics/noBigInt.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noClassMetamethods.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 3,
+			"category": "error",
+			"message": "Metamethods cannot be used in class definitions!",
+			"file": "src/diagnostics/noClassMetamethods.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noConstructorMacroWithoutNew.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 42,
+			"category": "error",
+			"message": "Cannot index a constructor macro without using the `new` operator!",
+			"file": "src/diagnostics/noConstructorMacroWithoutNew.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noDebuggerStatement.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 6,
+			"category": "error",
+			"message": "`debugger` is not supported!",
+			"file": "src/diagnostics/noDebuggerStatement.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noEnumMerging.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 18,
+			"category": "error",
+			"message": "Enum merging is not supported!",
+			"file": "src/diagnostics/noEnumMerging.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noEqualsEquals.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 16,
+			"category": "error",
+			"message": "operator `==` is not supported!\nSuggestion: Use `===` instead.",
+			"file": "src/diagnostics/noEqualsEquals.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noExclamationEquals.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 17,
+			"category": "error",
+			"message": "operator `!=` is not supported!\nSuggestion: Use `!==` instead.",
+			"file": "src/diagnostics/noExclamationEquals.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noExportAssignmentLet.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 24,
+			"category": "error",
+			"message": "Cannot use `export =` on a `let` variable!\nSuggestion: Use `const` instead.",
+			"file": "src/diagnostics/noExportAssignmentLet.ts",
+			"line": 1,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noForInStatement.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 4,
+			"category": "error",
+			"message": "for-in loop statements are not supported!",
+			"file": "src/diagnostics/noForInStatement.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noFunctionExpressionName.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 21,
+			"category": "error",
+			"message": "Function expression names are not supported!",
+			"file": "src/diagnostics/noFunctionExpressionName.ts",
+			"line": 0,
+			"column": 15
+		}
+	],
+	"src/diagnostics/noGetterSetter.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 14,
+			"category": "error",
+			"message": "Getters and Setters are not supported!\nMore information: https://github.com/roblox-ts/roblox-ts/issues/457",
+			"file": "src/diagnostics/noGetterSetter.1.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noGetterSetter.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 14,
+			"category": "error",
+			"message": "Getters and Setters are not supported!\nMore information: https://github.com/roblox-ts/roblox-ts/issues/457",
+			"file": "src/diagnostics/noGetterSetter.2.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noGlobalThis.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 25,
+			"category": "error",
+			"message": "`globalThis` is not supported!",
+			"file": "src/diagnostics/noGlobalThis.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noIndexWithoutCall.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 39,
+			"category": "error",
+			"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+			"file": "src/diagnostics/noIndexWithoutCall.1.ts",
+			"line": 0,
+			"column": 24
+		}
+	],
+	"src/diagnostics/noIndexWithoutCall.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 39,
+			"category": "error",
+			"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+			"file": "src/diagnostics/noIndexWithoutCall.2.ts",
+			"line": 1,
+			"column": 10
+		}
+	],
+	"src/diagnostics/noIndexWithoutCall.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 39,
+			"category": "error",
+			"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+			"file": "src/diagnostics/noIndexWithoutCall.3.ts",
+			"line": 1,
+			"column": 8
+		}
+	],
+	"src/diagnostics/noIndexWithoutCall.4.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 39,
+			"category": "error",
+			"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+			"file": "src/diagnostics/noIndexWithoutCall.4.ts",
+			"line": 0,
+			"column": 8
+		}
+	],
+	"src/diagnostics/noIndexWithoutCall.5.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 39,
+			"category": "error",
+			"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+			"file": "src/diagnostics/noIndexWithoutCall.5.ts",
+			"line": 7,
+			"column": 12
+		}
+	],
+	"src/diagnostics/noInstanceMethodCollisions.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 30,
+			"category": "error",
+			"message": "Static methods cannot use the same name as instance methods!",
+			"file": "src/diagnostics/noInstanceMethodCollisions.ts",
+			"line": 3,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noInvalidIdentifier.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 0,
+			"category": "error",
+			"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+			"file": "src/diagnostics/noInvalidIdentifier.1.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noInvalidIdentifier.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 0,
+			"category": "error",
+			"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+			"file": "src/diagnostics/noInvalidIdentifier.2.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noInvalidIdentifier.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 0,
+			"category": "error",
+			"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+			"file": "src/diagnostics/noInvalidIdentifier.3.ts",
+			"line": 0,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noIsolatedImport.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 53,
+			"category": "error",
+			"message": "Attempted to import a file inside of an isolated container from outside!",
+			"file": "src/diagnostics/noIsolatedImport.ts",
+			"line": 0,
+			"column": 18
+		}
+	],
+	"src/diagnostics/noLabeledStatement.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 5,
+			"category": "error",
+			"message": "labels are not supported!",
+			"file": "src/diagnostics/noLabeledStatement.1.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noLabeledStatement.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 5,
+			"category": "error",
+			"message": "labels are not supported!",
+			"file": "src/diagnostics/noLabeledStatement.2.ts",
+			"line": 2,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noLabeledStatement.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 5,
+			"category": "error",
+			"message": "labels are not supported!",
+			"file": "src/diagnostics/noLabeledStatement.3.ts",
+			"line": 2,
+			"column": 10
+		}
+	],
+	"src/diagnostics/noLuaTupleDestructureAssignmentExpression.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 23,
+			"category": "error",
+			"message": "Cannot destructure LuaTuple<T> expression outside of an ExpressionStatement!",
+			"file": "src/diagnostics/noLuaTupleDestructureAssignmentExpression.ts",
+			"line": 3,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noMacroObjectSpread.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 45,
+			"category": "error",
+			"message": "Macro classes cannot be used in an object spread!\nSuggestion: Did you mean to use an array spread? `[ ...exp ]`",
+			"file": "src/diagnostics/noMacroObjectSpread.1.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noMacroUnion.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 44,
+			"category": "error",
+			"message": "Macro cannot be applied to a union type!",
+			"file": "src/diagnostics/noMacroUnion.1.ts",
+			"line": 1,
+			"column": 17
+		}
+	],
+	"src/diagnostics/noMacroUnion.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 44,
+			"category": "error",
+			"message": "Macro cannot be applied to a union type!",
+			"file": "src/diagnostics/noMacroUnion.2.ts",
+			"line": 1,
+			"column": 15
+		}
+	],
+	"src/diagnostics/noMixedTypeCall.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 38,
+			"category": "error",
+			"message": "Attempted to call a function with mixed types! All definitions must either be a method or a callback.",
+			"file": "src/diagnostics/noMixedTypeCall.ts",
+			"line": 6,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noModuleSpecifierFile.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 49,
+			"category": "error",
+			"message": "Could not find file for import. Did you forget to `npm install`?",
+			"file": "src/diagnostics/noModuleSpecifierFile.ts",
+			"line": 1,
+			"column": 18
+		}
+	],
+	"src/diagnostics/noNamespaceMerging.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 19,
+			"category": "error",
+			"message": "Namespace merging is not supported!",
+			"file": "src/diagnostics/noNamespaceMerging.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noNonModuleImport.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 52,
+			"category": "error",
+			"message": "Cannot import a non-ModuleScript!",
+			"file": "src/diagnostics/noNonModuleImport.ts",
+			"line": 0,
+			"column": 18
+		}
+	],
+	"src/diagnostics/noNonNumberStringRelationOperator.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 29,
+			"category": "error",
+			"message": "Relation operators can only be used on number or string types!",
+			"file": "src/diagnostics/noNonNumberStringRelationOperator.ts",
+			"line": 2,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noNullLiteral.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 7,
+			"category": "error",
+			"message": "`null` is not supported!\nSuggestion: Use `undefined` instead.",
+			"file": "src/diagnostics/noNullLiteral.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noOptionalMacroCall.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 41,
+			"category": "error",
+			"message": "Macro methods can not be optionally called!\nSuggestion: Macros always exist. Use a normal call.",
+			"file": "src/diagnostics/noOptionalMacroCall.ts",
+			"line": 1,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noPrecedingSpreadElement.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 22,
+			"category": "error",
+			"message": "Spread element must come last in a list of arguments!",
+			"file": "src/diagnostics/noPrecedingSpreadElement.ts",
+			"line": 0,
+			"column": 9
+		}
+	],
+	"src/diagnostics/noPrivateIdentifier.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 8,
+			"category": "error",
+			"message": "Private identifiers are not supported!",
+			"file": "src/diagnostics/noPrivateIdentifier.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noPrototype.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 27,
+			"category": "error",
+			"message": "`prototype` is not supported!",
+			"file": "src/diagnostics/noPrototype.ts",
+			"line": 2,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noRegex.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 10,
+			"category": "error",
+			"message": "Regular expressions are not supported!",
+			"file": "src/diagnostics/noRegex.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noReservedClassFields.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 2,
+			"category": "error",
+			"message": "Cannot use class field reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedClassFields.1.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noReservedClassFields.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 2,
+			"category": "error",
+			"message": "Cannot use class field reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedClassFields.2.ts",
+			"line": 1,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noReservedClassFields.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 2,
+			"category": "error",
+			"message": "Cannot use class field reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedClassFields.3.ts",
+			"line": 1,
+			"column": 8
+		}
+	],
+	"src/diagnostics/noReservedClassFields.4.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 2,
+			"category": "error",
+			"message": "Cannot use class field reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedClassFields.4.ts",
+			"line": 1,
+			"column": 8
+		}
+	],
+	"src/diagnostics/noReservedIdentifier.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 1,
+			"category": "error",
+			"message": "Cannot use identifier reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedIdentifier.1.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noReservedIdentifier.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 1,
+			"category": "error",
+			"message": "Cannot use identifier reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedIdentifier.2.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noReservedIdentifier.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 1,
+			"category": "error",
+			"message": "Cannot use identifier reserved for compiler internal usage.",
+			"file": "src/diagnostics/noReservedIdentifier.3.ts",
+			"line": 0,
+			"column": 7
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.1.ts",
+			"line": 0,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.2.ts",
+			"line": 0,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.3.ts",
+			"line": 2,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.4.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.4.ts",
+			"line": 2,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.5.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.5.ts",
+			"line": 2,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.6.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.6.ts",
+			"line": 1,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.7.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.7.ts",
+			"line": 1,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.8.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.8.ts",
+			"line": 1,
+			"column": 17
+		}
+	],
+	"src/diagnostics/noRobloxSymbolInstanceof.9.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 28,
+			"category": "error",
+			"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+			"file": "src/diagnostics/noRobloxSymbolInstanceof.9.ts",
+			"line": 1,
+			"column": 17
+		}
+	],
+	"src/diagnostics/noRojoData.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 58,
+			"category": "error",
+			"message": "Could not find Rojo data. There is no $path in your Rojo config that covers out\\helpers\\rojo\\noRojo.luau",
+			"file": "src/diagnostics/noRojoData.ts",
+			"line": 0,
+			"column": 18
+		}
+	],
+	"src/diagnostics/noSpreadDestructuring.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 20,
+			"category": "error",
+			"message": "Operator `...` is not supported for destructuring!",
+			"file": "src/diagnostics/noSpreadDestructuring.1.ts",
+			"line": 0,
+			"column": 10
+		}
+	],
+	"src/diagnostics/noSpreadDestructuring.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 20,
+			"category": "error",
+			"message": "Operator `...` is not supported for destructuring!",
+			"file": "src/diagnostics/noSpreadDestructuring.2.ts",
+			"line": 0,
+			"column": 11
+		}
+	],
+	"src/diagnostics/noStaticMethodCollisions.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 31,
+			"category": "error",
+			"message": "Instance methods cannot use the same name as static methods!",
+			"file": "src/diagnostics/noStaticMethodCollisions.ts",
+			"line": 3,
+			"column": 1
+		}
+	],
+	"src/diagnostics/noTupleMacroOutsideReturn.1.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 48,
+			"category": "error",
+			"message": "$tuple() macro is only valid as an expression of a return statement!",
+			"file": "src/diagnostics/noTupleMacroOutsideReturn.1.ts",
+			"line": 0,
+			"column": 0
+		}
+	],
+	"src/diagnostics/noTupleMacroOutsideReturn.2.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 48,
+			"category": "error",
+			"message": "$tuple() macro is only valid as an expression of a return statement!",
+			"file": "src/diagnostics/noTupleMacroOutsideReturn.2.ts",
+			"line": 1,
+			"column": 16
+		}
+	],
+	"src/diagnostics/noTupleMacroOutsideReturn.3.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 48,
+			"category": "error",
+			"message": "$tuple() macro is only valid as an expression of a return statement!",
+			"file": "src/diagnostics/noTupleMacroOutsideReturn.3.ts",
+			"line": 1,
+			"column": 27
+		}
+	],
+	"src/diagnostics/noTypeOfExpression.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 9,
+			"category": "error",
+			"message": "`typeof` operator is not supported!\nSuggestion: Use `typeIs(value, type)` or `typeOf(value)` instead.",
+			"file": "src/diagnostics/noTypeOfExpression.ts",
+			"line": 0,
+			"column": 6
+		}
+	],
+	"src/diagnostics/noUnaryPlus.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 32,
+			"category": "error",
+			"message": "Unary `+` is not supported!\nSuggestion: Use `tonumber(x)` instead.",
+			"file": "src/diagnostics/noUnaryPlus.ts",
+			"line": 0,
+			"column": 10
+		}
+	],
+	"src/diagnostics/noVar.ts": [
+		{
+			"source": "rbxts",
+			"code": -1,
+			"id": 13,
+			"category": "error",
+			"message": "`var` keyword is not supported!\nSuggestion: Use `let` or `const` instead.",
+			"file": "src/diagnostics/noVar.ts",
+			"line": 0,
+			"column": 0
+		}
+	]
+}

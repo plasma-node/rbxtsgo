@@ -1,0 +1,20 @@
+# Build output
+/bin/
+/dist/
+*.exe
+*.test
+*.prof
+
+# Node
+node_modules/
+*.tgz
+
+
+# Machine-local scripts. Never committed.
+/scripts/local/
+
+# Local-only experiments and scratch work.
+/.scratch/
+
+# Upstream clones at pinned commits, made by scripts/setup-third-party.sh
+/third_party/

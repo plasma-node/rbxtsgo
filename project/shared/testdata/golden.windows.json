@@ -1,0 +1,2464 @@
+{
+	"color": {
+		"factories": {
+			"noInvalidIdentifier": {
+				"factoryId": 0,
+				"atRange": {
+					"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+					"id": 0,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+					"id": 0,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noReservedIdentifier": {
+				"factoryId": 1,
+				"atRange": {
+					"message": "Cannot use identifier reserved for compiler internal usage.",
+					"id": 1,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot use identifier reserved for compiler internal usage.",
+					"id": 1,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noReservedClassFields": {
+				"factoryId": 2,
+				"atRange": {
+					"message": "Cannot use class field reserved for compiler internal usage.",
+					"id": 2,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot use class field reserved for compiler internal usage.",
+					"id": 2,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noClassMetamethods": {
+				"factoryId": 3,
+				"atRange": {
+					"message": "Metamethods cannot be used in class definitions!",
+					"id": 3,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Metamethods cannot be used in class definitions!",
+					"id": 3,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noForInStatement": {
+				"factoryId": 4,
+				"atRange": {
+					"message": "for-in loop statements are not supported!",
+					"id": 4,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "for-in loop statements are not supported!",
+					"id": 4,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noLabeledStatement": {
+				"factoryId": 5,
+				"atRange": {
+					"message": "labels are not supported!",
+					"id": 5,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "labels are not supported!",
+					"id": 5,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noDebuggerStatement": {
+				"factoryId": 6,
+				"atRange": {
+					"message": "`debugger` is not supported!",
+					"id": 6,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`debugger` is not supported!",
+					"id": 6,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNullLiteral": {
+				"factoryId": 7,
+				"atRange": {
+					"message": "`null` is not supported!\nSuggestion: \u001b[33mUse `undefined` instead.\u001b[39m",
+					"id": 7,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`null` is not supported!\nSuggestion: \u001b[33mUse `undefined` instead.\u001b[39m",
+					"id": 7,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrivateIdentifier": {
+				"factoryId": 8,
+				"atRange": {
+					"message": "Private identifiers are not supported!",
+					"id": 8,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Private identifiers are not supported!",
+					"id": 8,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noTypeOfExpression": {
+				"factoryId": 9,
+				"atRange": {
+					"message": "`typeof` operator is not supported!\nSuggestion: \u001b[33mUse `typeIs(value, type)` or `typeOf(value)` instead.\u001b[39m",
+					"id": 9,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`typeof` operator is not supported!\nSuggestion: \u001b[33mUse `typeIs(value, type)` or `typeOf(value)` instead.\u001b[39m",
+					"id": 9,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noRegex": {
+				"factoryId": 10,
+				"atRange": {
+					"message": "Regular expressions are not supported!",
+					"id": 10,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Regular expressions are not supported!",
+					"id": 10,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noBigInt": {
+				"factoryId": 11,
+				"atRange": {
+					"message": "BigInt literals are not supported!",
+					"id": 11,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "BigInt literals are not supported!",
+					"id": 11,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAny": {
+				"factoryId": 12,
+				"atRange": {
+					"message": "Using values of type `any` is not supported!\nSuggestion: \u001b[33mUse `unknown` instead.\u001b[39m",
+					"id": 12,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Using values of type `any` is not supported!\nSuggestion: \u001b[33mUse `unknown` instead.\u001b[39m",
+					"id": 12,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noVar": {
+				"factoryId": 13,
+				"atRange": {
+					"message": "`var` keyword is not supported!\nSuggestion: \u001b[33mUse `let` or `const` instead.\u001b[39m",
+					"id": 13,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`var` keyword is not supported!\nSuggestion: \u001b[33mUse `let` or `const` instead.\u001b[39m",
+					"id": 13,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noGetterSetter": {
+				"factoryId": 14,
+				"atRange": {
+					"message": "Getters and Setters are not supported!\nMore information: \u001b[90mhttps://github.com/roblox-ts/roblox-ts/issues/457\u001b[39m",
+					"id": 14,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Getters and Setters are not supported!\nMore information: \u001b[90mhttps://github.com/roblox-ts/roblox-ts/issues/457\u001b[39m",
+					"id": 14,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAutoAccessorModifiers": {
+				"factoryId": 15,
+				"atRange": {
+					"message": "Getters and Setters are not supported!\nThe `accessor` keyword requires generating get/set accessors\nMore information: \u001b[90mhttps://github.com/roblox-ts/roblox-ts/issues/457\u001b[39m",
+					"id": 15,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Getters and Setters are not supported!\nThe `accessor` keyword requires generating get/set accessors\nMore information: \u001b[90mhttps://github.com/roblox-ts/roblox-ts/issues/457\u001b[39m",
+					"id": 15,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noEqualsEquals": {
+				"factoryId": 16,
+				"atRange": {
+					"message": "operator `==` is not supported!\nSuggestion: \u001b[33mUse `===` instead.\u001b[39m",
+					"id": 16,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "operator `==` is not supported!\nSuggestion: \u001b[33mUse `===` instead.\u001b[39m",
+					"id": 16,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noExclamationEquals": {
+				"factoryId": 17,
+				"atRange": {
+					"message": "operator `!=` is not supported!\nSuggestion: \u001b[33mUse `!==` instead.\u001b[39m",
+					"id": 17,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "operator `!=` is not supported!\nSuggestion: \u001b[33mUse `!==` instead.\u001b[39m",
+					"id": 17,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noEnumMerging": {
+				"factoryId": 18,
+				"atRange": {
+					"message": "Enum merging is not supported!",
+					"id": 18,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Enum merging is not supported!",
+					"id": 18,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNamespaceMerging": {
+				"factoryId": 19,
+				"atRange": {
+					"message": "Namespace merging is not supported!",
+					"id": 19,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Namespace merging is not supported!",
+					"id": 19,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noSpreadDestructuring": {
+				"factoryId": 20,
+				"atRange": {
+					"message": "Operator `...` is not supported for destructuring!",
+					"id": 20,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Operator `...` is not supported for destructuring!",
+					"id": 20,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noFunctionExpressionName": {
+				"factoryId": 21,
+				"atRange": {
+					"message": "Function expression names are not supported!",
+					"id": 21,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Function expression names are not supported!",
+					"id": 21,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrecedingSpreadElement": {
+				"factoryId": 22,
+				"atRange": {
+					"message": "Spread element must come last in a list of arguments!",
+					"id": 22,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Spread element must come last in a list of arguments!",
+					"id": 22,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noLuaTupleDestructureAssignmentExpression": {
+				"factoryId": 23,
+				"atRange": {
+					"message": "Cannot destructure LuaTuple<T> expression outside of an ExpressionStatement!",
+					"id": 23,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot destructure LuaTuple<T> expression outside of an ExpressionStatement!",
+					"id": 23,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noExportAssignmentLet": {
+				"factoryId": 24,
+				"atRange": {
+					"message": "Cannot use `export =` on a `let` variable!\nSuggestion: \u001b[33mUse `const` instead.\u001b[39m",
+					"id": 24,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot use `export =` on a `let` variable!\nSuggestion: \u001b[33mUse `const` instead.\u001b[39m",
+					"id": 24,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noGlobalThis": {
+				"factoryId": 25,
+				"atRange": {
+					"message": "`globalThis` is not supported!",
+					"id": 25,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`globalThis` is not supported!",
+					"id": 25,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noArguments": {
+				"factoryId": 26,
+				"atRange": {
+					"message": "`arguments` is not supported!",
+					"id": 26,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`arguments` is not supported!",
+					"id": 26,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrototype": {
+				"factoryId": 27,
+				"atRange": {
+					"message": "`prototype` is not supported!",
+					"id": 27,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`prototype` is not supported!",
+					"id": 27,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noRobloxSymbolInstanceof": {
+				"factoryId": 28,
+				"atRange": {
+					"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: \u001b[33mUse `typeIs(myThing, \"TypeToCheck\") instead\u001b[39m",
+					"id": 28,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: \u001b[33mUse `typeIs(myThing, \"TypeToCheck\") instead\u001b[39m",
+					"id": 28,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonNumberStringRelationOperator": {
+				"factoryId": 29,
+				"atRange": {
+					"message": "Relation operators can only be used on number or string types!",
+					"id": 29,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Relation operators can only be used on number or string types!",
+					"id": 29,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noInstanceMethodCollisions": {
+				"factoryId": 30,
+				"atRange": {
+					"message": "Static methods cannot use the same name as instance methods!",
+					"id": 30,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Static methods cannot use the same name as instance methods!",
+					"id": 30,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noStaticMethodCollisions": {
+				"factoryId": 31,
+				"atRange": {
+					"message": "Instance methods cannot use the same name as static methods!",
+					"id": 31,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Instance methods cannot use the same name as static methods!",
+					"id": 31,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noUnaryPlus": {
+				"factoryId": 32,
+				"atRange": {
+					"message": "Unary `+` is not supported!\nSuggestion: \u001b[33mUse `tonumber(x)` instead.\u001b[39m",
+					"id": 32,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Unary `+` is not supported!\nSuggestion: \u001b[33mUse `tonumber(x)` instead.\u001b[39m",
+					"id": 32,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonNumberUnaryMinus": {
+				"factoryId": 33,
+				"atRange": {
+					"message": "Unary `-` is only supported for number types!",
+					"id": 33,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Unary `-` is only supported for number types!",
+					"id": 33,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAwaitForOf": {
+				"factoryId": 34,
+				"atRange": {
+					"message": "`await` is not supported in for-of loops!",
+					"id": 34,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`await` is not supported in for-of loops!",
+					"id": 34,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAsyncGeneratorFunctions": {
+				"factoryId": 35,
+				"atRange": {
+					"message": "Async generator functions are not supported!",
+					"id": 35,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Async generator functions are not supported!",
+					"id": 35,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonStringModuleSpecifier": {
+				"factoryId": 36,
+				"atRange": {
+					"message": "Module specifiers must be a string literal.",
+					"id": 36,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Module specifiers must be a string literal.",
+					"id": 36,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noIterableIteration": {
+				"factoryId": 37,
+				"atRange": {
+					"message": "Iterating on Iterable<T> is not supported! You must use a more specific type.",
+					"id": 37,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Iterating on Iterable<T> is not supported! You must use a more specific type.",
+					"id": 37,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMixedTypeCall": {
+				"factoryId": 38,
+				"atRange": {
+					"message": "Attempted to call a function with mixed types! All definitions must either be a method or a callback.",
+					"id": 38,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to call a function with mixed types! All definitions must either be a method or a callback.",
+					"id": 38,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noIndexWithoutCall": {
+				"factoryId": 39,
+				"atRange": {
+					"message": "Cannot index a method without calling it!\nSuggestion: \u001b[33mUse the form `() => a.b()` instead of `a.b`.\u001b[39m",
+					"id": 39,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot index a method without calling it!\nSuggestion: \u001b[33mUse the form `() => a.b()` instead of `a.b`.\u001b[39m",
+					"id": 39,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noCommentDirectives": {
+				"factoryId": 40,
+				"atRange": {
+					"message": "Usage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: \u001b[33mConsider using type assertions or `declare` statements.\u001b[39m",
+					"id": 40,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Usage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: \u001b[33mConsider using type assertions or `declare` statements.\u001b[39m",
+					"id": 40,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noOptionalMacroCall": {
+				"factoryId": 41,
+				"atRange": {
+					"message": "Macro methods can not be optionally called!\nSuggestion: \u001b[33mMacros always exist. Use a normal call.\u001b[39m",
+					"id": 41,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macro methods can not be optionally called!\nSuggestion: \u001b[33mMacros always exist. Use a normal call.\u001b[39m",
+					"id": 41,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noConstructorMacroWithoutNew": {
+				"factoryId": 42,
+				"atRange": {
+					"message": "Cannot index a constructor macro without using the `new` operator!",
+					"id": 42,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot index a constructor macro without using the `new` operator!",
+					"id": 42,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMacroExtends": {
+				"factoryId": 43,
+				"atRange": {
+					"message": "Cannot extend from a macro class!\nSuggestion: \u001b[33mStore an instance of the macro class in a property.\u001b[39m",
+					"id": 43,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot extend from a macro class!\nSuggestion: \u001b[33mStore an instance of the macro class in a property.\u001b[39m",
+					"id": 43,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMacroUnion": {
+				"factoryId": 44,
+				"atRange": {
+					"message": "Macro cannot be applied to a union type!",
+					"id": 44,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macro cannot be applied to a union type!",
+					"id": 44,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMacroObjectSpread": {
+				"factoryId": 45,
+				"atRange": {
+					"message": "Macro classes cannot be used in an object spread!\nSuggestion: \u001b[33mDid you mean to use an array spread? `[ ...exp ]`\u001b[39m",
+					"id": 45,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macro classes cannot be used in an object spread!\nSuggestion: \u001b[33mDid you mean to use an array spread? `[ ...exp ]`\u001b[39m",
+					"id": 45,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noVarArgsMacroSpread": {
+				"factoryId": 46,
+				"atRange": {
+					"message": "Macros which use variadic arguments do not support spread expressions!\nMore information: \u001b[90mhttps://github.com/roblox-ts/roblox-ts/issues/1149\u001b[39m",
+					"id": 46,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macros which use variadic arguments do not support spread expressions!\nMore information: \u001b[90mhttps://github.com/roblox-ts/roblox-ts/issues/1149\u001b[39m",
+					"id": 46,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noRangeMacroOutsideForOf": {
+				"factoryId": 47,
+				"atRange": {
+					"message": "$range() macro is only valid as an expression of a for-of loop!",
+					"id": 47,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "$range() macro is only valid as an expression of a for-of loop!",
+					"id": 47,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noTupleMacroOutsideReturn": {
+				"factoryId": 48,
+				"atRange": {
+					"message": "$tuple() macro is only valid as an expression of a return statement!",
+					"id": 48,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "$tuple() macro is only valid as an expression of a return statement!",
+					"id": 48,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noModuleSpecifierFile": {
+				"factoryId": 49,
+				"atRange": {
+					"message": "Could not find file for import. Did you forget to `npm install`?",
+					"id": 49,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Could not find file for import. Did you forget to `npm install`?",
+					"id": 49,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noInvalidModule": {
+				"factoryId": 50,
+				"atRange": {
+					"message": "You can only use npm scopes that are listed in your typeRoots.",
+					"id": 50,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "You can only use npm scopes that are listed in your typeRoots.",
+					"id": 50,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noUnscopedModule": {
+				"factoryId": 51,
+				"atRange": {
+					"message": "You cannot use modules directly under node_modules.",
+					"id": 51,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "You cannot use modules directly under node_modules.",
+					"id": 51,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonModuleImport": {
+				"factoryId": 52,
+				"atRange": {
+					"message": "Cannot import a non-ModuleScript!",
+					"id": 52,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot import a non-ModuleScript!",
+					"id": 52,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noIsolatedImport": {
+				"factoryId": 53,
+				"atRange": {
+					"message": "Attempted to import a file inside of an isolated container from outside!",
+					"id": 53,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to import a file inside of an isolated container from outside!",
+					"id": 53,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noServerImport": {
+				"factoryId": 54,
+				"atRange": {
+					"message": "Cannot import a server file from a shared or client location!\nSuggestion: \u001b[33mMove the file you want to import to a shared location.\u001b[39m",
+					"id": 54,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot import a server file from a shared or client location!\nSuggestion: \u001b[33mMove the file you want to import to a shared location.\u001b[39m",
+					"id": 54,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrecedingJsxSpreadElement": {
+				"factoryId": 55,
+				"atRange": {
+					"message": "JSX spread expression must come last in children!",
+					"id": 55,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "JSX spread expression must come last in children!",
+					"id": 55,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"expectedMethodGotFunction": {
+				"factoryId": 56,
+				"atRange": {
+					"message": "Attempted to assign non-method where method was expected.",
+					"id": 56,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to assign non-method where method was expected.",
+					"id": 56,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"expectedFunctionGotMethod": {
+				"factoryId": 57,
+				"atRange": {
+					"message": "Attempted to assign method where non-method was expected.",
+					"id": 57,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to assign method where non-method was expected.",
+					"id": 57,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"runtimeLibUsedInReplicatedFirst": {
+				"factoryId": 60,
+				"atRange": {
+					"message": "This statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.",
+					"id": 60,
+					"category": 0,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "This statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.",
+					"id": 60,
+					"category": 0,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			}
+		},
+		"context": {
+			"noRojoDataId": 58,
+			"noPackageImportWithoutScopeId": 59,
+			"noRojoData": [
+				{
+					"message": "Could not find Rojo data. There is no $path in your Rojo config that covers first/path.lua",
+					"id": 58,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				{
+					"message": "Could not find Rojo data. There is no $path in your Rojo config that covers first/path.lua\nCould not find Rojo data. There is no $path in your Rojo config that covers second/path.lua\nSuggestion: \u001b[33mDid you forget to add a custom npm scope to your default.project.json?\u001b[39m",
+					"id": 58,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				{
+					"message": "Could not find Rojo data. There is no $path in your Rojo config that covers first/path.lua\nCould not find Rojo data. There is no $path in your Rojo config that covers second/path.lua\nSuggestion: \u001b[33mDid you forget to add a custom npm scope to your default.project.json?\u001b[39m\nCould not find Rojo data. There is no $path in your Rojo config that covers third/path.lua",
+					"id": 58,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			],
+			"noPackageImportWithoutScope": [
+				{
+					"message": "Imported package Roblox path is missing an npm scope!\nPackage path: pkg/a.lua\nRoblox path: ReplicatedStorage.a\nSuggestion: \u001b[33mYou might need to update your \"node_modules\" in default.project.json to match:\n\"node_modules\": {\n\t\"$className\": \"Folder\",\n\t\"@rbxts\": {\n\t\t\"$path\": \"node_modules/@rbxts\"\n\t}\n}\u001b[39m",
+					"id": 59,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				{
+					"message": "Imported package Roblox path is missing an npm scope!\nPackage path: pkg/a.lua\nRoblox path: ReplicatedStorage.a\nSuggestion: \u001b[33mYou might need to update your \"node_modules\" in default.project.json to match:\n\"node_modules\": {\n\t\"$className\": \"Folder\",\n\t\"@rbxts\": {\n\t\t\"$path\": \"node_modules/@rbxts\"\n\t}\n}\u001b[39m\nImported package Roblox path is missing an npm scope!\nPackage path: pkg/b.lua\nRoblox path: ReplicatedStorage.b.c\nSuggestion: \u001b[33mYou might need to update your \"node_modules\" in default.project.json to match:\n\"node_modules\": {\n\t\"$className\": \"Folder\",\n\t\"@rbxts\": {\n\t\t\"$path\": \"node_modules/@rbxts\"\n\t}\n}\u001b[39m",
+					"id": 59,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			]
+		},
+		"text": {
+			"incorrectFileName": {
+				"message": "Incorrect file name: `init.ts`!\nFull path: /full/path/init.ts\nSuggestion: \u001b[33mChange `init.ts` to `index.ts`.\u001b[39m",
+				"id": null,
+				"category": 1,
+				"start": null,
+				"length": null,
+				"code": " roblox-ts"
+			},
+			"rojoPathInSrc": {
+				"message": "Invalid Rojo configuration. $path fields should be relative to out directory.\nSuggestion: \u001b[33mChange the value of $path from \"src/x\" to \"out/x\".\u001b[39m",
+				"id": null,
+				"category": 1,
+				"start": null,
+				"length": null,
+				"code": " roblox-ts"
+			},
+			"transformerNotFound": {
+				"message": "Transformer `my-transformer` was not found!\nMore info: Cannot find module\nSuggestion: \u001b[33mDid you forget to install the package?\u001b[39m",
+				"id": null,
+				"category": 0,
+				"start": null,
+				"length": null,
+				"code": " roblox-ts"
+			},
+			"truthyChange": {
+				"factoryId": 61,
+				"diagnostic": {
+					"message": "Value will be checked against 0, \"\"",
+					"id": 61,
+					"category": 0,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				}
+			},
+			"stringOffsetChange": {
+				"factoryId": 62,
+				"diagnostic": {
+					"message": "String macros no longer offset inputs: text",
+					"id": 62,
+					"category": 0,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				}
+			}
+		},
+		"format": {
+			"located": "\u001b[96msample.ts\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0m`null` is not supported!\nSuggestion: \u001b[33mUse `undefined` instead.\u001b[39m\r\n\r\n\u001b[7m4\u001b[0m const other = 'x';\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~~~\u001b[0m\r\n",
+			"range": "\u001b[96msample.ts\u001b[0m:\u001b[93m2\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mUsage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: \u001b[33mConsider using type assertions or `declare` statements.\u001b[39m\r\n\r\n\u001b[7m2\u001b[0m const value = 1;\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~\u001b[0m\r\n\u001b[7m3\u001b[0m   // @ts-ignore\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~\u001b[0m\r\n",
+			"rangeAtEnd": "\u001b[96msample.ts\u001b[0m:\u001b[93m5\u001b[0m:\u001b[93m23\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mUsage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: \u001b[33mConsider using type assertions or `declare` statements.\u001b[39m\r\n\r\n\u001b[7m5\u001b[0m export { value, other };\r\n\u001b[7m \u001b[0m \u001b[91m                      ~~\u001b[0m\r\n\u001b[7m6\u001b[0m \r\n\u001b[7m \u001b[0m \u001b[91m\u001b[0m\r\n",
+			"warning": "\u001b[96msample.ts\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m1\u001b[0m - \u001b[93mwarning\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mThis statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.\r\n\r\n\u001b[7m4\u001b[0m const other = 'x';\r\n\u001b[7m \u001b[0m \u001b[93m~~~~~~~~~~~~~~~~~~\u001b[0m\r\n",
+			"text": "\u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mJust text\r\n",
+			"several": "\u001b[96msample.ts\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0m`var` keyword is not supported!\nSuggestion: \u001b[33mUse `let` or `const` instead.\u001b[39m\r\n\r\n\u001b[7m4\u001b[0m const other = 'x';\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~~~\u001b[0m\r\n\u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mText after\r\n\u001b[96msample.ts\u001b[0m:\u001b[93m5\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mUsing values of type `any` is not supported!\nSuggestion: \u001b[33mUse `unknown` instead.\u001b[39m\r\n\r\n\u001b[7m5\u001b[0m export { value, other };\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\r\n"
+		},
+		"kinds": {},
+		"sourceText": "// leading comment\nconst value = 1;\n  // @ts-ignore\nconst other = 'x';\nexport { value, other };\n"
+	},
+	"plain": {
+		"factories": {
+			"noInvalidIdentifier": {
+				"factoryId": 0,
+				"atRange": {
+					"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+					"id": 0,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Invalid Luau identifier!\nLuau identifiers must start with a letter and only contain letters, numbers, and underscores.\nReserved Luau keywords cannot be used as identifiers.",
+					"id": 0,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noReservedIdentifier": {
+				"factoryId": 1,
+				"atRange": {
+					"message": "Cannot use identifier reserved for compiler internal usage.",
+					"id": 1,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot use identifier reserved for compiler internal usage.",
+					"id": 1,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noReservedClassFields": {
+				"factoryId": 2,
+				"atRange": {
+					"message": "Cannot use class field reserved for compiler internal usage.",
+					"id": 2,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot use class field reserved for compiler internal usage.",
+					"id": 2,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noClassMetamethods": {
+				"factoryId": 3,
+				"atRange": {
+					"message": "Metamethods cannot be used in class definitions!",
+					"id": 3,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Metamethods cannot be used in class definitions!",
+					"id": 3,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noForInStatement": {
+				"factoryId": 4,
+				"atRange": {
+					"message": "for-in loop statements are not supported!",
+					"id": 4,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "for-in loop statements are not supported!",
+					"id": 4,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noLabeledStatement": {
+				"factoryId": 5,
+				"atRange": {
+					"message": "labels are not supported!",
+					"id": 5,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "labels are not supported!",
+					"id": 5,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noDebuggerStatement": {
+				"factoryId": 6,
+				"atRange": {
+					"message": "`debugger` is not supported!",
+					"id": 6,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`debugger` is not supported!",
+					"id": 6,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNullLiteral": {
+				"factoryId": 7,
+				"atRange": {
+					"message": "`null` is not supported!\nSuggestion: Use `undefined` instead.",
+					"id": 7,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`null` is not supported!\nSuggestion: Use `undefined` instead.",
+					"id": 7,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrivateIdentifier": {
+				"factoryId": 8,
+				"atRange": {
+					"message": "Private identifiers are not supported!",
+					"id": 8,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Private identifiers are not supported!",
+					"id": 8,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noTypeOfExpression": {
+				"factoryId": 9,
+				"atRange": {
+					"message": "`typeof` operator is not supported!\nSuggestion: Use `typeIs(value, type)` or `typeOf(value)` instead.",
+					"id": 9,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`typeof` operator is not supported!\nSuggestion: Use `typeIs(value, type)` or `typeOf(value)` instead.",
+					"id": 9,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noRegex": {
+				"factoryId": 10,
+				"atRange": {
+					"message": "Regular expressions are not supported!",
+					"id": 10,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Regular expressions are not supported!",
+					"id": 10,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noBigInt": {
+				"factoryId": 11,
+				"atRange": {
+					"message": "BigInt literals are not supported!",
+					"id": 11,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "BigInt literals are not supported!",
+					"id": 11,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAny": {
+				"factoryId": 12,
+				"atRange": {
+					"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+					"id": 12,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Using values of type `any` is not supported!\nSuggestion: Use `unknown` instead.",
+					"id": 12,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noVar": {
+				"factoryId": 13,
+				"atRange": {
+					"message": "`var` keyword is not supported!\nSuggestion: Use `let` or `const` instead.",
+					"id": 13,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`var` keyword is not supported!\nSuggestion: Use `let` or `const` instead.",
+					"id": 13,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noGetterSetter": {
+				"factoryId": 14,
+				"atRange": {
+					"message": "Getters and Setters are not supported!\nMore information: https://github.com/roblox-ts/roblox-ts/issues/457",
+					"id": 14,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Getters and Setters are not supported!\nMore information: https://github.com/roblox-ts/roblox-ts/issues/457",
+					"id": 14,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAutoAccessorModifiers": {
+				"factoryId": 15,
+				"atRange": {
+					"message": "Getters and Setters are not supported!\nThe `accessor` keyword requires generating get/set accessors\nMore information: https://github.com/roblox-ts/roblox-ts/issues/457",
+					"id": 15,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Getters and Setters are not supported!\nThe `accessor` keyword requires generating get/set accessors\nMore information: https://github.com/roblox-ts/roblox-ts/issues/457",
+					"id": 15,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noEqualsEquals": {
+				"factoryId": 16,
+				"atRange": {
+					"message": "operator `==` is not supported!\nSuggestion: Use `===` instead.",
+					"id": 16,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "operator `==` is not supported!\nSuggestion: Use `===` instead.",
+					"id": 16,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noExclamationEquals": {
+				"factoryId": 17,
+				"atRange": {
+					"message": "operator `!=` is not supported!\nSuggestion: Use `!==` instead.",
+					"id": 17,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "operator `!=` is not supported!\nSuggestion: Use `!==` instead.",
+					"id": 17,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noEnumMerging": {
+				"factoryId": 18,
+				"atRange": {
+					"message": "Enum merging is not supported!",
+					"id": 18,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Enum merging is not supported!",
+					"id": 18,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNamespaceMerging": {
+				"factoryId": 19,
+				"atRange": {
+					"message": "Namespace merging is not supported!",
+					"id": 19,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Namespace merging is not supported!",
+					"id": 19,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noSpreadDestructuring": {
+				"factoryId": 20,
+				"atRange": {
+					"message": "Operator `...` is not supported for destructuring!",
+					"id": 20,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Operator `...` is not supported for destructuring!",
+					"id": 20,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noFunctionExpressionName": {
+				"factoryId": 21,
+				"atRange": {
+					"message": "Function expression names are not supported!",
+					"id": 21,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Function expression names are not supported!",
+					"id": 21,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrecedingSpreadElement": {
+				"factoryId": 22,
+				"atRange": {
+					"message": "Spread element must come last in a list of arguments!",
+					"id": 22,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Spread element must come last in a list of arguments!",
+					"id": 22,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noLuaTupleDestructureAssignmentExpression": {
+				"factoryId": 23,
+				"atRange": {
+					"message": "Cannot destructure LuaTuple<T> expression outside of an ExpressionStatement!",
+					"id": 23,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot destructure LuaTuple<T> expression outside of an ExpressionStatement!",
+					"id": 23,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noExportAssignmentLet": {
+				"factoryId": 24,
+				"atRange": {
+					"message": "Cannot use `export =` on a `let` variable!\nSuggestion: Use `const` instead.",
+					"id": 24,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot use `export =` on a `let` variable!\nSuggestion: Use `const` instead.",
+					"id": 24,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noGlobalThis": {
+				"factoryId": 25,
+				"atRange": {
+					"message": "`globalThis` is not supported!",
+					"id": 25,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`globalThis` is not supported!",
+					"id": 25,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noArguments": {
+				"factoryId": 26,
+				"atRange": {
+					"message": "`arguments` is not supported!",
+					"id": 26,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`arguments` is not supported!",
+					"id": 26,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrototype": {
+				"factoryId": 27,
+				"atRange": {
+					"message": "`prototype` is not supported!",
+					"id": 27,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`prototype` is not supported!",
+					"id": 27,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noRobloxSymbolInstanceof": {
+				"factoryId": 28,
+				"atRange": {
+					"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+					"id": 28,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "The `instanceof` operator can only be used on roblox-ts classes!\nSuggestion: Use `typeIs(myThing, \"TypeToCheck\") instead",
+					"id": 28,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonNumberStringRelationOperator": {
+				"factoryId": 29,
+				"atRange": {
+					"message": "Relation operators can only be used on number or string types!",
+					"id": 29,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Relation operators can only be used on number or string types!",
+					"id": 29,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noInstanceMethodCollisions": {
+				"factoryId": 30,
+				"atRange": {
+					"message": "Static methods cannot use the same name as instance methods!",
+					"id": 30,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Static methods cannot use the same name as instance methods!",
+					"id": 30,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noStaticMethodCollisions": {
+				"factoryId": 31,
+				"atRange": {
+					"message": "Instance methods cannot use the same name as static methods!",
+					"id": 31,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Instance methods cannot use the same name as static methods!",
+					"id": 31,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noUnaryPlus": {
+				"factoryId": 32,
+				"atRange": {
+					"message": "Unary `+` is not supported!\nSuggestion: Use `tonumber(x)` instead.",
+					"id": 32,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Unary `+` is not supported!\nSuggestion: Use `tonumber(x)` instead.",
+					"id": 32,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonNumberUnaryMinus": {
+				"factoryId": 33,
+				"atRange": {
+					"message": "Unary `-` is only supported for number types!",
+					"id": 33,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Unary `-` is only supported for number types!",
+					"id": 33,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAwaitForOf": {
+				"factoryId": 34,
+				"atRange": {
+					"message": "`await` is not supported in for-of loops!",
+					"id": 34,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "`await` is not supported in for-of loops!",
+					"id": 34,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noAsyncGeneratorFunctions": {
+				"factoryId": 35,
+				"atRange": {
+					"message": "Async generator functions are not supported!",
+					"id": 35,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Async generator functions are not supported!",
+					"id": 35,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonStringModuleSpecifier": {
+				"factoryId": 36,
+				"atRange": {
+					"message": "Module specifiers must be a string literal.",
+					"id": 36,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Module specifiers must be a string literal.",
+					"id": 36,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noIterableIteration": {
+				"factoryId": 37,
+				"atRange": {
+					"message": "Iterating on Iterable<T> is not supported! You must use a more specific type.",
+					"id": 37,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Iterating on Iterable<T> is not supported! You must use a more specific type.",
+					"id": 37,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMixedTypeCall": {
+				"factoryId": 38,
+				"atRange": {
+					"message": "Attempted to call a function with mixed types! All definitions must either be a method or a callback.",
+					"id": 38,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to call a function with mixed types! All definitions must either be a method or a callback.",
+					"id": 38,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noIndexWithoutCall": {
+				"factoryId": 39,
+				"atRange": {
+					"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+					"id": 39,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot index a method without calling it!\nSuggestion: Use the form `() => a.b()` instead of `a.b`.",
+					"id": 39,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noCommentDirectives": {
+				"factoryId": 40,
+				"atRange": {
+					"message": "Usage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: Consider using type assertions or `declare` statements.",
+					"id": 40,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Usage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: Consider using type assertions or `declare` statements.",
+					"id": 40,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noOptionalMacroCall": {
+				"factoryId": 41,
+				"atRange": {
+					"message": "Macro methods can not be optionally called!\nSuggestion: Macros always exist. Use a normal call.",
+					"id": 41,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macro methods can not be optionally called!\nSuggestion: Macros always exist. Use a normal call.",
+					"id": 41,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noConstructorMacroWithoutNew": {
+				"factoryId": 42,
+				"atRange": {
+					"message": "Cannot index a constructor macro without using the `new` operator!",
+					"id": 42,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot index a constructor macro without using the `new` operator!",
+					"id": 42,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMacroExtends": {
+				"factoryId": 43,
+				"atRange": {
+					"message": "Cannot extend from a macro class!\nSuggestion: Store an instance of the macro class in a property.",
+					"id": 43,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot extend from a macro class!\nSuggestion: Store an instance of the macro class in a property.",
+					"id": 43,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMacroUnion": {
+				"factoryId": 44,
+				"atRange": {
+					"message": "Macro cannot be applied to a union type!",
+					"id": 44,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macro cannot be applied to a union type!",
+					"id": 44,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noMacroObjectSpread": {
+				"factoryId": 45,
+				"atRange": {
+					"message": "Macro classes cannot be used in an object spread!\nSuggestion: Did you mean to use an array spread? `[ ...exp ]`",
+					"id": 45,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macro classes cannot be used in an object spread!\nSuggestion: Did you mean to use an array spread? `[ ...exp ]`",
+					"id": 45,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noVarArgsMacroSpread": {
+				"factoryId": 46,
+				"atRange": {
+					"message": "Macros which use variadic arguments do not support spread expressions!\nMore information: https://github.com/roblox-ts/roblox-ts/issues/1149",
+					"id": 46,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Macros which use variadic arguments do not support spread expressions!\nMore information: https://github.com/roblox-ts/roblox-ts/issues/1149",
+					"id": 46,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noRangeMacroOutsideForOf": {
+				"factoryId": 47,
+				"atRange": {
+					"message": "$range() macro is only valid as an expression of a for-of loop!",
+					"id": 47,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "$range() macro is only valid as an expression of a for-of loop!",
+					"id": 47,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noTupleMacroOutsideReturn": {
+				"factoryId": 48,
+				"atRange": {
+					"message": "$tuple() macro is only valid as an expression of a return statement!",
+					"id": 48,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "$tuple() macro is only valid as an expression of a return statement!",
+					"id": 48,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noModuleSpecifierFile": {
+				"factoryId": 49,
+				"atRange": {
+					"message": "Could not find file for import. Did you forget to `npm install`?",
+					"id": 49,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Could not find file for import. Did you forget to `npm install`?",
+					"id": 49,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noInvalidModule": {
+				"factoryId": 50,
+				"atRange": {
+					"message": "You can only use npm scopes that are listed in your typeRoots.",
+					"id": 50,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "You can only use npm scopes that are listed in your typeRoots.",
+					"id": 50,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noUnscopedModule": {
+				"factoryId": 51,
+				"atRange": {
+					"message": "You cannot use modules directly under node_modules.",
+					"id": 51,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "You cannot use modules directly under node_modules.",
+					"id": 51,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noNonModuleImport": {
+				"factoryId": 52,
+				"atRange": {
+					"message": "Cannot import a non-ModuleScript!",
+					"id": 52,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot import a non-ModuleScript!",
+					"id": 52,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noIsolatedImport": {
+				"factoryId": 53,
+				"atRange": {
+					"message": "Attempted to import a file inside of an isolated container from outside!",
+					"id": 53,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to import a file inside of an isolated container from outside!",
+					"id": 53,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noServerImport": {
+				"factoryId": 54,
+				"atRange": {
+					"message": "Cannot import a server file from a shared or client location!\nSuggestion: Move the file you want to import to a shared location.",
+					"id": 54,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Cannot import a server file from a shared or client location!\nSuggestion: Move the file you want to import to a shared location.",
+					"id": 54,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"noPrecedingJsxSpreadElement": {
+				"factoryId": 55,
+				"atRange": {
+					"message": "JSX spread expression must come last in children!",
+					"id": 55,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "JSX spread expression must come last in children!",
+					"id": 55,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"expectedMethodGotFunction": {
+				"factoryId": 56,
+				"atRange": {
+					"message": "Attempted to assign non-method where method was expected.",
+					"id": 56,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to assign non-method where method was expected.",
+					"id": 56,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"expectedFunctionGotMethod": {
+				"factoryId": 57,
+				"atRange": {
+					"message": "Attempted to assign method where non-method was expected.",
+					"id": 57,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "Attempted to assign method where non-method was expected.",
+					"id": 57,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			},
+			"runtimeLibUsedInReplicatedFirst": {
+				"factoryId": 60,
+				"atRange": {
+					"message": "This statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.",
+					"id": 60,
+					"category": 0,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				"atNode": {
+					"message": "This statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.",
+					"id": 60,
+					"category": 0,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			}
+		},
+		"context": {
+			"noRojoDataId": 58,
+			"noPackageImportWithoutScopeId": 59,
+			"noRojoData": [
+				{
+					"message": "Could not find Rojo data. There is no $path in your Rojo config that covers first/path.lua",
+					"id": 58,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				{
+					"message": "Could not find Rojo data. There is no $path in your Rojo config that covers first/path.lua\nCould not find Rojo data. There is no $path in your Rojo config that covers second/path.lua\nSuggestion: Did you forget to add a custom npm scope to your default.project.json?",
+					"id": 58,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				{
+					"message": "Could not find Rojo data. There is no $path in your Rojo config that covers first/path.lua\nCould not find Rojo data. There is no $path in your Rojo config that covers second/path.lua\nSuggestion: Did you forget to add a custom npm scope to your default.project.json?\nCould not find Rojo data. There is no $path in your Rojo config that covers third/path.lua",
+					"id": 58,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			],
+			"noPackageImportWithoutScope": [
+				{
+					"message": "Imported package Roblox path is missing an npm scope!\nPackage path: pkg/a.lua\nRoblox path: ReplicatedStorage.a\nSuggestion: You might need to update your \"node_modules\" in default.project.json to match:\n\"node_modules\": {\n\t\"$className\": \"Folder\",\n\t\"@rbxts\": {\n\t\t\"$path\": \"node_modules/@rbxts\"\n\t}\n}",
+					"id": 59,
+					"category": 1,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				},
+				{
+					"message": "Imported package Roblox path is missing an npm scope!\nPackage path: pkg/a.lua\nRoblox path: ReplicatedStorage.a\nSuggestion: You might need to update your \"node_modules\" in default.project.json to match:\n\"node_modules\": {\n\t\"$className\": \"Folder\",\n\t\"@rbxts\": {\n\t\t\"$path\": \"node_modules/@rbxts\"\n\t}\n}\nImported package Roblox path is missing an npm scope!\nPackage path: pkg/b.lua\nRoblox path: ReplicatedStorage.b.c\nSuggestion: You might need to update your \"node_modules\" in default.project.json to match:\n\"node_modules\": {\n\t\"$className\": \"Folder\",\n\t\"@rbxts\": {\n\t\t\"$path\": \"node_modules/@rbxts\"\n\t}\n}",
+					"id": 59,
+					"category": 1,
+					"start": 52,
+					"length": 18,
+					"code": " roblox-ts"
+				}
+			]
+		},
+		"text": {
+			"incorrectFileName": {
+				"message": "Incorrect file name: `init.ts`!\nFull path: /full/path/init.ts\nSuggestion: Change `init.ts` to `index.ts`.",
+				"id": null,
+				"category": 1,
+				"start": null,
+				"length": null,
+				"code": " roblox-ts"
+			},
+			"rojoPathInSrc": {
+				"message": "Invalid Rojo configuration. $path fields should be relative to out directory.\nSuggestion: Change the value of $path from \"src/x\" to \"out/x\".",
+				"id": null,
+				"category": 1,
+				"start": null,
+				"length": null,
+				"code": " roblox-ts"
+			},
+			"transformerNotFound": {
+				"message": "Transformer `my-transformer` was not found!\nMore info: Cannot find module\nSuggestion: Did you forget to install the package?",
+				"id": null,
+				"category": 0,
+				"start": null,
+				"length": null,
+				"code": " roblox-ts"
+			},
+			"truthyChange": {
+				"factoryId": 61,
+				"diagnostic": {
+					"message": "Value will be checked against 0, \"\"",
+					"id": 61,
+					"category": 0,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				}
+			},
+			"stringOffsetChange": {
+				"factoryId": 62,
+				"diagnostic": {
+					"message": "String macros no longer offset inputs: text",
+					"id": 62,
+					"category": 0,
+					"start": 19,
+					"length": 24,
+					"code": " roblox-ts"
+				}
+			}
+		},
+		"format": {
+			"located": "\u001b[96msample.ts\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0m`null` is not supported!\nSuggestion: Use `undefined` instead.\r\n\r\n\u001b[7m4\u001b[0m const other = 'x';\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~~~\u001b[0m\r\n",
+			"range": "\u001b[96msample.ts\u001b[0m:\u001b[93m2\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mUsage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: Consider using type assertions or `declare` statements.\r\n\r\n\u001b[7m2\u001b[0m const value = 1;\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~\u001b[0m\r\n\u001b[7m3\u001b[0m   // @ts-ignore\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~\u001b[0m\r\n",
+			"rangeAtEnd": "\u001b[96msample.ts\u001b[0m:\u001b[93m5\u001b[0m:\u001b[93m23\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mUsage of `@ts-ignore`, `@ts-expect-error`, and `@ts-nocheck` are not supported!\nroblox-ts needs type and symbol info to compile correctly.\nSuggestion: Consider using type assertions or `declare` statements.\r\n\r\n\u001b[7m5\u001b[0m export { value, other };\r\n\u001b[7m \u001b[0m \u001b[91m                      ~~\u001b[0m\r\n\u001b[7m6\u001b[0m \r\n\u001b[7m \u001b[0m \u001b[91m\u001b[0m\r\n",
+			"warning": "\u001b[96msample.ts\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m1\u001b[0m - \u001b[93mwarning\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mThis statement would generate a call to the runtime library. The runtime library should not be used from ReplicatedFirst.\r\n\r\n\u001b[7m4\u001b[0m const other = 'x';\r\n\u001b[7m \u001b[0m \u001b[93m~~~~~~~~~~~~~~~~~~\u001b[0m\r\n",
+			"text": "\u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mJust text\r\n",
+			"several": "\u001b[96msample.ts\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0m`var` keyword is not supported!\nSuggestion: Use `let` or `const` instead.\r\n\r\n\u001b[7m4\u001b[0m const other = 'x';\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~~~\u001b[0m\r\n\u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mText after\r\n\u001b[96msample.ts\u001b[0m:\u001b[93m5\u001b[0m:\u001b[93m1\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS roblox-ts: \u001b[0mUsing values of type `any` is not supported!\nSuggestion: Use `unknown` instead.\r\n\r\n\u001b[7m5\u001b[0m export { value, other };\r\n\u001b[7m \u001b[0m \u001b[91m~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\r\n"
+		},
+		"kinds": {},
+		"sourceText": "// leading comment\nconst value = 1;\n  // @ts-ignore\nconst other = 'x';\nexport { value, other };\n"
+	}
+}
