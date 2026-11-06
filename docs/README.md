@@ -8,5 +8,6 @@ How rbxtsgo is built, and where it differs from JS `rbxtsc`. The reference compi
 - [Watch mode and incremental builds](watch-and-incremental.md): what gets skipped, and why the output still equals a clean build
 - [Union member order](union-order.md): why TS 7's type ordering needed a fix in macro lookups
 - [Known differences](known-differences.md): every difference from `rbxtsc` that is accepted, and the ones still open
+- [fix-emit.md](fix-emit.md): which fixes are on by default, and which need `--fix-emit`.
 
 Output compatibility is a requirement. Every accepted difference is written down with its reason, and expected output is never edited by hand to make a test pass: it comes from running the real JS compiler.

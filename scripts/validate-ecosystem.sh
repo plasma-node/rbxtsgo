@@ -91,7 +91,7 @@ compare_project() {
 	# Related locations are printed differently by TS 7 (accepted, see docs/known-differences.md): drop those blocks
 	# from both logs for the second comparison.
 	for side in js go; do
-		awk '/^  [^ ].*:[0-9]+:[0-9]+/ { skip = 1 } /^$/ { skip = 0 } !skip { print }' "$out/$side.log" | grep -v "^rbxtsgo can.t run the transformer plugin" >"$out/$side.norm"
+		awk '/^  [^ ].*:[0-9]+:[0-9]+/ { skip = 1 } /^$/ { skip = 0 } !skip { print }' "$out/$side.log" | grep -v -E '^(Built in |No changes, finished in )' | grep -v "^rbxtsgo can.t run the transformer plugin" >"$out/$side.norm"
 	done
 	local diag="match"
 	if ! diff -q "$out/js.log" "$out/go.log" >/dev/null; then

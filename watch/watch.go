@@ -98,7 +98,7 @@ func Run(ctx context.Context, config Config) error {
 
 	report := func(started time.Time, debounce time.Duration) {
 		result := s.runCompile()
-		s.reportEmitResult(result)
+		s.reportEmitResult(result, time.Since(started))
 		s.finishCycle(started, debounce, result)
 	}
 	s.reportText("Starting compilation in watch mode...")
@@ -156,8 +156,8 @@ func (s *session) reportText(message string) {
 	fmt.Fprintf(s.config.Output, "[\x1b[90m%s\x1b[0m] %s%s%s", time.Now().Format("3:04:05 PM"), message, shared.EOL, shared.EOL)
 }
 
-// reportEmitResult is reportEmitResult.
-func (s *session) reportEmitResult(result *compile.EmitResult) {
+// reportEmitResult is reportEmitResult, plus how long the build took, which JS doesn't print.
+func (s *session) reportEmitResult(result *compile.EmitResult, elapsed time.Duration) {
 	cwd := shared.ProcessCwd()
 	caseSensitivity := osvfs.FS().CaseSensitivity()
 	amtErrors := 0
@@ -171,7 +171,7 @@ func (s *session) reportEmitResult(result *compile.EmitResult) {
 	if amtErrors == 1 {
 		plural = ""
 	}
-	s.reportText(fmt.Sprintf("Found %d error%s. Watching for file changes.", amtErrors, plural))
+	s.reportText(fmt.Sprintf("Found %d error%s. Watching for file changes. (%s)", amtErrors, plural, shared.FormatElapsed(elapsed)))
 }
 
 // eventPath puts a path from fswatch in the form the project uses: forward slashes, no trailing one.

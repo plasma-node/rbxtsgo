@@ -1077,8 +1077,11 @@ func TestSessionMatchesUpstream(t *testing.T) {
 		<-cycles
 	}
 	clock := regexp.MustCompile(`\d+:\d\d:\d\d [AP]M`)
+	// The elapsed time after the status line is rbxtsgo's own: JS doesn't print it.
+	elapsed := regexp.MustCompile(`(Watching for file changes\.) \(\d+(\.\d+)? m?s\)`)
 	normalize := func(text string) string {
-		return clock.ReplaceAllString(strings.ReplaceAll(text, "\r\n", "\n"), "<TIME>")
+		text = elapsed.ReplaceAllString(strings.ReplaceAll(text, "\r\n", "\n"), "$1")
+		return clock.ReplaceAllString(text, "<TIME>")
 	}
 	buffer.mu.Lock()
 	got := normalize(buffer.String())

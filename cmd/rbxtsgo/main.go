@@ -338,6 +338,7 @@ func build(projectPath string, applyFlags func(*shared.ProjectOptions), checkers
 	unchanged := inc.Unchanged(p)
 	lap(&times.State)
 	if unchanged {
+		fmt.Printf("No changes, finished in %s%s", shared.FormatElapsed(time.Since(started)), shared.EOL)
 		return nil
 	}
 	prepared, failure, err := project.PrepareCompile(p, data, translator, p.Program().CaseSensitivity())
@@ -380,7 +381,9 @@ func build(projectPath string, applyFlags func(*shared.ProjectOptions), checkers
 	printDiagnostics(diagnostics)
 	if shared.HasErrors(diagnostics) {
 		exitCode = 1
+		return nil
 	}
+	fmt.Printf("Built in %s%s", shared.FormatElapsed(time.Since(started)), shared.EOL)
 	return nil
 }
 
